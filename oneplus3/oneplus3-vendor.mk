@@ -365,6 +365,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:system/vendor/lib/libSonyIMX298PdafLibrary.so
 
 PRODUCT_PACKAGES += \
+    libril \
     org.ifaa.android.manager \
     dashd
 
