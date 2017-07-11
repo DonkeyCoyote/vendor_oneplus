@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+/******************************************************************************
+* Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+* All Rights Reserved
+* Confidential and Proprietary - Qualcomm Technologies, Inc.
+******************************************************************************/
+-->
+<Configuration>
+<SFConfig>
+		<Stateinit ombc="2.221441469079183 2.221441469079183 0.0" delta="-0.0018" tbc="-0.022 -0.001 -0.003" />
+		<Initialuncertainty std0Delta="0.002" std0Tbc="0.01 0.005 0.005" />
+		<Features randSeed="100" />
+		<Autocal enabled = "true" />
+		<Delaylineupdate delayLineSize = "8" />
+		<EKF1D minNumMeasForTriangulation="7"/>
+		<KeyFrameSelection minTranslation="0.04"/>
+		<Processnoise gyroMeasurementRange="29"  accelMeasurementRange="79" varAccelNoise="5e-3" varGyroNoise="1e-5" stdABias="1e-5"/>
+		<Propagation doSkipOnTime="false" numCovPropToSkip="4" minCovPropDT="0.0" />
+		<Logging level="1" logToFile="false"/>
+		<Measurementnoise varPixelNoise="1.0" useUndistortFeatMeasCov="true" />
+		<Warmstart enabled="true" overwritefile="false"/>
+		<PoseQuality minNumISFeatTrack='5' thresSigmaSensors='4' thresSigmaCamera = '4'/>
+</SFConfig>
+</Configuration>
