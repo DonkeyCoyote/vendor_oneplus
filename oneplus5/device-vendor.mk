@@ -412,6 +412,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/oneplus/oneplus5/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/oneplus/oneplus5/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
+    vendor/oneplus/oneplus5/proprietary/lib/sensors.hal.tof.so:system/lib/sensors.hal.tof.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libOmxVpp.so:system/lib64/libOmxVpp.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
