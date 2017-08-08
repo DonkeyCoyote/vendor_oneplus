@@ -10,4 +10,4 @@ mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn
 mcfg_sw/generic/oem/lab/volte_te/mcfg_sw.mbn
 mcfg_sw/generic/oem/oversea/commerci/mcfg_sw.mbn
 mcfg_sw/generic/sea/ytl/gen_3gpp/mcfg_sw.mbn
-mcfg_sw/generic/common/row/gen_3gpp/mcfg_sw.mbn
+mcfg_sw/generic/common/row/commerci/mcfg_sw.mbn
