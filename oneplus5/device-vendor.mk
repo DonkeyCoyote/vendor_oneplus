@@ -116,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib/libopposfr.so:system/lib/libopposfr.so \
     vendor/oneplus/oneplus5/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/oneplus/oneplus5/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
+    vendor/oneplus/oneplus5/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
     vendor/oneplus/oneplus5/proprietary/lib/modules/qca_cld3/qca_cld3_wlan.ko:system/lib/modules/qca_cld3/qca_cld3_wlan.ko \
     vendor/oneplus/oneplus5/proprietary/lib/rfsa/adsp/libVDHexagonBlurless_skel.so:system/lib/rfsa/adsp/libVDHexagonBlurless_skel.so \
     vendor/oneplus/oneplus5/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
@@ -125,6 +126,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libparam.so:system/lib64/libparam.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/libteeclientjni.so:system/lib64/libteeclientjni.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/libteeclientjniv2.so:system/lib64/libteeclientjniv2.so \
     vendor/oneplus/oneplus5/proprietary/vendor/firmware/libpn553_fw.so:system/vendor/firmware/libpn553_fw.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libSonyIMX350PdafLibrary.so:system/vendor/lib/libSonyIMX350PdafLibrary.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libSonyIMX371RmscLibrary.so:system/vendor/lib/libSonyIMX371RmscLibrary.so \
@@ -133,6 +136,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libactuator_lc898217xc_imx350.so:system/vendor/lib/libactuator_lc898217xc_imx350.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libactuator_lc898217xc_imx398.so:system/vendor/lib/libactuator_lc898217xc_imx398.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:system/vendor/lib/libarcsoft_dualcam_refocus.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libblurbuster.so:system/vendor/lib/libblurbuster.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libcamera_bokeh_wrapper.so:system/vendor/lib/libcamera_bokeh_wrapper.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libcdsprpc.so:system/vendor/lib/libcdsprpc.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
@@ -186,6 +190,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_hq.so:system/vendor/lib/libchromatix_imx398_3a_hq.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_manual.so:system/vendor/lib/libchromatix_imx398_3a_manual.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_panorama.so:system/vendor/lib/libchromatix_imx398_3a_panorama.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_wechat_preview.so:system/vendor/lib/libchromatix_imx398_3a_wechat_preview.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_common.so:system/vendor/lib/libchromatix_imx398_common.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_1476x834_120fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_2328x1304_60fps_video.so \
@@ -208,10 +213,25 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_snapshot.so:system/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_snapshot.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_manual.so:system/vendor/lib/libchromatix_imx398_isp_manual.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_panorama.so:system/vendor/lib/libchromatix_imx398_isp_panorama.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so:system/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_postproc.so:system/vendor/lib/libchromatix_imx398_postproc.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so:system/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libcvface_api.so:system/vendor/lib/libcvface_api.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libdualcameraddm.so:system/vendor/lib/libdualcameraddm.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libfiltergenerator.so:system/vendor/lib/libfiltergenerator.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libfusionLibrary.so:system/vendor/lib/libfusionLibrary.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_blurbuster.so:system/vendor/lib/libjni_blurbuster.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_chromaflash.so:system/vendor/lib/libjni_chromaflash.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_dualcamera.so:system/vendor/lib/libjni_dualcamera.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_filtergenerator.so:system/vendor/lib/libjni_filtergenerator.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_makeupV2.so:system/vendor/lib/libjni_makeupV2.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_optizoom.so:system/vendor/lib/libjni_optizoom.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_panorama.so:system/vendor/lib/libjni_panorama.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_sharpshooter.so:system/vendor/lib/libjni_sharpshooter.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_stillmore.so:system/vendor/lib/libjni_stillmore.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_trackingfocus.so:system/vendor/lib/libjni_trackingfocus.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libjni_ubifocus.so:system/vendor/lib/libjni_ubifocus.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
@@ -328,9 +348,24 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libst_disp.so:system/vendor/lib/libst_disp.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libcdsprpc.so:system/vendor/lib64/libcdsprpc.so
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libblurbuster.so:system/vendor/lib64/libblurbuster.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libcdsprpc.so:system/vendor/lib64/libcdsprpc.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libchromaflash.so:system/vendor/lib64/libchromaflash.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_blurbuster.so:system/vendor/lib64/libjni_blurbuster.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_chromaflash.so:system/vendor/lib64/libjni_chromaflash.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_clearsight.so:system/vendor/lib64/libjni_clearsight.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_makeupV2.so:system/vendor/lib64/libjni_makeupV2.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_optizoom.so:system/vendor/lib64/libjni_optizoom.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_panorama.so:system/vendor/lib64/libjni_panorama.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_sharpshooter.so:system/vendor/lib64/libjni_sharpshooter.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_stillmore.so:system/vendor/lib64/libjni_stillmore.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_trackingfocus.so:system/vendor/lib64/libjni_trackingfocus.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libjni_ubifocus.so:system/vendor/lib64/libjni_ubifocus.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/liboptizoom.so:system/vendor/lib64/liboptizoom.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libseemore.so:system/vendor/lib64/libseemore.so
 
 PRODUCT_PACKAGES += \
+    IFAAService \
     org.simalliance.openmobileapi \
     dashd
 
