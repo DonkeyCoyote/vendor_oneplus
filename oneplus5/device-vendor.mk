@@ -839,7 +839,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
-    SmartcardService \
     colorservice \
     ims \
     imssettings \
