@@ -423,7 +423,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libremosaic_daemon.so:system/vendor/lib64/libremosaic_daemon.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libremosaic_tuning.so:system/vendor/lib64/libremosaic_tuning.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libremosaiclib.so:system/vendor/lib64/libremosaiclib.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/qfp.wakeup.so:system/vendor/lib64/qfp.wakeup.so
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/qfp.wakeup.so:system/vendor/lib64/qfp.wakeup.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libprotobuf-cpp-fool.so:system/vendor/lib64/libprotobuf-cpp-fool.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libprotobuf-cpp-late.so:system/vendor/lib64/libprotobuf-cpp-late.so
 
 PRODUCT_PACKAGES += \
     org.ifaa.android.manager \
