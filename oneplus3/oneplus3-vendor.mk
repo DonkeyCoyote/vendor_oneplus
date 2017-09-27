@@ -157,8 +157,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/qpd_dspcl_v2.bin:system/lib/qpd_dspcl_v2.bin \
     vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
     vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/hw/fingerprint.msm8996.so:system/lib64/hw/fingerprint.msm8996.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
+    vendor/oneplus/oneplus3/proprietary/lib64/hw/fingerprint.msm8996.so:system/vendor/lib64/hw/fingerprint.vendor.msm8996.so \
+    vendor/oneplus/oneplus3/proprietary/lib64/lib_fpc_tac_shared.so:system/vendor/lib64/lib_fpc_tac_shared.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libparam.so:system/lib64/libparam.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libteeclientjni.so:system/lib64/libteeclientjni.so \
     vendor/oneplus/oneplus3/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
@@ -764,20 +764,23 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     QtiTelephonyService \
     TimeService \
-    datastatusnotification \
-    embms \
-    fastdormancy \
     shutdownlistener \
-    CNEService \
     QtiTetherService \
+    colorservice
+
+#PRODUCT_PACKAGES += \
     com.qualcomm.location \
+    datastatusnotification \
     dpmserviceapp \
     qcrilmsgtunnel \
-    colorservice \
+    qcnvitems \
+    qcrilhook \
+    fastdormancy \
+    embms \
     ims \
     imssettings \
-    qcnvitems \
-    qcrilhook
+    CNEService
+
 endif
 
 -include vendor/extra/devices.mk
