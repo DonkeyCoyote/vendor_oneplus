@@ -427,11 +427,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libprotobuf-cpp-fool.so:system/vendor/lib64/libprotobuf-cpp-fool.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libprotobuf-cpp-late.so:system/vendor/lib64/libprotobuf-cpp-late.so
 
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager \
-    dashd
-
-ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/adsprpcd:system/vendor/bin/adsprpcd \
     vendor/oneplus/oneplus3/proprietary/bin/btnvtool:system/vendor/bin/btnvtool \
@@ -604,7 +599,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so \
@@ -688,8 +682,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
@@ -780,10 +772,10 @@ PRODUCT_PACKAGES += \
     imssettings \
     CNEService
 
-endif
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager \
+    dashd
 
--include vendor/extra/devices.mk
-ifneq ($(call is-qc-perf-target),true)
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/iop:system/vendor/bin/iop \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
@@ -800,7 +792,28 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-iop.so:system/vendor/lib64/libqti-iop.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so
-endif
+
+# DRM stuff from marlin
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus3/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
+    vendor/oneplus/oneplus3/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libdrm.so:system/vendor/lib/libdrm.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libdrmutils.so:system/vendor/lib/libdrmutils.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrm.so:system/vendor/lib64/libdrm.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrmutils.so:system/vendor/lib64/libdrmutils.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:system/vendor/lib64/mediadrm/libwvdrmengine.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libwvhidl.so:system/vendor/lib/libwvhidl.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.widevine:system/vendor/bin/hw/android.hardware.drm@1.0-service.widevine \
+    vendor/oneplus/oneplus3/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:system/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc \
 
 $(call inherit-product, vendor/qcom/binaries/msm8996/graphics/graphics-vendor.mk)
 $(call inherit-product, vendor/qcom/binaries/msm8996/audio/audio-vendor.mk)
