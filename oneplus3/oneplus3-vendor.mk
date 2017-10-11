@@ -747,7 +747,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/sensors.oem.so:system/vendor/lib64/sensors.oem.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/qcril.db:system/vendor/qcril.db
+    vendor/oneplus/oneplus3/proprietary/vendor/qcril.db:system/vendor/qcril.db \
+    vendor/oneplus/oneplus3/proprietary/vendor/etc/public.libraries.txt:system/vendor/etc/public.libraries.txt
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
@@ -776,6 +777,7 @@ PRODUCT_PACKAGES += \
     org.ifaa.android.manager \
     dashd
 
+# perfd from marlin
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/iop:system/vendor/bin/iop \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \

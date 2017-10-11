@@ -1,0 +1,3 @@
+libadsprpc.so
+libqti-perfd-client.so
+libOpenCL.so
