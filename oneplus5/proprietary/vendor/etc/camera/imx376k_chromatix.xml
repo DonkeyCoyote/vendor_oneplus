@@ -82,6 +82,10 @@ special_mode_mask values:
       <ISPCommon>imx376k_common</ISPCommon>
       <PostProc>imx376k_postproc</PostProc>
     </ChromatixName>
+    <ChromatixName special_mode_mask="SCENE_THIRDPARTY">
+      <A3Preview>imx376k_3a_2592x1940_30fps_preview_wechat</A3Preview>
+      <A3Video>imx376k_3a_2592x1940_30fps_preview_wechat</A3Video>
+    </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="0">

@@ -95,6 +95,17 @@ special_mode_mask values:
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
+      <ISPPreview>imx371_isp_640x480_120fps_video</ISPPreview>
+      <ISPSnapshot>imx371_isp_640x480_120fps_video</ISPSnapshot>
+      <ISPVideo>imx371_isp_640x480_120fps_video</ISPVideo>
+      <CPPPreview>imx371_cpp_640x480_120fps_video</CPPPreview>
+      <CPPSnapshot>imx371_cpp_640x480_120fps_video</CPPSnapshot>
+      <CPPVideo>imx371_cpp_640x480_120fps_video</CPPVideo>
+      <CPPLiveshot>imx371_cpp_640x480_120fps_video</CPPLiveshot>
+      <A3Preview>imx371_3a_640x480_120fps_video</A3Preview>
+      <A3Video>imx371_3a_640x480_120fps_video</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
       <ISPPreview>imx371_isp_2304x1728_30fps_snapshot</ISPPreview>
       <ISPSnapshot>imx371_isp_2304x1728_30fps_snapshot</ISPSnapshot>
       <ISPVideo>imx371_isp_2304x1728_30fps_snapshot</ISPVideo>
@@ -105,7 +116,7 @@ special_mode_mask values:
       <A3Preview>imx371_3a_2304x1728_30fps_preview</A3Preview>
       <A3Video>imx371_3a_2304x1728_30fps_video</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="0">
       <ISPPreview>imx371_isp_4656x3456_30fps_snapshot</ISPPreview>
       <ISPSnapshot>imx371_isp_4656x3456_30fps_snapshot</ISPSnapshot>
       <ISPVideo>imx371_isp_4656x3456_30fps_snapshot</ISPVideo>
