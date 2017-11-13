@@ -35,24 +35,24 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
     vendor/oneplus/oneplus3/proprietary/etc/camera/s5k3p8_chromatix.xml:system/etc/camera/s5k3p8_chromatix.xml \
     vendor/oneplus/oneplus3/proprietary/etc/camera/s5k3p8sp_chromatix.xml:system/etc/camera/s5k3p8sp_chromatix.xml \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_gpmu.fw2:system/etc/firmware/a530_gpmu.fw2 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_pfp.fw:system/etc/firmware/a530_pfp.fw \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_pm4.fw:system/etc/firmware/a530_pm4.fw \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap-pro.b00:system/etc/firmware/a530_zap-pro.b00 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap-pro.b01:system/etc/firmware/a530_zap-pro.b01 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap-pro.b02:system/etc/firmware/a530_zap-pro.b02 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap-pro.elf:system/etc/firmware/a530_zap-pro.elf \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap-pro.mdt:system/etc/firmware/a530_zap-pro.mdt \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap.b00:system/etc/firmware/a530_zap.b00 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap.b01:system/etc/firmware/a530_zap.b01 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap.b02:system/etc/firmware/a530_zap.b02 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap.elf:system/etc/firmware/a530_zap.elf \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_zap.mdt:system/etc/firmware/a530_zap.mdt \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530v1_pfp.fw:system/etc/firmware/a530v1_pfp.fw \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530v1_pm4.fw:system/etc/firmware/a530v1_pm4.fw \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530v2_seq.fw2:system/etc/firmware/a530v2_seq.fw2 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530v3_gpmu.fw2:system/etc/firmware/a530v3_gpmu.fw2 \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/a530v3_seq.fw2:system/etc/firmware/a530v3_seq.fw2 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_gpmu.fw2:system/vendor/firmware/a530_gpmu.fw2 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_pfp.fw:system/vendor/firmware/a530_pfp.fw \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_pm4.fw:system/vendor/firmware/a530_pm4.fw \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap-pro.b00:system/vendor/firmware/a530_zap-pro.b00 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap-pro.b01:system/vendor/firmware/a530_zap-pro.b01 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap-pro.b02:system/vendor/firmware/a530_zap-pro.b02 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap-pro.elf:system/vendor/firmware/a530_zap-pro.elf \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap-pro.mdt:system/vendor/firmware/a530_zap-pro.mdt \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap.b00:system/vendor/firmware/a530_zap.b00 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap.b01:system/vendor/firmware/a530_zap.b01 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap.b02:system/vendor/firmware/a530_zap.b02 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap.elf:system/vendor/firmware/a530_zap.elf \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530_zap.mdt:system/vendor/firmware/a530_zap.mdt \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530v1_pfp.fw:system/vendor/firmware/a530v1_pfp.fw \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530v1_pm4.fw:system/vendor/firmware/a530v1_pm4.fw \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530v2_seq.fw2:system/vendor/firmware/a530v2_seq.fw2 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530v3_gpmu.fw2:system/vendor/firmware/a530v3_gpmu.fw2 \
+    vendor/oneplus/oneplus3/proprietary/vendor/firmware/a530v3_seq.fw2:system/vendor/firmware/a530v3_seq.fw2 \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
@@ -480,16 +480,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
     vendor/oneplus/oneplus3/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/oneplus/oneplus3/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/nvm_tlv_3.0.bin:system/etc/firmware/nvm_tlv_3.0.bin \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/nvm_tlv_3.2.bin:system/etc/firmware/nvm_tlv_3.2.bin \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:system/etc/firmware/rampatch_tlv_1.3.tlv \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
-    vendor/oneplus/oneplus3/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
