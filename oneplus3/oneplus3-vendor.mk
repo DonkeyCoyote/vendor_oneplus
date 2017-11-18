@@ -959,6 +959,7 @@ PRODUCT_PACKAGES += \
     qcnvitems \
     embms \
     CNEService \
+    TimeService \
     dashd
 
 #PRODUCT_PACKAGES += \
