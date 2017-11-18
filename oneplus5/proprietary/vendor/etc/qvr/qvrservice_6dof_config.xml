@@ -7,19 +7,20 @@
 ******************************************************************************/
 -->
 <Configuration>
-<SFConfig>
-		<Stateinit ombc="2.221441469079183 2.221441469079183 0.0" delta="-0.0018" tbc="-0.022 -0.001 -0.003" />
-		<Initialuncertainty std0Delta="0.002" std0Tbc="0.01 0.005 0.005" />
-		<Features randSeed="100" />
+	<SFConfig>
+		<Features randSeed="100" selectionThreshold="0" minInState="15" maxOutState="50" />
 		<Autocal enabled = "true" />
-		<Delaylineupdate delayLineSize = "8" />
-		<EKF1D minNumMeasForTriangulation="7"/>
-		<KeyFrameSelection minTranslation="0.04"/>
-		<Processnoise gyroMeasurementRange="29"  accelMeasurementRange="79" varAccelNoise="5e-3" varGyroNoise="1e-5" stdABias="1e-5"/>
-		<Propagation doSkipOnTime="false" numCovPropToSkip="4" minCovPropDT="0.0" />
-		<Logging level="1" logToFile="false"/>
-		<Measurementnoise varPixelNoise="1.0" useUndistortFeatMeasCov="true" />
-		<Warmstart enabled="true" overwritefile="false"/>
-		<PoseQuality minNumISFeatTrack='5' thresSigmaSensors='4' thresSigmaCamera = '4'/>
-</SFConfig>
+		<EKF correctInnovationCovariance="true" correctStateCovariance="true" />
+		<Tracker useTrackPerLevel="true" />
+		<Keypointdetector fastThreshold="11 11 11" minTrackabilityScore="10" harrisThreshold="10" maskMapFeatures="true" maxPointsPerCell="8"/>
+		<Mapping enabled="true" />
+		<Processnoise varAccelNoise="5e-3" varGyroNoise="1e-5" stdABias="1e-5"/>
+		<Propagation numCovPropToSkip="4" />
+		<Logging level="1" logToFile="false" sfLevel="1" />
+		<Measurementnoise varPixelNoise="1.0" />
+		<Warmstart enabled="true" overwritefile="false" std0abias="0.1" std0wbias="0.005" />
+		<PoseQuality thresSigmaSensors="4" thresSigmaCamera="4" minNumISFeatTrack="0" />
+		<Reset numFramesZeroMeas="60"/>
+		<gn useNewComputeGN="true"/>
+	</SFConfig>
 </Configuration>
