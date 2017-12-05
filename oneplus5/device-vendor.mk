@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/oneplus/oneplus5/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
     vendor/oneplus/oneplus5/proprietary/etc/firmware/tp/fw_synaptics_16859.img:system/etc/firmware/tp/fw_synaptics_16859.img \
-    vendor/oneplus/oneplus5/proprietary/etc/firmware/tp/fw_synaptics_17801.img:system/etc/firmware/tp/fw_synaptics_17801.img \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/com.fingerprints.extension.xml:system/etc/permissions/com.fingerprints.extension.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/oneplus/oneplus5/proprietary/framework/com.fingerprints.extension.jar:system/framework/com.fingerprints.extension.jar \
@@ -519,6 +518,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/audiosphere.xml:system/etc/permissions/audiosphere.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/oneplus/oneplus5/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:system/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
@@ -1186,6 +1186,7 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
     QtiTelephonyService \
+    WfdService \
     datastatusnotification \
     embms \
     ims \
@@ -1196,6 +1197,7 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     qcrilmsgtunnel \
     TimeService \
+    WfdCommon \
     qcnvitems \
     qcrilhook
 endif

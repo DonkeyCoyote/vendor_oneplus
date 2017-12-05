@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),oneplus5)
+ifeq ($(TARGET_DEVICE),$(filter $(TARGET_DEVICE),oneplus5 oneplus5t))
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := IFAAService
@@ -127,6 +127,17 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTelephonyService
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/WfdService/WfdService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -247,6 +258,16 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdCommon
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/framework/WfdCommon.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
