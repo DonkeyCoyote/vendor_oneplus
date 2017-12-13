@@ -576,6 +576,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libdiag_system.so:system/vendor/lib/libdiag_system.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdpmqmihal.so:system/vendor/lib/libdpmqmihal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
@@ -588,6 +589,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/lib-imscmservice.so:system/vendor/lib/lib-imscmservice.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
@@ -628,6 +630,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libqdMetaData.system.so:system/vendor/lib/libqdMetaData.system.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
@@ -639,6 +643,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/librilqmiservices.so:system/vendor/lib/librilqmiservices.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/librcc.so:system/vendor/lib/librcc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/librmp.so:system/vendor/lib/librmp.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
@@ -710,6 +716,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imscmservice.so:system/vendor/lib64/lib-imscmservice.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
@@ -759,6 +766,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdiag_system.so:system/vendor/lib64/libdiag_system.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdpmqmihal.so:system/vendor/lib64/libdpmqmihal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
@@ -799,6 +807,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqdMetaData.system.so:system/vendor/lib64/libqdMetaData.system.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqisl.so:system/vendor/lib64/libqisl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqmi.so:system/vendor/lib64/libqmi.so \
@@ -815,6 +824,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/librmp.so:system/vendor/lib64/librmp.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
@@ -879,6 +889,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:system/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdrm.so:system/vendor/lib/libdrm.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
@@ -949,17 +963,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 
+#PRODUCT_PACKAGES += \
+    datastatusnotification \
+    dpmserviceapp \
+    CNEService \
+
 PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     QtiTelephonyService \
-    datastatusnotification \
     qcrilhook \
     qcrilmsgtunnel \
     ims \
     imssettings \
     colorservice \
-    dpmserviceapp \
     qcnvitems \
     embms \
     CNEService \
