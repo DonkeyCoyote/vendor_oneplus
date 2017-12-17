@@ -215,16 +215,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libSonyIMX350PdafLibrary.so:system/vendor/lib/libSonyIMX350PdafLibrary.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libSonyIMX371RmscLibrary.so:system/vendor/lib/libSonyIMX371RmscLibrary.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libStDualCam.so:system/vendor/lib/libStDualCam.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libStereoblur.so:system/vendor/lib/libStereoblur.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libVDDualCameraBlurlessAPI.so:system/vendor/lib/libVDDualCameraBlurlessAPI.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libactuator_lc898217xc_imx350.so:system/vendor/lib/libactuator_lc898217xc_imx350.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libactuator_lc898217xc_imx376k.so:system/vendor/lib/libactuator_lc898217xc_imx376k.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libactuator_lc898217xc_imx398.so:system/vendor/lib/libactuator_lc898217xc_imx398.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:system/vendor/lib/libarcsoft_dualcam_refocus.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libcamera_bokeh_wrapper.so:system/vendor/lib/libcamera_bokeh_wrapper.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libcamera_cp_bokeh.so:system/vendor/lib/libcamera_cp_bokeh.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libcamera_cp_wrapper.so:system/vendor/lib/libcamera_cp_wrapper.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libcamera_oneplus_bokeh_wrapper.so:system/vendor/lib/libcamera_oneplus_bokeh_wrapper.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libcdsprpc.so:system/vendor/lib/libcdsprpc.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx350_3a_1536x866_30fps_video.so:system/vendor/lib/libchromatix_imx350_3a_1536x866_30fps_video.so \
@@ -459,7 +455,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libscvePanorama.so:system/vendor/lib/libscvePanorama.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libscvePanorama_lite.so:system/vendor/lib/libscvePanorama_lite.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libst_disp.so:system/vendor/lib/libst_disp.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so \
