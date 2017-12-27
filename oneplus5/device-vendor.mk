@@ -533,7 +533,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oneplus/oneplus5/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oneplus/oneplus5/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/oneplus/oneplus5/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oneplus/oneplus5/proprietary/framework/rcs_service_aidl.jar:system/framework/rcs_service_aidl.jar \
     vendor/oneplus/oneplus5/proprietary/framework/rcs_service_api.jar:system/framework/rcs_service_api.jar \
     vendor/oneplus/oneplus5/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
@@ -1132,7 +1131,8 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     TimeService \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    qti-telephony-common
 endif
 
 -include vendor/extra/devices.mk
