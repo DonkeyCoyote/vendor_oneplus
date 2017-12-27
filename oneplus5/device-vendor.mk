@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
     vendor/oneplus/oneplus5/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/oneplus/oneplus5/proprietary/lib/libblurbuster.so:system/lib/libblurbuster.so \
-    vendor/oneplus/oneplus5/proprietary/lib/libfiltergenerator.so:system/lib/libfiltergenerator.so \
     vendor/oneplus/oneplus5/proprietary/lib/libjni_blurbuster.so:system/lib/libjni_blurbuster.so \
     vendor/oneplus/oneplus5/proprietary/lib/libjni_chromaflash.so:system/lib/libjni_chromaflash.so \
     vendor/oneplus/oneplus5/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
@@ -109,7 +108,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libblurbuster.so:system/lib64/libblurbuster.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/libclearsight.so:system/lib64/libclearsight.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libfiltergenerator.so:system/lib64/libfiltergenerator.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/libhazebuster.so:system/lib64/libhazebuster.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_blurbuster.so:system/lib64/libjni_blurbuster.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_chromaflash.so:system/lib64/libjni_chromaflash.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_clearsight.so:system/lib64/libjni_clearsight.so \
@@ -118,7 +119,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_hazebuster.so:system/lib64/libjni_hazebuster.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_makeupV2.so:system/lib64/libjni_makeupV2.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_optizoom.so:system/lib64/libjni_optizoom.so \
-    vendor/oneplus/oneplus5/proprietary/lib64/libjni_pacprocessor.so:system/lib64/libjni_pacprocessor.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_panorama.so:system/lib64/libjni_panorama.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_seestraight.so:system/lib64/libjni_seestraight.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libjni_sharpshooter.so:system/lib64/libjni_sharpshooter.so \
@@ -143,10 +143,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib64/libscveObjectTracker_stub.so:system/lib64/libscveObjectTracker_stub.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libscvePanorama.so:system/lib64/libscvePanorama.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libscvePanorama_lite.so:system/lib64/libscvePanorama_lite.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/libseestraight.so:system/lib64/libseestraight.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libteeclientjni.so:system/lib64/libteeclientjni.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libteeclientjniv2.so:system/lib64/libteeclientjniv2.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/libtruescanner.so:system/lib64/libtruescanner.so \
     vendor/oneplus/oneplus5/proprietary/lib64/sensors.hal.tof.so:system/lib64/sensors.hal.tof.so \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hvdcp_opti:system/vendor/bin/hvdcp_opti \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:system/vendor/bin/hw/android.hardware.camera.provider@2.4-service \
@@ -326,7 +328,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so:system/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libcvface_api.so:system/vendor/lib/libcvface_api.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libdczoom.so:system/vendor/lib/libdczoom.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libdualcameraddm.so:system/vendor/lib/libdualcameraddm.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libfusionLibrary.so:system/vendor/lib/libfusionLibrary.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
@@ -456,13 +457,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libscvePanorama.so:system/vendor/lib/libscvePanorama.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libscvePanorama_lite.so:system/vendor/lib/libscvePanorama_lite.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:system/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libcdsprpc.so:system/vendor/lib64/libcdsprpc.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libchromaflash.so:system/vendor/lib64/libchromaflash.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libdualcameraddm.so:system/vendor/lib64/libdualcameraddm.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libmmcamera2_is.so:system/vendor/lib64/libmmcamera2_is.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:system/vendor/lib64/libmmcamera2_q3a_core.so \
@@ -488,6 +489,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libscvePanorama.so:system/vendor/lib64/libscvePanorama.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libscvePanorama_lite.so:system/vendor/lib64/libscvePanorama_lite.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libseemore.so:system/vendor/lib64/libseemore.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/libubifocus.so:system/vendor/lib64/libubifocus.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so \
