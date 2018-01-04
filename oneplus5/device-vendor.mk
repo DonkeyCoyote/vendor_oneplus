@@ -465,6 +465,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libscvePanorama_lite.so:system/vendor/lib/libscvePanorama_lite.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:system/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libcdsprpc.so:system/vendor/lib64/libcdsprpc.so \
@@ -497,6 +498,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libseemore.so:system/vendor/lib64/libseemore.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libubifocus.so:system/vendor/lib64/libubifocus.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:system/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
