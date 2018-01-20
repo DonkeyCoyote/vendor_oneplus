@@ -78,11 +78,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
     vendor/oneplus/oneplus5/proprietary/lib/libopposfr.so:system/lib/libopposfr.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscveBlobDescriptor.so:system/lib/libscveBlobDescriptor.so \
-    vendor/oneplus/oneplus5/proprietary/lib/libscveBlobDescriptor_skel.so:system/lib/libscveBlobDescriptor_skel.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscveBlobDescriptor_stub.so:system/lib/libscveBlobDescriptor_stub.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscveCommon.so:system/lib/libscveCommon.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscveCommon_stub.so:system/lib/libscveCommon_stub.so \
-    vendor/oneplus/oneplus5/proprietary/lib/libscveFaceLandmark_skel.so:system/lib/libscveFaceLandmark_skel.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscveFaceLandmarks.so:system/lib/libscveFaceLandmarks.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscveFaceLandmarks_stub.so:system/lib/libscveFaceLandmarks_stub.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscveFaceRecognition.so:system/lib/libscveFaceRecognition.so \
@@ -92,7 +90,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib/libscveObjectTracker_stub.so:system/lib/libscveObjectTracker_stub.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscvePanorama.so:system/lib/libscvePanorama.so \
     vendor/oneplus/oneplus5/proprietary/lib/libscvePanorama_lite.so:system/lib/libscvePanorama_lite.so \
-    vendor/oneplus/oneplus5/proprietary/lib/libscveT2T_skel.so:system/lib/libscveT2T_skel.so \
     vendor/oneplus/oneplus5/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/oneplus/oneplus5/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
     vendor/oneplus/oneplus5/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
@@ -296,6 +293,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video_4k.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video_4k.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_4656x3496_30fps_preview.so:system/vendor/lib/libchromatix_imx398_3a_4656x3496_30fps_preview.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_4656x3496_30fps_video.so:system/vendor/lib/libchromatix_imx398_3a_4656x3496_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_hq.so:system/vendor/lib/libchromatix_imx398_3a_hq.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_manual.so:system/vendor/lib/libchromatix_imx398_3a_manual.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_panorama.so:system/vendor/lib/libchromatix_imx398_3a_panorama.so \
@@ -310,6 +308,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video_4k.so:system/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video_4k.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x3496_30fps_preview.so:system/vendor/lib/libchromatix_imx398_cpp_4656x3496_30fps_preview.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x3496_30fps_snapshot.so:system/vendor/lib/libchromatix_imx398_cpp_4656x3496_30fps_snapshot.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x3496_30fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_4656x3496_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_flash.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_flash.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_hdr.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_manual.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_manual.so \
@@ -322,6 +321,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_4656x2608_30fps_video.so:system/vendor/lib/libchromatix_imx398_isp_4656x2608_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_preview.so:system/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_preview.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_snapshot.so:system/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_snapshot.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_video.so:system/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_manual.so:system/vendor/lib/libchromatix_imx398_isp_manual.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_panorama.so:system/vendor/lib/libchromatix_imx398_isp_panorama.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so:system/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so \
@@ -518,6 +518,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/oneplus/oneplus5/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/oneplus/oneplus5/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/oneplus/oneplus5/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/audiosphere.xml:system/etc/permissions/audiosphere.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:system/etc/permissions/com.qualcomm.qti.imscmservice.xml \
@@ -525,7 +526,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/oneplus/oneplus5/proprietary/etc/permissions/radioconfig.xml:system/etc/permissions/radioconfig.xml \
     vendor/oneplus/oneplus5/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/oneplus5/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/oneplus/oneplus5/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
@@ -572,11 +572,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/oneplus5/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/oneplus5/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
-    vendor/oneplus/oneplus5/proprietary/lib/libqvr_adsp_driver_skel.so:system/lib/libqvr_adsp_driver_skel.so \
     vendor/oneplus/oneplus5/proprietary/lib/libqvr_adsp_driver_stub.so:system/lib/libqvr_adsp_driver_stub.so \
-    vendor/oneplus/oneplus5/proprietary/lib/libqvrcamera_client.so:system/lib/libqvrcamera_client.so \
     vendor/oneplus/oneplus5/proprietary/lib/libqvrservice.so:system/lib/libqvrservice.so \
-    vendor/oneplus/oneplus5/proprietary/lib/libqvrservice_client.so:system/lib/libqvrservice_client.so \
     vendor/oneplus/oneplus5/proprietary/lib/libqvrservice_hvxcameraclient.so:system/lib/libqvrservice_hvxcameraclient.so \
     vendor/oneplus/oneplus5/proprietary/lib/libqvrservice_ov7251_hvx_tuning.so:system/lib/libqvrservice_ov7251_hvx_tuning.so \
     vendor/oneplus/oneplus5/proprietary/lib/libqvrservice_ov9282_hvx_tuning.so:system/lib/libqvrservice_ov9282_hvx_tuning.so \
@@ -651,8 +648,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
-    vendor/oneplus/oneplus5/proprietary/lib64/libqvrcamera_client.so:system/lib64/libqvrcamera_client.so \
-    vendor/oneplus/oneplus5/proprietary/lib64/libqvrservice_client.so:system/lib64/libqvrservice_client.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libqvrservice_hvxcameraclient.so:system/lib64/libqvrservice_hvxcameraclient.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libqvrservice_ov7251_hvx_tuning.so:system/lib64/libqvrservice_ov7251_hvx_tuning.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libqvrservice_ov9282_hvx_tuning.so:system/lib64/libqvrservice_ov9282_hvx_tuning.so \
@@ -692,7 +687,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
     vendor/oneplus/oneplus5/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oneplus/oneplus5/proprietary/lib64/vendor.qti.hardware.fm@1.0.so:system/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/oneplus/oneplus5/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/oneplus/oneplus5/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
     vendor/oneplus/oneplus5/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/oneplus/oneplus5/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
@@ -711,7 +705,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:system/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:system/vendor/bin/hw/vendor.qti.gnss@1.0-service \
-    vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.iop@1.0-service \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:system/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
@@ -766,7 +759,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:system/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/oneplus/oneplus5/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:system/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/oneplus/oneplus5/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
-    vendor/oneplus/oneplus5/proprietary/vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc \
     vendor/oneplus/oneplus5/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
     vendor/oneplus/oneplus5/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/oneplus/oneplus5/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
@@ -941,8 +933,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libdirac17801-capiv2.so:system/vendor/lib/rfsa/adsp/libdirac17801-capiv2.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libdirac_capiv2.so:system/vendor/lib/rfsa/adsp/libdirac_capiv2.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libexternal_dog_skel.so:system/vendor/lib/rfsa/adsp/libexternal_dog_skel.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/rfsa/adsp/libhvxMathVIO.so:system/vendor/lib/rfsa/adsp/libhvxMathVIO.so \
@@ -1203,7 +1197,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:system/vendor/lib64/vendor.qti.voiceprint@1.0.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/radio/qcril_database/qcril.db:system/vendor/radio/qcril_database/qcril.db
+    vendor/oneplus/oneplus5/proprietary/vendor/radio/qcril_database/qcril.db:system/vendor/radio/qcril_database/qcril.db \
+    vendor/oneplus/oneplus5/proprietary/xbin/antradio_app:system/xbin/antradio_app
 
 PRODUCT_PACKAGES += \
     libbtnv \
@@ -1211,6 +1206,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libloc_api_v02 \
+    AntHalService \
     QtiSystemService \
     QtiTelephonyService \
     WfdService \

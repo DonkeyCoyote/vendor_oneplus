@@ -72,8 +72,8 @@ kgsl_pwrscale = 1
 # performance: thread_attributes
 # format -> [thread type]:[cpu performance level]>[sched_policy],[priority],[cpu_affinity];[cpu performance level]>[sched_policy],[priority],[cpu_affinity];
 # cpu_affinity is given as bit mask
-performance_thread_attributes = render:0>SCHED_FIFO,98,0xFF;1>SCHED_FIFO,98,0xF;2>SCHED_FIFO,98,0xF0;3>SCHED_FIFO,98,0xF0
-performance_thread_attributes = warp:0>SCHED_FIFO,98,0xFF;1>SCHED_FIFO,98,0xF;2>SCHED_FIFO,98,0xF0;3>SCHED_FIFO,98,0xF0
+performance_thread_attributes = render:0>SCHED_FIFO,48,0xFF;1>SCHED_FIFO,48,0xF;2>SCHED_FIFO,48,0xF0;3>SCHED_FIFO,48,0xF0
+performance_thread_attributes = warp:0>SCHED_FIFO,49,0xFF;1>SCHED_FIFO,49,0xF;2>SCHED_FIFO,49,0xF0;3>SCHED_FIFO,49,0xF0
 performance_thread_attributes = controller:0>SCHED_OTHER,0,0xFF;1>SCHED_OTHER,0,0xF;2>SCHED_OTHER,0,0xF0;3>SCHED_OTHER,0,0xF0
 performance_thread_attributes = normal:0>SCHED_OTHER,0,0xFF;1>SCHED_OTHER,0,0xF;2>SCHED_OTHER,0,0xF0;3>SCHED_OTHER,0,0xF0
 
