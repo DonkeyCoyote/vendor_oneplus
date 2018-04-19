@@ -42,6 +42,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
     vendor/oneplus/oneplus5/proprietary/framework/com.fingerprints.extension.jar:system/framework/com.fingerprints.extension.jar \
     vendor/oneplus/oneplus5/proprietary/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
+    vendor/oneplus/oneplus5/proprietary/lib/android.hardware.camera.device@3.2.so:system/lib/android.hardware.camera.device@3.2.so \
+    vendor/oneplus/oneplus5/proprietary/lib/android.hardware.camera.provider@2.4.so:system/lib/android.hardware.camera.provider@2.4.so \
     vendor/oneplus/oneplus5/proprietary/lib/hw/fingerprint.msm8998.so:system/lib/hw/fingerprint.msm8998.so \
     vendor/oneplus/oneplus5/proprietary/lib/libSensorManagerHAL.so:system/lib/libSensorManagerHAL.so \
     vendor/oneplus/oneplus5/proprietary/lib/libVDBlurlessAPI_v2.so:system/lib/libVDBlurlessAPI_v2.so \
@@ -100,7 +102,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oneplus/oneplus5/proprietary/lib/rfsa/adsp/libthread_blur_skel.so:system/lib/rfsa/adsp/libthread_blur_skel.so \
     vendor/oneplus/oneplus5/proprietary/lib/sensors.hal.tof.so:system/lib/sensors.hal.tof.so \
+    vendor/oneplus/oneplus5/proprietary/lib/vendor.qti.hardware.camera.device@1.0.so:system/lib/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/android.hardware.camera.device@3.2.so:system/lib64/android.hardware.camera.device@3.2.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/android.hardware.camera.provider@2.4.so:system/lib64/android.hardware.camera.provider@2.4.so \
     vendor/oneplus/oneplus5/proprietary/lib64/hw/fingerprint.msm8998.so:system/lib64/hw/fingerprint.msm8998.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/libCalibrationJNI.so:system/lib64/libCalibrationJNI.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libblurbuster.so:system/lib64/libblurbuster.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libclearsight.so:system/lib64/libclearsight.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libfiltergenerator.so:system/lib64/libfiltergenerator.so \
@@ -143,6 +149,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/oneplus/oneplus5/proprietary/lib64/libtruescanner.so:system/lib64/libtruescanner.so \
     vendor/oneplus/oneplus5/proprietary/lib64/sensors.hal.tof.so:system/lib64/sensors.hal.tof.so \
+    vendor/oneplus/oneplus5/proprietary/lib64/vendor.qti.hardware.camera.device@1.0.so:system/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hvdcp_opti:system/vendor/bin/hvdcp_opti \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service:system/vendor/bin/hw/android.hardware.camera.provider@2.4-service \
     vendor/oneplus/oneplus5/proprietary/vendor/bin/ipacm-diag:system/vendor/bin/ipacm-diag \
@@ -205,6 +212,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/firmware/leia_pfp_470.fw:system/vendor/firmware/leia_pfp_470.fw \
     vendor/oneplus/oneplus5/proprietary/vendor/firmware/leia_pm4_470.fw:system/vendor/firmware/leia_pm4_470.fw \
     vendor/oneplus/oneplus5/proprietary/vendor/firmware/libpn553_fw.so:system/vendor/firmware/libpn553_fw.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/camera.device@3.2-impl.so:system/vendor/lib/camera.device@3.2-impl.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:system/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/hw/camera.msm8998.so:system/vendor/lib/hw/camera.msm8998.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libSTDualCamCaptureBokeh.so:system/vendor/lib/libSTDualCamCaptureBokeh.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libSonyIMX350PdafLibrary.so:system/vendor/lib/libSonyIMX350PdafLibrary.so \
@@ -261,7 +270,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx371_cpp_4656x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_cpp_4656x3456_30fps_snapshot.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_120fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_640x480_120fps_video.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_snapshot.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx371_isp_4656x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_isp_4656x3456_30fps_snapshot.so \
@@ -287,8 +295,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx376k_postproc.so:system/vendor/lib/libchromatix_imx376k_postproc.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_3a_1476x834_120fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_3a_2328x1304_60fps_video.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_3264x2448_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_3264x2448_30fps_preview_bokeh.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_preview.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_preview.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video_4k.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video_4k.so \
@@ -297,12 +305,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_hq.so:system/vendor/lib/libchromatix_imx398_3a_hq.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_manual.so:system/vendor/lib/libchromatix_imx398_3a_manual.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_panorama.so:system/vendor/lib/libchromatix_imx398_3a_panorama.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_3a_wechat_preview.so:system/vendor/lib/libchromatix_imx398_3a_wechat_preview.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_common.so:system/vendor/lib/libchromatix_imx398_common.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_1476x834_120fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_2328x1304_60fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_3264x2448_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_cpp_3264x2448_30fps_preview_bokeh.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_3264x2448_30fps_snapshot_bokeh.so:system/vendor/lib/libchromatix_imx398_cpp_3264x2448_30fps_snapshot_bokeh.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so:system/vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_preview.so:system/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_preview.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video_4k.so:system/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video_4k.so \
@@ -324,9 +332,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_video.so:system/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_video.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_manual.so:system/vendor/lib/libchromatix_imx398_isp_manual.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_panorama.so:system/vendor/lib/libchromatix_imx398_isp_panorama.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so:system/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_postproc.so:system/vendor/lib/libchromatix_imx398_postproc.so \
-    vendor/oneplus/oneplus5/proprietary/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so:system/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libcvface_api.so:system/vendor/lib/libcvface_api.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libdczoom.so:system/vendor/lib/libdczoom.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
@@ -461,6 +467,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/libvideobokeh.so:system/vendor/lib/libvideobokeh.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/camera.device@3.2-impl.so:system/vendor/lib64/camera.device@3.2-impl.so \
+    vendor/oneplus/oneplus5/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:system/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libaptXHD_encoder.so:system/vendor/lib64/libaptXHD_encoder.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so \
     vendor/oneplus/oneplus5/proprietary/vendor/lib64/libcdsprpc.so:system/vendor/lib64/libcdsprpc.so \
