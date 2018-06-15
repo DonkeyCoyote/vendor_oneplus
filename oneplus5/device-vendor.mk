@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5/proprietary/etc/camera/cp/SystemParamsBokeh.bin:system/etc/camera/cp/SystemParamsBokeh.bin \
     vendor/oneplus/oneplus5/proprietary/etc/camera/cp/SystemParamsFusion.bin:system/etc/camera/cp/SystemParamsFusion.bin \
     vendor/oneplus/oneplus5/proprietary/etc/camera/cp/systemParams.bin:system/etc/camera/cp/systemParams.bin \
-    vendor/oneplus/oneplus5/proprietary/etc/camera/license.lic:system/etc/camera/license.lic \
     vendor/oneplus/oneplus5/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/oneplus/oneplus5/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
     vendor/oneplus/oneplus5/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
