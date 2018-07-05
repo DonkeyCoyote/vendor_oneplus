@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvt.so:system/lib/lib-imsvt.so \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/oneplus/oneplus6/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/oneplus/oneplus6/proprietary/lib/libadsprpc_system.so:system/lib/libadsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libantradio.so:system/lib/libantradio.so \
@@ -77,6 +78,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/liblight_jni.so:system/lib/liblight_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/oneplus6/proprietary/lib/libopcameralib-em.so:system/lib/libopcameralib-em.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
@@ -149,6 +154,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libantradio.so:system/lib64/libantradio.so \
@@ -168,6 +174,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/liblight_jni.so:system/lib64/liblight_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmmparser.so:system/lib64/libmmparser.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libopcameralib-em.so:system/lib64/libopcameralib-em.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
