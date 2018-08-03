@@ -137,8 +137,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/oneplus/oneplus6/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/oneplus/oneplus6/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libOpenCL_system.so:system/lib/libOpenCL_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libadsprpc_system.so:system/lib/libadsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libantradio.so:system/lib/libantradio.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libblurbuster.so:system/lib/libblurbuster.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libcdsprpc_system.so:system/lib/libcdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libchromaflash.so:system/lib/libchromaflash.so \
     vendor/oneplus/oneplus6/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libdisplayconfig.so:system/lib/libdisplayconfig.so \
     vendor/oneplus/oneplus6/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
@@ -149,9 +153,25 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
     vendor/oneplus/oneplus6/proprietary/lib/libfastcvdsp_stub.so:system/lib/libfastcvdsp_stub.so \
     vendor/oneplus/oneplus6/proprietary/lib/libfastcvopt.so:system/lib/libfastcvopt.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libfiltergenerator.so:system/lib/libfiltergenerator.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libhazebuster.so:system/lib/libhazebuster.so \
     vendor/oneplus/oneplus6/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_blurbuster.so:system/lib/libjni_blurbuster.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_chromaflash.so:system/lib/libjni_chromaflash.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_filtergenerator.so:system/lib/libjni_filtergenerator.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_hazebuster.so:system/lib/libjni_hazebuster.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_makeupV2.so:system/lib/libjni_makeupV2.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_optizoom.so:system/lib/libjni_optizoom.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_panorama.so:system/lib/libjni_panorama.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_seestraight.so:system/lib/libjni_seestraight.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_sharpshooter.so:system/lib/libjni_sharpshooter.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_stillmore.so:system/lib/libjni_stillmore.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_trackingfocus.so:system/lib/libjni_trackingfocus.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_trueportrait.so:system/lib/libjni_trueportrait.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_truescanner_v2.so:system/lib/libjni_truescanner_v2.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
     vendor/oneplus/oneplus6/proprietary/lib/liblight_jni.so:system/lib/liblight_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
@@ -160,6 +180,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/oneplus6/proprietary/lib/libopcameralib-em.so:system/lib/libopcameralib-em.so \
+    vendor/oneplus/oneplus6/proprietary/lib/liboptizoom.so:system/lib/liboptizoom.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
@@ -168,11 +189,29 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libqvr_adsp_driver_stub.so:system/lib/libqvr_adsp_driver_stub.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqvrservice.so:system/lib/libqvrservice.so \
     vendor/oneplus/oneplus6/proprietary/lib/librcc.so:system/lib/librcc.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveBlobDescriptor.so:system/lib/libscveBlobDescriptor.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveBlobDescriptor_stub.so:system/lib/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveCommon.so:system/lib/libscveCommon.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveCommon_stub.so:system/lib/libscveCommon_stub.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveFaceLandmarks.so:system/lib/libscveFaceLandmarks.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveFaceRecognition.so:system/lib/libscveFaceRecognition.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveImageCorrection.so:system/lib/libscveImageCorrection.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveObjectSegmentation.so:system/lib/libscveObjectSegmentation.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveObjectTracker.so:system/lib/libscveObjectTracker.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveObjectTracker_stub.so:system/lib/libscveObjectTracker_stub.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscvePanorama.so:system/lib/libscvePanorama.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscvePanorama_lite.so:system/lib/libscvePanorama_lite.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libscveScan3D.so:system/lib/libscveScan3D.so \
     vendor/oneplus/oneplus6/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/oneplus/oneplus6/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libseemore.so:system/lib/libseemore.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libseestraight.so:system/lib/libseestraight.so \
     vendor/oneplus/oneplus6/proprietary/lib/libstagefright_soft_qtiflacdec.so:system/lib/libstagefright_soft_qtiflacdec.so \
     vendor/oneplus/oneplus6/proprietary/lib/libstagefright_wfd.so:system/lib/libstagefright_wfd.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libtruescanner.so:system/lib/libtruescanner.so \
     vendor/oneplus/oneplus6/proprietary/lib/libtzcom.so:system/lib/libtzcom.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libubifocus.so:system/lib/libubifocus.so \
     vendor/oneplus/oneplus6/proprietary/lib/libvr_amb_engine.so:system/lib/libvr_amb_engine.so \
     vendor/oneplus/oneplus6/proprietary/lib/libvr_object_engine.so:system/lib/libvr_object_engine.so \
     vendor/oneplus/oneplus6/proprietary/lib/libvr_sam_wrapper.so:system/lib/libvr_sam_wrapper.so \
@@ -235,8 +274,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libantradio.so:system/lib64/libantradio.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libblurbuster.so:system/lib64/libblurbuster.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libchromaflash.so:system/lib64/libchromaflash.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libdisplayconfig.so:system/lib64/libdisplayconfig.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
@@ -247,9 +290,27 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libdualcameraddm.so:system/lib64/libdualcameraddm.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libfastcvdsp_stub.so:system/lib64/libfastcvdsp_stub.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libfastcvopt.so:system/lib64/libfastcvopt.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libfiltergenerator.so:system/lib64/libfiltergenerator.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libhazebuster.so:system/lib64/libhazebuster.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_blurbuster.so:system/lib64/libjni_blurbuster.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_chromaflash.so:system/lib64/libjni_chromaflash.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_clearsight.so:system/lib64/libjni_clearsight.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_dualcamera.so:system/lib64/libjni_dualcamera.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_filtergenerator.so:system/lib64/libjni_filtergenerator.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_hazebuster.so:system/lib64/libjni_hazebuster.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_makeupV2.so:system/lib64/libjni_makeupV2.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_optizoom.so:system/lib64/libjni_optizoom.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_pacprocessor.so:system/lib64/libjni_pacprocessor.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_panorama.so:system/lib64/libjni_panorama.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_seestraight.so:system/lib64/libjni_seestraight.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_sharpshooter.so:system/lib64/libjni_sharpshooter.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_stillmore.so:system/lib64/libjni_stillmore.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_trackingfocus.so:system/lib64/libjni_trackingfocus.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
     vendor/oneplus/oneplus6/proprietary/lib64/liblight_jni.so:system/lib64/liblight_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
@@ -258,17 +319,36 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libopcameralib-em.so:system/lib64/libopcameralib-em.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/liboptizoom.so:system/lib64/liboptizoom.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/oneplus/oneplus6/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveBlobDescriptor.so:system/lib64/libscveBlobDescriptor.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveBlobDescriptor_stub.so:system/lib64/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveCommon.so:system/lib64/libscveCommon.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveCommon_stub.so:system/lib64/libscveCommon_stub.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveFaceLandmarks.so:system/lib64/libscveFaceLandmarks.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveFaceRecognition.so:system/lib64/libscveFaceRecognition.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveImageCorrection.so:system/lib64/libscveImageCorrection.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveObjectSegmentation.so:system/lib64/libscveObjectSegmentation.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveObjectTracker.so:system/lib64/libscveObjectTracker.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveObjectTracker_stub.so:system/lib64/libscveObjectTracker_stub.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscvePanorama.so:system/lib64/libscvePanorama.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscvePanorama_lite.so:system/lib64/libscvePanorama_lite.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libscveScan3D.so:system/lib64/libscveScan3D.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libseemore.so:system/lib64/libseemore.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libseestraight.so:system/lib64/libseestraight.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libstagefright_soft_qtiflacdec.so:system/lib64/libstagefright_soft_qtiflacdec.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libstagefright_wfd.so:system/lib64/libstagefright_wfd.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libtruescanner.so:system/lib64/libtruescanner.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libtzcom.so:system/lib64/libtzcom.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libubifocus.so:system/lib64/libubifocus.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libvr_amb_engine.so:system/lib64/libvr_amb_engine.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libvr_object_engine.so:system/lib64/libvr_object_engine.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libvr_sam_wrapper.so:system/lib64/libvr_sam_wrapper.so \
