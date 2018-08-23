@@ -2,7 +2,7 @@
 //
 // Defines log messages used by the sensors diag service
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -140,6 +140,9 @@ message sns_diag_sensor_api_log
   // Timestamp associated with this message
   required fixed64 timestamp = 2;
 
+  // Data stream associated with this message
+  optional fixed64 stream_id = 3;
+
   // The Sensor API log packet payload
   oneof sensor_api_log_payload
   {
@@ -208,6 +211,10 @@ message sns_diag_instance_map_log
   // If no destination instance ids are specified it signifies
   // deletion of the source instance
   repeated fixed64 dest_instance_id = 2;
+
+  // Array of data stream ids that the
+  // source sensor instance is feeding to
+  repeated fixed64 stream_id = 3;
 }
 
 // Island mode states

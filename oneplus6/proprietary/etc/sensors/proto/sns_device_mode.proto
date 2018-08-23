@@ -2,7 +2,7 @@
 //
 // Defines message types for the Device Mode Sensor.
 //
-// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -31,15 +31,15 @@ enum sns_device_mode_msgid
 enum sns_device_mode
 {
   option (nanopb_enumopt).long_names = false;
+  SNS_DEVICE_MODE_UNKNOWN = 0;
   SNS_DEVICE_MODE_FLIP_OPEN  = 1;
 }
 
 enum sns_device_state
 {
   option (nanopb_enumopt).long_names = false;
-  SNS_DEVICE_STATE_UNKNOWN  = 0;
+  SNS_DEVICE_STATE_INACTIVE  = 0;
   SNS_DEVICE_STATE_ACTIVE  = 1;
-  SNS_DEVICE_STATE_INACTIVE  = 2;
 }
 
 message sns_device_mode_event

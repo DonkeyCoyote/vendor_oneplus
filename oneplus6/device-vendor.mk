@@ -16,14 +16,8 @@
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/bin/qvrservice:system/bin/qvrservice \
-    vendor/oneplus/oneplus6/proprietary/bin/wfdservice:system/bin/wfdservice \
-    vendor/oneplus/oneplus6/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/oneplus/oneplus6/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    vendor/oneplus/oneplus6/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/oneplus/oneplus6/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
-    vendor/oneplus/oneplus6/proprietary/etc/init/init.qti.fm.rc:system/etc/init/init.qti.fm.rc \
-    vendor/oneplus/oneplus6/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/audiosphere.xml:system/etc/permissions/audiosphere.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -36,11 +30,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/vendor-qti-hardware-alarm.xml:system/etc/permissions/vendor-qti-hardware-alarm.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/scve/facereco/gModel.dat:system/etc/scve/facereco/gModel.dat \
     vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/descriptor.proto:system/etc/sensors/proto/descriptor.proto \
     vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/nanopb.proto:system/etc/sensors/proto/nanopb.proto \
     vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/qti_gravity.proto:system/etc/sensors/proto/qti_gravity.proto \
@@ -115,8 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_tilt_to_wake.proto:system/etc/sensors/proto/sns_tilt_to_wake.proto \
     vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_timer.proto:system/etc/sensors/proto/sns_timer.proto \
     vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ultra_violet.proto:system/etc/sensors/proto/sns_ultra_violet.proto \
-    vendor/oneplus/oneplus6/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/oneplus/oneplus6/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
     vendor/oneplus/oneplus6/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/oneplus/oneplus6/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
@@ -124,6 +113,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/oneplus/oneplus6/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
+    vendor/oneplus/oneplus6/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oneplus/oneplus6/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/oneplus/oneplus6/proprietary/lib/android.hardware.light@2.0.so:system/lib/android.hardware.light@2.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
@@ -131,15 +121,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvt.so:system/lib/lib-imsvt.so \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libConnor_oneplus.so:system/lib/libConnor_oneplus.so \
     vendor/oneplus/oneplus6/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/oneplus/oneplus6/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/oneplus/oneplus6/proprietary/lib/libOpenCL_system.so:system/lib/libOpenCL_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libadsprpc_system.so:system/lib/libadsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libantradio.so:system/lib/libantradio.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libbluetooth_qti.so:system/lib/libbluetooth_qti.so \
     vendor/oneplus/oneplus6/proprietary/lib/libblurbuster.so:system/lib/libblurbuster.so \
     vendor/oneplus/oneplus6/proprietary/lib/libcdsprpc_system.so:system/lib/libcdsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libchromaflash.so:system/lib/libchromaflash.so \
@@ -148,11 +141,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/oneplus/oneplus6/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
     vendor/oneplus/oneplus6/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libdpmnsrm.so:system/lib/libdpmnsrm.so \
     vendor/oneplus/oneplus6/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
     vendor/oneplus/oneplus6/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libfastcvdsp_stub.so:system/lib/libfastcvdsp_stub.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libfastcvopt.so:system/lib/libfastcvopt.so \
     vendor/oneplus/oneplus6/proprietary/lib/libfiltergenerator.so:system/lib/libfiltergenerator.so \
     vendor/oneplus/oneplus6/proprietary/lib/libhazebuster.so:system/lib/libhazebuster.so \
     vendor/oneplus/oneplus6/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
@@ -164,18 +154,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_hazebuster.so:system/lib/libjni_hazebuster.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_makeupV2.so:system/lib/libjni_makeupV2.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_optizoom.so:system/lib/libjni_optizoom.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libjni_panorama.so:system/lib/libjni_panorama.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_seestraight.so:system/lib/libjni_seestraight.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_sharpshooter.so:system/lib/libjni_sharpshooter.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_stillmore.so:system/lib/libjni_stillmore.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libjni_trackingfocus.so:system/lib/libjni_trackingfocus.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_trueportrait.so:system/lib/libjni_trueportrait.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_truescanner_v2.so:system/lib/libjni_truescanner_v2.so \
     vendor/oneplus/oneplus6/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
     vendor/oneplus/oneplus6/proprietary/lib/liblight_jni.so:system/lib/liblight_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
@@ -186,28 +173,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libqvr_adsp_driver_stub.so:system/lib/libqvr_adsp_driver_stub.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqvrservice.so:system/lib/libqvrservice.so \
     vendor/oneplus/oneplus6/proprietary/lib/librcc.so:system/lib/librcc.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveBlobDescriptor.so:system/lib/libscveBlobDescriptor.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveBlobDescriptor_stub.so:system/lib/libscveBlobDescriptor_stub.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveCommon.so:system/lib/libscveCommon.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveCommon_stub.so:system/lib/libscveCommon_stub.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveFaceLandmarks.so:system/lib/libscveFaceLandmarks.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveFaceRecognition.so:system/lib/libscveFaceRecognition.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveImageCorrection.so:system/lib/libscveImageCorrection.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveObjectSegmentation.so:system/lib/libscveObjectSegmentation.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveObjectTracker.so:system/lib/libscveObjectTracker.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveObjectTracker_stub.so:system/lib/libscveObjectTracker_stub.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscvePanorama.so:system/lib/libscvePanorama.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscvePanorama_lite.so:system/lib/libscvePanorama_lite.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libscveScan3D.so:system/lib/libscveScan3D.so \
     vendor/oneplus/oneplus6/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/oneplus/oneplus6/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
     vendor/oneplus/oneplus6/proprietary/lib/libseemore.so:system/lib/libseemore.so \
     vendor/oneplus/oneplus6/proprietary/lib/libseestraight.so:system/lib/libseestraight.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libstagefright_soft_qtiflacdec.so:system/lib/libstagefright_soft_qtiflacdec.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libstagefright_wfd.so:system/lib/libstagefright_wfd.so \
     vendor/oneplus/oneplus6/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
     vendor/oneplus/oneplus6/proprietary/lib/libtruescanner.so:system/lib/libtruescanner.so \
     vendor/oneplus/oneplus6/proprietary/lib/libtzcom.so:system/lib/libtzcom.so \
@@ -216,46 +187,28 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libvr_object_engine.so:system/lib/libvr_object_engine.so \
     vendor/oneplus/oneplus6/proprietary/lib/libvr_sam_wrapper.so:system/lib/libvr_sam_wrapper.so \
     vendor/oneplus/oneplus6/proprietary/lib/libvraudio.so:system/lib/libvraudio.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
-    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/oneplus/oneplus6/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
-    vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libapps_mem_heap.so:system/lib/rfsa/adsp/libapps_mem_heap.so \
-    vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libdspCV_skel.so:system/lib/rfsa/adsp/libdspCV_skel.so \
-    vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libfastcvadsp.so:system/lib/rfsa/adsp/libfastcvadsp.so \
-    vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libfastcvdsp_skel.so:system/lib/rfsa/adsp/libfastcvdsp_skel.so \
-    vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libqvr_adsp_driver_skel.so:system/lib/rfsa/adsp/libqvr_adsp_driver_skel.so \
-    vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
-    vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libscveT2T_skel.so:system/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.display.color@1.1.so:system/lib/vendor.display.color@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.config@1.0.so:system/lib/vendor.display.config@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.config@1.1.so:system/lib/vendor.display.config@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:system/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0.so:system/lib/vendor.oneplus.camera.CameraHIDL@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.faceunlock.hal@1.0.so:system/lib/vendor.oneplus.faceunlock.hal@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.fingerprint.extension@1.0.so:system/lib/vendor.oneplus.fingerprint.extension@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.hardware.display@1.0.so:system/lib/vendor.oneplus.hardware.display@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.hardware.ifaa@2.0.so:system/lib/vendor.oneplus.hardware.ifaa@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.hardware.param@1.0.so:system/lib/vendor.oneplus.hardware.param@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.hardware.wifi@1.0.so:system/lib/vendor.oneplus.hardware.wifi@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.gnss@1.1.so:system/lib/vendor.qti.gnss@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.camera.device@1.0.so:system/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.fm@1.0.so:system/lib/vendor.qti.hardware.fm@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so:system/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.limits@1.0.so:system/lib/vendor.qti.hardware.limits@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
@@ -267,16 +220,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libConnor_oneplus.so:system/lib64/libConnor_oneplus.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libantradio.so:system/lib64/libantradio.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libbluetooth_qti.so:system/lib64/libbluetooth_qti.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libblurbuster.so:system/lib64/libblurbuster.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libchromaflash.so:system/lib64/libchromaflash.so \
@@ -285,11 +242,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libdpmnsrm.so:system/lib64/libdpmnsrm.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libdualcameraddm.so:system/lib64/libdualcameraddm.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libfastcvdsp_stub.so:system/lib64/libfastcvdsp_stub.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libfastcvopt.so:system/lib64/libfastcvopt.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libfiltergenerator.so:system/lib64/libfiltergenerator.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libhazebuster.so:system/lib64/libhazebuster.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
@@ -303,18 +257,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_makeupV2.so:system/lib64/libjni_makeupV2.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_optizoom.so:system/lib64/libjni_optizoom.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_pacprocessor.so:system/lib64/libjni_pacprocessor.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libjni_panorama.so:system/lib64/libjni_panorama.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_seestraight.so:system/lib64/libjni_seestraight.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_sharpshooter.so:system/lib64/libjni_sharpshooter.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_stillmore.so:system/lib64/libjni_stillmore.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libjni_trackingfocus.so:system/lib64/libjni_trackingfocus.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
     vendor/oneplus/oneplus6/proprietary/lib64/liblight_jni.so:system/lib64/liblight_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libmmparser.so:system/lib64/libmmparser.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
@@ -326,25 +277,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/oneplus/oneplus6/proprietary/lib64/librcc.so:system/lib64/librcc.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveBlobDescriptor.so:system/lib64/libscveBlobDescriptor.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveBlobDescriptor_stub.so:system/lib64/libscveBlobDescriptor_stub.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveCommon.so:system/lib64/libscveCommon.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveCommon_stub.so:system/lib64/libscveCommon_stub.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveFaceLandmarks.so:system/lib64/libscveFaceLandmarks.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveFaceRecognition.so:system/lib64/libscveFaceRecognition.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveImageCorrection.so:system/lib64/libscveImageCorrection.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveObjectSegmentation.so:system/lib64/libscveObjectSegmentation.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveObjectTracker.so:system/lib64/libscveObjectTracker.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveObjectTracker_stub.so:system/lib64/libscveObjectTracker_stub.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscvePanorama.so:system/lib64/libscvePanorama.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscvePanorama_lite.so:system/lib64/libscvePanorama_lite.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libscveScan3D.so:system/lib64/libscveScan3D.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libseemore.so:system/lib64/libseemore.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libseestraight.so:system/lib64/libseestraight.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libstagefright_soft_qtiflacdec.so:system/lib64/libstagefright_soft_qtiflacdec.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libstagefright_wfd.so:system/lib64/libstagefright_wfd.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libtruescanner.so:system/lib64/libtruescanner.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libtzcom.so:system/lib64/libtzcom.so \
@@ -353,40 +289,29 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libvr_object_engine.so:system/lib64/libvr_object_engine.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libvr_sam_wrapper.so:system/lib64/libvr_sam_wrapper.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libvraudio.so:system/lib64/libvraudio.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdavenhancements.so:system/lib64/libwfdavenhancements.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdcodecv4l2.so:system/lib64/libwfdcodecv4l2.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdmminterface.so:system/lib64/libwfdmminterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdmmsink.so:system/lib64/libwfdmmsink.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdmmsrc.so:system/lib64/libwfdmmsrc.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdrtsp.so:system/lib64/libwfdrtsp.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfds.so:system/lib64/libwfds.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdservice.so:system/lib64/libwfdservice.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfdsm.so:system/lib64/libwfdsm.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcinterface.so:system/lib64/libwfduibcinterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsink.so:system/lib64/libwfduibcsink.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsinkinterface.so:system/lib64/libwfduibcsinkinterface.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsrc.so:system/lib64/libwfduibcsrc.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsrcinterface.so:system/lib64/libwfduibcsrcinterface.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.config@1.0.so:system/lib64/vendor.display.config@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.config@1.1.so:system/lib64/vendor.display.config@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:system/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so:system/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.faceunlock.hal@1.0.so:system/lib64/vendor.oneplus.faceunlock.hal@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.fingerprint.extension@1.0.so:system/lib64/vendor.oneplus.fingerprint.extension@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.hardware.display@1.0.so:system/lib64/vendor.oneplus.hardware.display@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.hardware.drmkey@1.0.so:system/lib64/vendor.oneplus.hardware.drmkey@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.hardware.ifaa@2.0.so:system/lib64/vendor.oneplus.hardware.ifaa@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.hardware.param@1.0.so:system/lib64/vendor.oneplus.hardware.param@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.hardware.wifi@1.0.so:system/lib64/vendor.oneplus.hardware.wifi@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.gnss@1.1.so:system/lib64/vendor.qti.gnss@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.camera.device@1.0.so:system/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.fm@1.0.so:system/lib64/vendor.qti.hardware.fm@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.limits@1.0.so:system/lib64/vendor.qti.hardware.limits@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
@@ -396,33 +321,24 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so
 
 PRODUCT_PACKAGES += \
-    hwcomposer.qcom \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
-    embmslibrary \
     dashd
 
 ifeq ($(QCPATH),)
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus6/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
+    vendor/oneplus/oneplus6/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
+    vendor/oneplus/oneplus6/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
+    vendor/oneplus/oneplus6/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/oneplus/oneplus6/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar
 
 PRODUCT_PACKAGES += \
-    AntHalService \
     QtiSystemService \
     QtiTelephonyService \
-    WfdService \
-    datastatusnotification \
-    embms \
-    ims \
-    imssettings \
     CNEService \
-    com.qualcomm.location \
     dpmserviceapp \
-    qcrilmsgtunnel \
-    QtiTelephonyServicelibrary \
-    WfdCommon \
-    com.qti.dpmframework \
-    qcnvitems \
-    qcrilhook \
-    qti-telephony-common
+    qcrilmsgtunnel
 endif
 
 -include vendor/extra/devices.mk

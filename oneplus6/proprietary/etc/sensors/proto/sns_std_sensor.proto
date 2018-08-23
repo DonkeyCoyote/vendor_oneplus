@@ -6,7 +6,7 @@
 // developers may choose to define Sensor-specific message API for any
 // new/Sensor-specific functionality.
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -26,6 +26,7 @@ enum sns_std_sensor_msgid
   // Does not use any message body.
   // Purpose:
   //   1. An enable request from a client to an on-change sensor.
+  //      Subsequent request from same client will be treated as NOP
   //   2. A config/ack event from an on-change sensor to the client.
   SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG  = 514;
 
@@ -36,7 +37,7 @@ enum sns_std_sensor_msgid
 
   // Uses message: sns_std_sensor_event
   // Purpose: A data event from a Sensor.
-  SNS_STD_SENSOR_MSGID_SNS_STD_SENSOR_EVENT  = 1025;  
+  SNS_STD_SENSOR_MSGID_SNS_STD_SENSOR_EVENT = 1025;
 }
 
 // Status for each sensor sample
@@ -101,7 +102,7 @@ enum sns_std_sensor_attr_id
   SNS_STD_SENSOR_ATTRID_API = 5;
 
   // OPTIONAL
-  // [Integer]
+  // [Float]
   // Supported sample rates in Hz
   SNS_STD_SENSOR_ATTRID_RATES = 6;
 
@@ -133,12 +134,13 @@ enum sns_std_sensor_attr_id
 
   // OPTIONAL
   // String
-  // Operating Modes ("LPM", "HIGH_PERF", "NORMAL")
+  // Operating Modes ("LPM", "HIGH_PERF", "NORMAL", "OFF")
   SNS_STD_SENSOR_ATTRID_OP_MODES = 12;
 
   // OPTIONAL
   // Boolean
-  // Boolean: Whether the Sensor supports Data Ready Interrupt (DRI).
+  // Whether the Sensor supports Data Ready Interrupt (DRI) or IBI
+  // (In Band Interrupt).
   SNS_STD_SENSOR_ATTRID_DRI = 13;
 
   // OPTIONAL
@@ -175,7 +177,7 @@ enum sns_std_sensor_attr_id
   // float[12]
   // Location and orientation of sensor element in the device frame.
   SNS_STD_SENSOR_ATTRID_PLACEMENT = 20;
-  
+
   // OPTIONAL
   // Boolean
   // Boolean: True for a physical sensor
@@ -195,6 +197,21 @@ enum sns_std_sensor_attr_id
   // float[2]
   // Sensors chosen {min, max} range in it's engineering units.
   SNS_STD_SENSOR_ATTRID_SELECTED_RANGE = 24;
+
+  // OPTIONAL
+  // [float]
+  // List of additional sample rates for low latency clients in Hz.
+  // These are additional rates for low latency clients extended from list
+  // of rates published in attribute SNS_STD_SENSOR_ATTRID_RATES.
+  // This is supported for internal clients only. External clients shall not use this API.
+  SNS_STD_SENSOR_ATTRID_ADDITIONAL_LOW_LATENCY_RATES = 25;
+  
+  // OPTIONAL
+  // Boolean
+  // Boolean: True if the sensor supports passive request, False otherwise.
+  // If this attribute is not supported, then the sensor does not support passive requests.
+  // Sensors that do not support passive requests, will service all requests as active requests.
+  SNS_STD_SENSOR_ATTRID_PASSIVE_REQUEST = 26;
 }
 
 // Sensor stream configuration request
@@ -259,7 +276,8 @@ message sns_std_sensor_config_event
 // configuration of the physical sensor.
 message sns_std_sensor_physical_config_event
 {
-  // Current sample rate in Hz
+  // Current sample rate in Hz for streaming sensors or highest rate of value
+  // change for on-change sensors. 0 if sensor is disabled.
   // Note: if stream will be synchronized via S4S or I3C, this is the sample
   // rate after synchronization is complete.
   optional float sample_rate = 1;
@@ -274,6 +292,8 @@ message sns_std_sensor_physical_config_event
   optional float resolution = 4;
 
   // Sensor operation mode
+  // If all requests to the sensor are passive then it shall use
+  // operating_mode = "OFF"
   optional string operation_mode = 5;
 
   // Sensor active current in uA
@@ -305,7 +325,8 @@ message sns_std_sensor_physical_config_event
 // 2. SNS_STD_SENSOR_ATTRID_NAME attribute value (string) as the name of the sensor model.
 // 3. SNS_STD_SENSOR_ATTRID_VENDOR attribute value (string) as the name of the sensor vendor.
 // 4. SNS_STD_SENSOR_ATTRID_VERSION attribute value (decimal) as the version of the driver.
-// 5. SNS_STD_SENSOR_ATTRID_RATES attribute as a float array of supported sample rates in Hz.
+// 5. SNS_STD_SENSOR_ATTRID_RATES attribute as a float array of supported sample rates in Hz
+//    for streaming sensors. On-change sensors publish the highest rate of value change.
 // 6. SNS_STD_SENSOR_ATTRID_FIFO_SIZE attribute value (decimal) as the maximum FIFO depth in
 //    number of sensor samples available to it when enabled standalone.
 //    The value can be zero if FIFO is not supported.
@@ -346,4 +367,16 @@ message sns_std_sensor_physical_config_event
 //     SNS_STD_SENSOR_ATTRID_RESOLUTIONS attribute array.
 // 21. SNS_STD_SENSOR_ATTRID_SELECTED_RANGE attribute value chosen from the
 //     SNS_STD_SENSOR_ATTRID_RANGES array.
+// 22. SNS_STD_SENSOR_ATTRID_ADDITIONAL_LOW_LATENCY_RATES attribute as a float array of supported
+//     sample rates in Hz additional to rates in SNS_STD_SENSOR_ATTRID_RATES, this is only for low
+//     latency clients like direct report mode.
 // See sensor specific .proto files for sensor specific attribute information.
+
+// Recommendation for device drivers to select configuration:
+// 1. Choose fastest sample_rate among all client requests.
+// 2. Choose fastest batch rate (using batch_period) among all client requests. For streaming clients,
+//    treat batch rate equal to requested sample rate for that request.
+// 3. If HW FIFO is supported then:
+//     a. If all requests are max_batch then the driver configures highest FIFO watermark.
+//        If DAE is supported, the DAE watermark should be INT_MAX.
+//     b. Else FIFO watermark is determined based on sample_rate from #1 and batch rate from #2.

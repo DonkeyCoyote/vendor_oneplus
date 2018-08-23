@@ -2,7 +2,7 @@
 //
 // Defines all high-level messages sent to/from the Nano sensor environment
 //
-// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2017,2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -68,19 +68,36 @@ message sns_s4s_static_info {
 }
 
 
+// Triaxial sensor input to output axis conversion
+message sensor_to_phone_conversion {
+
+  // input axis index (x=0, y=1, z=2)
+  required uint32 ipaxis = 1;
+
+  // output axis index the above input axis maps to
+  required uint32 opaxis = 2;
+
+  // whether the input needs to be negated when
+  // translating to the output axis
+  required bool invert = 3;
+}
+
 // Accel static informtaion
 //
 // Accel configuration setting that is not expected to change at run time
 message sns_accel_static_info {
 
-  // Factory calibration: offset, in g's
-  repeated float offset_cal = 1 [(nanopb).max_count = 3];
+  // Factory calibration: offset, in g's (DEPRECATED - moved to sns_accel_dynamic_info)
+  repeated float offset_cal = 1 [(nanopb).max_count = 3, deprecated = true];
 
-  // Factory calibration: scale factor
-  repeated float scale_cal = 2 [(nanopb).max_count = 3];
+  // Factory calibration: scale factor (DEPRECATED - moved to sns_accel_dynamic_info)
+  repeated float scale_cal = 2[(nanopb).max_count = 3, deprecated = true];
 
   // range in G
   required int32 accel_range = 3;
+
+  // axis map to convert from sensor to phone
+  repeated sensor_to_phone_conversion axis_map = 4 [(nanopb).max_count = 3];
 }
 
 
@@ -93,6 +110,13 @@ message sns_accel_dynamic_info {
 
   // How many initial samples after ODR change are invalid
   required uint32 num_initial_invalid_samples = 2;
+
+  // Factory calibration: offset, in g's
+  repeated float offset_cal = 3 [(nanopb).max_count = 3];
+
+  // Factory calibration: scale factor
+  repeated float scale_cal = 4 [(nanopb).max_count = 3];
+
 }
 
 // Polling config info
@@ -114,14 +138,20 @@ message sns_dae_set_static_config {
   // name of the function table for the nano version of the physical sensor
   required string func_table_name = 1 [(nanopb).max_size = 32];
 
-  // Operational mode of the sensor: interrupt (!interrupt = polling)
-  required bool interrupt = 2;
+  // Operational mode of the sensor:
+  // 0 --> Polling
+  // 1 --> Interrupt
+  // 2 --> IBI (I3C In Band Interrupt)
+  required int32 interrupt = 2;
 
-  // x/y/z axis map for this sensor
-  repeated int32           axis_map = 3 [(nanopb).max_count = 3];
+  // x/y/z axis map for this sensor (DEPRECATED - moved to sns_accel_static_info)
+  repeated int32           axis_map = 3 [(nanopb).max_count = 3, deprecated = true];
 
-  // irq_config required if mode == INTERRUPT
+  // irq_config required if interrupt == 1
   optional sns_interrupt_req     irq_config = 4;
+
+  // ibi_config required if interrupt == 2
+  optional sns_ibi_req           ibi_config = 8;
 
   // s4s_config required if sensor supports S4S
   optional sns_s4s_static_info s4s_config = 5;
@@ -167,6 +197,11 @@ message sns_dae_set_streaming_config {
 
   // Only for accel sensors
   optional sns_accel_dynamic_info accel_info = 4;
+
+  // Expected number of bytes read from sensor for each call to the DAE environment
+  // "get_data" driver function.
+  // If not included, default value is 100 bytes.
+  optional uint32 expected_get_data_bytes = 5;
 }
 
 message sns_dae_resp {

@@ -2,7 +2,7 @@
 //
 // Defines the API for Heart Rate Detection Sensors.
 //
-// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -26,8 +26,30 @@ import "sns_std_sensor.proto";
 // ## Event Message: sns_std_sensor_event
 // Output of the Heart Rate sensor will be populated in sns_std_sensor_event.
 //
-// sns_std_sensor_event::data[0] = current heart rate in beats per minute (BPM)
+// SNS_HEART_RATE_MSGID_SNS_HEART_RATE_EVENT::data[0] = current heart rate in beats per minute (BPM)
 //
-// sns_std_sensor_event::status specifies the reliability of the sample value
-// value is of type sns_std_sensor_sample_status. see sns_std_sensor.proto for
-// details.
+// SNS_HEART_RATE_MSGID_SNS_HEART_RATE_EVENT::status specifies the reliability of the sample value
+// value is of type sns_heart_rate_event_type.
+
+enum sns_heart_rate_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_HEART_RATE_MSGID_SNS_HEART_RATE_EVENT = 779;
+}
+
+enum sns_heart_rate_event_type {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_HR_STATUS_NO_CONTACT = -1;
+  SNS_HR_STATUS_UNRELIABLE  = 0;
+  SNS_HR_STATUS_ACCURACY_LOW = 1;
+  SNS_HR_STATUS_ACCURACY_MEDIUM = 2;
+  SNS_HR_STATUS_ACCURACY_HIGH = 3;
+}
+
+// Events types from heart_rate Sensor
+message sns_heart_rate_event
+{
+  required float heart_rate = 1;
+  required sns_heart_rate_event_type heart_rate_event_type = 2 [default = SNS_HR_STATUS_NO_CONTACT];
+}

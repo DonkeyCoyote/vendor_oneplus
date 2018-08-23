@@ -2,7 +2,7 @@
 //
 //  Defines standard message types for the Async Com Port
 //
-// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -12,7 +12,7 @@ import "sns_std.proto";
 
 // Asynchronous Com Port
 //
-// The Asynchronous Com Port provides access to buses like I2C, SPI and others.
+// The Asynchronous Com Port provides access to buses like I2C, I3C, SPI and others.
 // A complete list of all buses available in the sns_async_com_port_bus_type enum.
 //
 // The Asynchronous Com Port can perform read and write operations on these buses
@@ -23,7 +23,7 @@ import "sns_std.proto";
 // First, the client must configure the port using the sns_async_com_port_config
 // message.
 //
-// To perform a read or a write operation, the client should send out the
+// To perform one or more read or write operations, the client should send the
 // sns_async_com_port_vector_rw message.
 //
 // A single sns_async_com_port_vector_rw message can contain multiple
@@ -54,8 +54,20 @@ enum sns_async_com_port_bus_type
 {
   option (nanopb_enumopt).long_names = false;
 
-  SNS_ASYNC_COM_PORT_BUS_TYPE_I2C  =  0;
-  SNS_ASYNC_COM_PORT_BUS_TYPE_SPI  =  1;
+  // I2C bus:
+  SNS_ASYNC_COM_PORT_BUS_TYPE_I2C            = 0;
+
+  // SPI bus:
+  SNS_ASYNC_COM_PORT_BUS_TYPE_SPI            = 1;
+
+  // I3C bus, standard data rate:
+  SNS_ASYNC_COM_PORT_BUS_TYPE_I3C_SDR        = 3;
+
+  // I3C bus, double data rate:
+  SNS_ASYNC_COM_PORT_BUS_TYPE_I3C_HDR_DDR    = 4;
+
+  // I3C bus, legacy I2C device attached to I3C bus:
+  SNS_ASYNC_COM_PORT_BUS_TYPE_I3C_I2C_LEGACY = 5;
 }
 
 // The registry address type to be used by async com port
@@ -74,7 +86,9 @@ message sns_async_com_port_config
   // The bus type
   required sns_async_com_port_bus_type bus_type = 1;
 
-  // Slave Address for I2C/I3C. Chip Select for SPI
+  // Slave Address for I2C.
+  // Dynamic slave address for I3C.
+  // Chip Select for SPI.
   required fixed32 slave_control = 2;
 
   // Register address type for the slave

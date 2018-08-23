@@ -5,7 +5,7 @@
 // Any new functionality for Ambient Light Sensor can be defined in a
 // device specific API file.
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -20,10 +20,7 @@ import "sns_cal.proto";
 // 1. SNS_STD_SENSOR_ATTRID_TYPE attribute value as "ambient_light".
 // 2. SNS_STD_SENSOR_ATTRID_RESOLUTIONS attribute value in Lux/LSB.
 // 3. SNS_STD_SENSOR_ATTRID_RANGES attribute values in Lux unit.
-// 4. SNS_STD_SENSOR_ATTRID_RATES
-//    - For on-change not applicable
-//    - For streaming see sns_std_sensor.proto
-// 5. See sns_std_sensor.proto for other attributes.
+// 4. See sns_std_sensor.proto for other attributes.
 
 // Handling stream requests:
 // 1. The Ambient Light Sensor supports both streaming and on-change

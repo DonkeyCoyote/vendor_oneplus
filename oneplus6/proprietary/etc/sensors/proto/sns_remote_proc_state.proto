@@ -15,7 +15,7 @@ import "sns_std_type.proto";
 // remote_proc_state Sensor Attribute Requirements:
 // SNS_STD_SENSOR_ATTRID_NAME: "Remote Processor State"
 // SNS_STD_SENSOR_ATTRID_TYPE: "remote_proc_state"
-// SNS_STD_SENSOR_ATTRID_VENDOR: "QTI"
+// SNS_STD_SENSOR_ATTRID_VENDOR: "qualcomm"
 
 enum sns_remote_proc_state_msgid {
   option (nanopb_enumopt).long_names = false;

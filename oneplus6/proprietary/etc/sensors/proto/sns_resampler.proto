@@ -2,7 +2,7 @@
 //
 // Defines standard message types for the Resampler
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -16,7 +16,7 @@ import "sns_std_event_gated_sensor.proto";
 // SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_STREAMING
 
 // Sensor output event:
-// Resampler use sns_std_sensor_event for it's output event 
+// Resampler use sns_std_sensor_event for it's output event
 
 enum sns_resampler_msgid
 {
@@ -75,6 +75,9 @@ message sns_resampler_config
 
   // Set to true if sensor to be resampled is event gated
   optional bool event_gated = 5;
+
+  // Number of axes of the sensor data
+  optional uint32 axis_cnt = 6;
 }
 
 // Config event to inform client sample quality

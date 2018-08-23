@@ -8,6 +8,10 @@
 syntax = "proto2";
 import "nanopb.proto";
 
+// Registry Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "registry"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_SINGLE_OUTPUT
+
 // Registry Sensor message IDs:
 enum sns_registry_msgid {
   option (nanopb_enumopt).long_names = false;

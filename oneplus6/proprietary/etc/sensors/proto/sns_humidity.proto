@@ -5,7 +5,7 @@
 // Any new functionality for Humidity Sensor can be defined in a
 // device specific API file.
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -21,9 +21,7 @@ import "sns_cal.proto";
 // 2. SNS_STD_SENSOR_ATTRID_RESOLUTIONS attribute value in %RH/LSB.
 // 3. SNS_STD_SENSOR_ATTRID_RANGES attribute values in %RH unit.
 // 4. The Humidity Sensor is an on-change sensor.
-// 5. The SNS_STD_SENSOR_ATTRID_RATES attribute is not applicable
-//    since this is an on-change sensor.
-// 6. See sns_std_sensor.proto for other attributes.
+// 5. See sns_std_sensor.proto for other attributes.
 
 
 // Handling stream requests:

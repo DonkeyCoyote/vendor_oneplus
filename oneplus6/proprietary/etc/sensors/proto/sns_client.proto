@@ -4,7 +4,7 @@
 // Manager.  The Client Manager is the primary path for external clients
 // to communicate with the SSC.
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -79,6 +79,11 @@ message sns_client_request_msg {
 
     // Whether to send events while the specified processor is in suspend.
     required sns_client_delivery  delivery_type = 2 [default = SNS_CLIENT_DELIVERY_WAKEUP];
+
+    //The client expects that, when the message with an id specified in this list
+    //is generated, the message should only be delivered to the client if data
+    //is already being delivered to the processor mentioned above.
+    repeated fixed32 nowakeup_msg_ids = 3;
   }
   required suspend_config susp_config = 3;
 

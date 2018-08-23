@@ -2,7 +2,7 @@
 //
 // Defines standard messages used across multiple Sensor API definitions
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -32,7 +32,7 @@ enum sns_std_msgid {
   // All published attributes for a Sensor
   SNS_STD_MSGID_SNS_STD_ATTR_EVENT = 128;
 
-  // Indicates no further events will be generated in response to flush req.
+  // Indicates no further events will be generated in response to a flush req.
   // Empty Message
   SNS_STD_MSGID_SNS_STD_FLUSH_EVENT = 129;
 
@@ -54,28 +54,24 @@ message sns_std_request {
     // A batch period of 0 indicates that no batching shall occur.
     required uint32 batch_period = 1;
 
-    // Do not store/return more than approximately this many microseconds of
-    // data upon a flush. The sensor can choose to drop old data but should
-    // always provide the latest flush period worth of data.
-    // Effective flush period may be smaller due to
-    // system constraints, or larger in the case of a concurrent client with a
-    // larger value.
-    // If less than batch_period, the Sensor may publish no
-    // events (depending on concurrent clients).
-    // Value defaults to value set for batch_period.
+    // Sensor supporting Data Acquisition Engine shall support flush_period.
+    // Sensor shall not drop data that is more recent than flush_period.
+    // Sensor may drop data that is older than the flush_period.
+    // Effective flush period may be smaller due to system constraints,
+    // or larger in the case of a concurrent client with a larger value.
+    // flush_period, if set, should be greater than or equal to batch_period.
+    // If flush_period is less than batch period the behavior is undefined.
+    // Value defaults to value set for batch_period; units in microseconds
     optional uint32 flush_period = 2;
 
-    // If flush_only = true, the sensor should
-    // only send data to the client on receiving a flush request or if the sensor
-    // cannot accumulate flush period worth of data.
-    // The absence of this field is equivalent to flush_only = false.
+    // If flush_only = true, the sensor should only send data to the client
+    // on receiving a flush request or if the sensor cannot accumulate flush
+    // period worth of data.
     optional bool flush_only = 3 [default = false];
 
     // If max_batch = true for all requests, the sensor should operate at
-    // maximum batching capacity.
-    // The absence of this field is equivalent to max_batch = false.
-    // If a request has both max_batch = true and flush_only = true,
-    // flush_only takes precedence.
+    // maximum batching capacity. If a request has both max_batch = true
+    // and flush_only = true, flush_only takes precedence.
     optional bool max_batch = 4 [default = false];
   }
   // Batching is disabled by default
@@ -86,6 +82,25 @@ message sns_std_request {
   // header file. If the request does not contain any message body then this
   // field is not present.
   optional bytes payload = 2;
+
+  // Set to true if a client intends to be a passive client. Else it is an
+  // active client request. Absence of this field shall be treated as an active
+  // request.
+  // If all requests to the sensor are passive then it shall be in off
+  // state and stop streaming.
+  // If the sensor has at least one active request then it shall be enabled
+  // and configured according to all active and passive requests.
+  // When all active clients are flush_only then passive clients are also treated
+  // as flush_only.
+  // When all active clients are event gated then passive clients are also treated
+  // as event gated.
+  // delivery_type field in passive requests shall be configured as
+  // SNS_CLIENT_DELIVERY_NO_WAKEUP.
+  // Actively enabling one sensor shall not lead to enabling of another
+  // sensor having only passive requests. For example: enabling gyro shall not
+  // lead to enabling of sensor_temperature, and vice versa.
+  optional bool is_passive = 3 [default = false];
+
 }
 
 // Query a Sensor for its list of attributes

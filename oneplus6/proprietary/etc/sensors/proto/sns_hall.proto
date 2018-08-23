@@ -5,7 +5,7 @@
 // Any new functionality for Hall Sensor can be defined in a
 // device specific API file.
 //
-// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -20,9 +20,7 @@ import "sns_physical_sensor_test.proto";
 // 2. SNS_STD_SENSOR_ATTRID_RESOLUTIONS attribute is not applicable since this is an event
 //    sensor.
 // 3. SNS_STD_SENSOR_ATTRID_RANGES attribute values as 0 and 1.
-// 4. The SNS_STD_SENSOR_ATTRID_RATES attribute is not applicable
-//    since this is an event sensor.
-// 5. See sns_std_sensor.proto for other attributes.
+// 4. See sns_std_sensor.proto for other attributes.
 
 // Handling stream requests:
 // 1. The Hall Sensor handles the SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG
