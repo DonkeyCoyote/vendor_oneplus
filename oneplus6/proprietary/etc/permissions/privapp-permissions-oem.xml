@@ -76,6 +76,10 @@
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.wdstechnology.android.kryten">
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="net.oneplus.launcher">
         <permission name="android.permission.BIND_APPWIDGET"/>
         <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
