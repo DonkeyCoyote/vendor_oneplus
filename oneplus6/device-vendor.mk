@@ -16,6 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/bin/qvrservice:system/bin/qvrservice \
+    vendor/oneplus/oneplus6/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oneplus/oneplus6/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/oneplus/oneplus6/proprietary/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
     vendor/oneplus/oneplus6/proprietary/etc/bluetooth/bt_profile.conf:system/etc/bluetooth/bt_profile.conf \
@@ -138,13 +139,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_timer.proto:system/etc/sensors/proto/sns_timer.proto \
     vendor/oneplus/oneplus6/proprietary/etc/sensors/proto/sns_ultra_violet.proto:system/etc/sensors/proto/sns_ultra_violet.proto \
     vendor/oneplus/oneplus6/proprietary/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/oneplus6/proprietary/etc/voicemail-conf.xml:system/etc/voicemail-conf.xml \
     vendor/oneplus/oneplus6/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/oneplus/oneplus6/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/oneplus/oneplus6/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
     vendor/oneplus/oneplus6/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/oneplus/oneplus6/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oneplus/oneplus6/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/oneplus/oneplus6/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
@@ -450,6 +449,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
     com.qualcomm.qti.camera \
     com.qualcomm.qti.imscmservice-V2.0-java \
