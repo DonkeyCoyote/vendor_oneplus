@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/oneplus/oneplus6/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/oneplus6/proprietary/etc/nfc_card_config.conf:system/etc/nfc_card_config.conf \
+    vendor/oneplus/oneplus6/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/LteDirectDiscovery.xml:system/etc/permissions/LteDirectDiscovery.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/RemoteSimlock.xml:system/etc/permissions/RemoteSimlock.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/UimService.xml:system/etc/permissions/UimService.xml \
@@ -158,6 +159,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.voiceprint-V1.0-java.jar:system/framework/vendor.qti.voiceprint-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/lib/android.hardware.light@2.0.so:system/lib/android.hardware.light@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/android.hardware.secure_element@1.0.so:system/lib/android.hardware.secure_element@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
@@ -166,6 +168,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.imscmservice@2.1.so:system/lib/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:system/lib/com.qualcomm.qti.uceservice@2.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/ese_spi_nxp.so:system/lib/ese_spi_nxp.so \
     vendor/oneplus/oneplus6/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/oneplus/oneplus6/proprietary/lib/lib-imsvt.so:system/lib/lib-imsvt.so \
@@ -217,6 +220,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/oneplus6/proprietary/lib/libnl.so:system/lib/libnl.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libnxpnfc-nci.so:system/lib/libnxpnfc-nci.so \
     vendor/oneplus/oneplus6/proprietary/lib/libopcameralib-em.so:system/lib/libopcameralib-em.so \
     vendor/oneplus/oneplus6/proprietary/lib/liboptizoom.so:system/lib/liboptizoom.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
@@ -282,6 +286,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.config@1.0.so:system/lib/vendor.display.config@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.config@1.1.so:system/lib/vendor.display.config@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.nxp.nxpese@1.0.so:system/lib/vendor.nxp.nxpese@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.nxp.nxpnfc@1.0.so:system/lib/vendor.nxp.nxpnfc@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:system/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0.so:system/lib/vendor.oneplus.camera.CameraHIDL@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.oneplus.fingerprint.extension@1.0.so:system/lib/vendor.oneplus.fingerprint.extension@1.0.so \
@@ -324,6 +330,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.voiceprint@1.0.so:system/lib/vendor.qti.voiceprint@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/android.hardware.light@2.0.so:system/lib64/android.hardware.light@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/android.hardware.secure_element@1.0.so:system/lib64/android.hardware.secure_element@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -331,6 +338,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.imscmservice@2.0.so:system/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.imscmservice@2.1.so:system/lib64/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/oneplus/oneplus6/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/lib64/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/ese_spi_nxp.so:system/lib64/ese_spi_nxp.so \
     vendor/oneplus/oneplus6/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/oneplus/oneplus6/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
@@ -385,6 +393,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libnxpnfc-nci.so:system/lib64/libnxpnfc-nci.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libopcameralib-em.so:system/lib64/libopcameralib-em.so \
     vendor/oneplus/oneplus6/proprietary/lib64/liboptizoom.so:system/lib64/liboptizoom.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
@@ -421,6 +431,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.config@1.0.so:system/lib64/vendor.display.config@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.config@1.1.so:system/lib64/vendor.display.config@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.nxp.nxpese@1.0.so:system/lib64/vendor.nxp.nxpese@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.nxp.nxpnfc@1.0.so:system/lib64/vendor.nxp.nxpnfc@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:system/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so:system/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.oneplus.fingerprint.extension@1.0.so:system/lib64/vendor.oneplus.fingerprint.extension@1.0.so \
@@ -465,8 +477,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.voiceprint@1.0.so:system/lib64/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
+    NxpNfcNci \
+    NxpSecureElement \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    com.nxp.nfc \
     com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
     com.qualcomm.qti.camera \

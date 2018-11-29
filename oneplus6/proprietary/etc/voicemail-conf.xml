@@ -12,4 +12,11 @@
         vmnumber="+33660660001"
         vmtag="Voicemail" />
     <!-- Angela 20180419 end -->
+    <!-- VENDOR_EDIT Brian+@20181025 start -->
+    <voicemail
+        numeric="22201"
+        carrier="TIM"
+        vmnumber="41919"
+        vmtag="Voicemail" />
+    <!-- VENDOR_EDIT Brian-@20181025 end -->
 </voicemail>

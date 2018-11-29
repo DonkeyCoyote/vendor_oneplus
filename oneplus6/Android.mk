@@ -19,6 +19,29 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),oneplus6)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := NxpNfcNci
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/NxpNfcNci/NxpNfcNci.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := NxpSecureElement
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/NxpSecureElement/NxpSecureElement.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_OVERRIDES_PACKAGES := SecureElement
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := HotwordEnrollmentOKGoogleWCD9340
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
@@ -40,6 +63,16 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.nxp.nfc
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/framework/com.nxp.nfc.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
