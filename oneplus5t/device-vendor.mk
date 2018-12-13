@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus5t/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/oneplus5t/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/oneplus/oneplus5t/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
-    vendor/oneplus/oneplus5t/proprietary/framework/WfdCommon.jar:system/framework/WfdCommon.jar \
     vendor/oneplus/oneplus5t/proprietary/lib/android.hardware.secure_element@1.0.so:system/lib/android.hardware.secure_element@1.0.so \
     vendor/oneplus/oneplus5t/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/oneplus5t/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
@@ -150,6 +149,7 @@ PRODUCT_PACKAGES += \
     NxpSecureElement \
     IFAAService \
     WfdService \
+    WfdCommon \
     com.nxp.nfc
 
 ifeq ($(QCPATH),)
