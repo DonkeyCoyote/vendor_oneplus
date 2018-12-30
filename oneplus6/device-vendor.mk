@@ -55,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/privapp-permissions-oem.xml:system/etc/permissions/privapp-permissions-oem.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/oneplus/oneplus6/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/oneplus6/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oneplus/oneplus6/proprietary/etc/public.libraries-qti.txt:system/etc/public.libraries-qti.txt \
     vendor/oneplus/oneplus6/proprietary/etc/qvr/ov7251_640x480_cam_config.xml:system/etc/qvr/ov7251_640x480_cam_config.xml \
@@ -152,12 +151,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/oneplus/oneplus6/proprietary/framework/qtiNetworkLib.jar:system/framework/qtiNetworkLib.jar \
     vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
-    vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
-    vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
-    vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.hardware.soter-V1.0-java.jar:system/framework/vendor.qti.hardware.soter-V1.0-java.jar \
-    vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
-    vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.voiceprint-V1.0-java.jar:system/framework/vendor.qti.voiceprint-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/lib/android.hardware.light@2.0.so:system/lib/android.hardware.light@2.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/android.hardware.secure_element@1.0.so:system/lib/android.hardware.secure_element@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
@@ -489,9 +483,14 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.uceservice-V2.0-java \
     vendor.oneplus.camera.CameraHIDL-V1.0-java \
+    vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.hardware.data.dynamicdds-V1.0-java \
     vendor.qti.hardware.data.latency-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
+    vendor.qti.hardware.soter-V1.0-java \
+    vendor.qti.ims.callinfo-V1.0-java \
     vendor.qti.ims.rcsconfig-V1.0-java \
+    vendor.qti.voiceprint-V1.0-java \
     dashd
 
 ifeq ($(QCPATH),)

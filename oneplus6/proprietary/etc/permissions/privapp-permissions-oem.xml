@@ -76,19 +76,6 @@
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.redteamobile.virtual.softsim">
-        <permission name="android.permission.MODIFY_PHONE_STATE"/>
-        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
-        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
-        <permission name="android.permission.REAL_GET_TASKS"/>
-        <permission name="android.permission.WRITE_APN_SETTINGS"/>
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-    </privapp-permissions>
-
-    <privapp-permissions package="com.wdstechnology.android.kryten">
-        <permission name="android.permission.WRITE_APN_SETTINGS"/>
-    </privapp-permissions>
-
     <privapp-permissions package="net.oneplus.launcher">
         <permission name="android.permission.BIND_APPWIDGET"/>
         <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
