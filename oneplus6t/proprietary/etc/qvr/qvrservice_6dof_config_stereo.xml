@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+/******************************************************************************
+* Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
+* All Rights Reserved.
+* Confidential and Proprietary - Qualcomm Technologies, Inc.
+******************************************************************************/
+-->
+
+<Configuration>
+  <SFConfig>
+    <SliceMapping enabled="true" />
+    <Logging level="3" />
+    <Warmstart enabled="true" />
+    <Stereo useStereoVIO="true" />
+    <Relocator enabled="true"/>
+    <Autocal enabled="true"/>
+    <DspClocksCfg enabled="true" dcvs_policy="2" force_dcvs_voltage_corner="4" mdspClkPercentage="100"/>
+    <Pseudomeasurements sigmaThresholdForSystematicMotion="3.5" measPixelChangeThresh="0.6"/>
+    <Measurementnoise varZeroVelocityNoise="1e-7"/>
+    <Initialuncertainty std0wbias="0.005" std0abias="0.1" std0delta="3e-3" std0Kg="2e-3" std0Ka="2e-3" />
+    <Warmstart enabled="true" std0wbias="0.0025" std0abias="0.05" std0delta="1.5e-3" std0Kg="1e-3" std0Ka="1e-3" />
+  </SFConfig>
+  <Cake>
+    <SLAM>
+     <Mapper dspLogLevel="2"/>
+    </SLAM>
+  </Cake>
+</Configuration>
