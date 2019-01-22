@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voicemail>
+    <voicemail
+        numeric="23410"
+        carrier="O2 UK"
+        vmnumber="901"
+        vmtag="Voicemail" />
+    <!-- Angela 20180419 add for Bouygues Telecom-->
+    <voicemail
+        numeric="20820"
+        carrier="Bouygues Telecom"
+        vmnumber="+33660660001"
+        vmtag="Voicemail" />
+    <!-- Angela 20180419 end -->
+</voicemail>
