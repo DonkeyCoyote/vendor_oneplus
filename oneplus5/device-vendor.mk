@@ -271,11 +271,11 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     datastatusnotification \
     embms \
-    ims \
     imssettings \
     CNEService \
     com.qualcomm.location \
     dpmserviceapp \
+    ims \
     qcrilmsgtunnel \
     com.qti.dpmframework \
     com.qti.snapdragon.sdk.display \
