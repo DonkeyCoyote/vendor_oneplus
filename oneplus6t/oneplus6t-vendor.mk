@@ -484,7 +484,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.uceservice-V2.0-java \
     vendor.oneplus.camera.CameraHIDL-V1.0-java \
-    vendor.oneplus.fingerprint.extension-V1.0-java \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.data.dynamicdds-V1.0-java \
     vendor.qti.hardware.data.latency-V1.0-java \
