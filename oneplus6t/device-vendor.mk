@@ -499,7 +499,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.uceservice-V2.0-java \
-    vendor.oneplus.camera.CameraHIDL-V1.0-java \
     vendor.qti.hardware.data.latency-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
     vendor.qti.ims.rcsconfig-V1.0-java \
