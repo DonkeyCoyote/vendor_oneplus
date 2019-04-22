@@ -41,18 +41,6 @@
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.oma.dm">
-        <permission name="android.permission.BATTERY_STATS"/>
-        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
-        <permission name="android.permission.MODIFY_PHONE_STATE"/>
-        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
-        <permission name="android.permission.REAL_GET_TASKS"/>
-        <permission name="android.permission.REBOOT"/>
-        <permission name="android.permission.SHUTDOWN"/>
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.oneplus.aod">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.MANAGE_USERS"/>

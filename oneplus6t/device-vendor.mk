@@ -249,6 +249,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6t/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/oneplus/oneplus6t/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/oneplus/oneplus6t/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
+    vendor/oneplus/oneplus6t/proprietary/lib/libsdsprpc_system.so:system/lib/libsdsprpc_system.so \
     vendor/oneplus/oneplus6t/proprietary/lib/libsecureui_svcsock_system.so:system/lib/libsecureui_svcsock_system.so \
     vendor/oneplus/oneplus6t/proprietary/lib/libseemore.so:system/lib/libseemore.so \
     vendor/oneplus/oneplus6t/proprietary/lib/libseestraight.so:system/lib/libseestraight.so \
@@ -293,8 +294,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6t/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oneplus/oneplus6t/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus6t/proprietary/lib/vendor.display.color@1.1.so:system/lib/vendor.display.color@1.1.so \
-    vendor/oneplus/oneplus6t/proprietary/lib/vendor.display.config@1.0.so:system/lib/vendor.display.config@1.0.so \
-    vendor/oneplus/oneplus6t/proprietary/lib/vendor.display.config@1.1.so:system/lib/vendor.display.config@1.1.so \
     vendor/oneplus/oneplus6t/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/oneplus/oneplus6t/proprietary/lib/vendor.nxp.nxpese@1.0.so:system/lib/vendor.nxp.nxpese@1.0.so \
     vendor/oneplus/oneplus6t/proprietary/lib/vendor.nxp.nxpnfc@1.0.so:system/lib/vendor.nxp.nxpnfc@1.0.so \
@@ -419,6 +418,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6t/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
+    vendor/oneplus/oneplus6t/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/libsecureui_svcsock_system.so:system/lib64/libsecureui_svcsock_system.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/libseemore.so:system/lib64/libseemore.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/libseestraight.so:system/lib64/libseestraight.so \
@@ -439,8 +439,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6t/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
-    vendor/oneplus/oneplus6t/proprietary/lib64/vendor.display.config@1.0.so:system/lib64/vendor.display.config@1.0.so \
-    vendor/oneplus/oneplus6t/proprietary/lib64/vendor.display.config@1.1.so:system/lib64/vendor.display.config@1.1.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/vendor.nxp.nxpese@1.0.so:system/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/oneplus/oneplus6t/proprietary/lib64/vendor.nxp.nxpnfc@1.0.so:system/lib64/vendor.nxp.nxpnfc@1.0.so \
