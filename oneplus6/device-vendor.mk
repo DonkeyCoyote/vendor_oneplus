@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -277,8 +277,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.color@1.1.so:system/lib/vendor.display.color@1.1.so \
-    vendor/oneplus/oneplus6/proprietary/lib/vendor.display.config@1.0.so:system/lib/vendor.display.config@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib/vendor.display.config@1.1.so:system/lib/vendor.display.config@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.nxp.nxpese@1.0.so:system/lib/vendor.nxp.nxpese@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib/vendor.nxp.nxpnfc@1.0.so:system/lib/vendor.nxp.nxpnfc@1.0.so \
@@ -422,8 +420,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.config@1.0.so:system/lib64/vendor.display.config@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.config@1.1.so:system/lib64/vendor.display.config@1.1.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.nxp.nxpese@1.0.so:system/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/oneplus/oneplus6/proprietary/lib64/vendor.nxp.nxpnfc@1.0.so:system/lib64/vendor.nxp.nxpnfc@1.0.so \
@@ -482,7 +478,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.uceservice-V2.0-java \
-    vendor.oneplus.camera.CameraHIDL-V1.0-java \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.data.dynamicdds-V1.0-java \
     vendor.qti.hardware.data.latency-V1.0-java \

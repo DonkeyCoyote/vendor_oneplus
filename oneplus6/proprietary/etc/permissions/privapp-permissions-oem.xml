@@ -34,8 +34,10 @@
 
     <!-- Additional permissions on top of privapp-permissions-platform.xml -->
     <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <permission name="android.permission.MANAGE_FINGERPRINT"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
     </privapp-permissions>
 
