@@ -56,6 +56,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6t/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     vendor/oneplus/oneplus6t/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/oneplus/oneplus6t/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/oneplus/oneplus6t/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/oneplus/oneplus6t/proprietary/etc/public.libraries-qti.txt:system/etc/public.libraries-qti.txt \
     vendor/oneplus/oneplus6t/proprietary/etc/qvr/ov7251_640x480_cam_config.xml:system/etc/qvr/ov7251_640x480_cam_config.xml \
     vendor/oneplus/oneplus6t/proprietary/etc/qvr/ov9282_640x400_cam_config.xml:system/etc/qvr/ov9282_640x400_cam_config.xml \
