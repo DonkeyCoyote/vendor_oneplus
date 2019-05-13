@@ -472,6 +472,7 @@ PRODUCT_PACKAGES += \
     NxpSecureElement \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    OPNetworkSetting \
     com.nxp.nfc \
     com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
