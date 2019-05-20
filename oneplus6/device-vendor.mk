@@ -150,7 +150,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oneplus/oneplus6/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oneplus/oneplus6/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/oneplus/oneplus6/proprietary/framework/qtiNetworkLib.jar:system/framework/qtiNetworkLib.jar \
     vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
     vendor/oneplus/oneplus6/proprietary/lib/android.hardware.light@2.0.so:system/lib/android.hardware.light@2.0.so \
@@ -480,6 +479,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.uceservice-V2.0-java \
+    qtiNetworkLib \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.data.dynamicdds-V1.0-java \
     vendor.qti.hardware.data.latency-V1.0-java \
