@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oneplus/oneplus7pro/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/oneplus/oneplus7pro/proprietary/etc/permissions/uimremoteclient.xml:system/etc/permissions/uimremoteclient.xml \
+    vendor/oneplus/oneplus7pro/proprietary/etc/permissions/com.dolby.daxservice.xml:system/etc/permissions/com.dolby.daxservice.xml \
     vendor/oneplus/oneplus7pro/proprietary/etc/public.libraries-qti.txt:system/etc/public.libraries-qti.txt \
     vendor/oneplus/oneplus7pro/proprietary/etc/qvr/qvrservice_6dof_config.xml:system/etc/qvr/qvrservice_6dof_config.xml \
     vendor/oneplus/oneplus7pro/proprietary/etc/qvr/qvrservice_6dof_config_stereo.xml:system/etc/qvr/qvrservice_6dof_config_stereo.xml \
@@ -466,7 +467,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.callinfo-V1.0-java \
     vendor.qti.ims.rcsconfig-V1.0-java \
     vendor.qti.voiceprint-V1.0-java \
-    dashd
+    dashd \
+    OPSoundTuner \
+    daxService
 
 ifeq ($(QCPATH),)
 
