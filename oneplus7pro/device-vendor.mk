@@ -307,6 +307,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib/vendor.qti.hardware.radio.ims@1.1.so:system/lib/vendor.qti.hardware.radio.ims@1.1.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/vendor.qti.hardware.radio.ims@1.2.so:system/lib/vendor.qti.hardware.radio.ims@1.2.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/vendor.qti.hardware.radio.ims@1.3.so:system/lib/vendor.qti.hardware.radio.ims@1.3.so \
+    vendor/oneplus/oneplus7pro/proprietary/lib/vendor.qti.hardware.radio.ims@1.4.so:system/lib/vendor.qti.hardware.radio.ims@1.4.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/vendor.qti.hardware.radio.lpa@1.0.so:system/lib/vendor.qti.hardware.radio.lpa@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:system/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:system/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
@@ -442,6 +443,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.qti.hardware.radio.ims@1.1.so:system/lib64/vendor.qti.hardware.radio.ims@1.1.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.qti.hardware.radio.ims@1.2.so:system/lib64/vendor.qti.hardware.radio.ims@1.2.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.qti.hardware.radio.ims@1.3.so:system/lib64/vendor.qti.hardware.radio.ims@1.3.so \
+    vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.qti.hardware.radio.ims@1.4.so:system/lib64/vendor.qti.hardware.radio.ims@1.4.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.qti.hardware.radio.lpa@1.0.so:system/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:system/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:system/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
