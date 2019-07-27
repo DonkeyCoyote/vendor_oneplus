@@ -348,6 +348,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libantradio.so:system/lib64/libantradio.so \
+    vendor/oneplus/oneplus7pro/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/oneplus/oneplus7pro/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libbluetooth_qti.so:system/lib64/libbluetooth_qti.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libblurbuster.so:system/lib64/libblurbuster.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
