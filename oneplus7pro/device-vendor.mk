@@ -466,9 +466,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.qti.voiceprint@1.0.so:system/lib64/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
+    DynamicDDSService \
     NxpNfcNci \
     NxpSecureElement \
     OPSoundTuner \
+    uceShimService \
     uimlpaservice \
     uimremoteclient \
     HotwordEnrollmentOKGoogleWCD9340 \

@@ -19,6 +19,17 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),oneplus7pro)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := DynamicDDSService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/DynamicDDSService/DynamicDDSService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := NxpNfcNci
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/app/NxpNfcNci/NxpNfcNci.apk
@@ -44,6 +55,17 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := OPSoundTuner
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/app/OPSoundTuner/OPSoundTuner.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := uceShimService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
