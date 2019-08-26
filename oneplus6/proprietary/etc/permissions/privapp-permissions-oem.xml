@@ -90,6 +90,7 @@
         <permission name="android.permission.STATUS_BAR"/>
         <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
         <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="net.oneplus.odm">
