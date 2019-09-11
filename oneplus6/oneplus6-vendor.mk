@@ -507,6 +507,28 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService \
     WfdService \
+    CallFeaturesSetting \
+    DynamicDDSService \
+    PerformanceMode \
+    QdcmFF \
+    QtiSettings \
+    QtiSystemService \
+    QtiTelephonyService \
+    atfwd \
+    colorservice \
+    com.qualcomm.qti.services.secureui \
+    datastatusnotification \
+    embms \
+    imssettings \
+    remoteSimLockAuthentication \
+    remotesimlockservice \
+    uceShimService \
+    uimgbaservice \
+    uimlpaservice \
+    uimremoteclient \
+    uimremoteserver \
+    ims \
+    qcrilmsgtunnel \
     WfdCommon \
     qcnvitems
 endif
