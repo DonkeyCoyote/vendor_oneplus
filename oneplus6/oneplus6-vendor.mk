@@ -218,11 +218,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/dpmapi.xml:system/product/etc/permissions/dpmapi.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/embms.xml:system/product/etc/permissions/embms.xml \
-    vendor/oneplus/oneplus6/proprietary/product/etc/permissions/ims_ext_common.xml:system/product/etc/permissions/ims_ext_common.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/lpa.xml:system/product/etc/permissions/lpa.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/qcrilhook.xml:system/product/etc/permissions/qcrilhook.xml \
-    vendor/oneplus/oneplus6/proprietary/product/etc/permissions/qti_telephony_hidl_wrapper.xml:system/product/etc/permissions/qti_telephony_hidl_wrapper.xml \
-    vendor/oneplus/oneplus6/proprietary/product/etc/permissions/qti_telephony_utils.xml:system/product/etc/permissions/qti_telephony_utils.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:system/product/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/telephonyservice.xml:system/product/etc/permissions/telephonyservice.xml \
     vendor/oneplus/oneplus6/proprietary/product/etc/permissions/uimremoteclient.xml:system/product/etc/permissions/uimremoteclient.xml \
@@ -241,12 +238,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/framework/com.quicinc.cne.constants-V2.1-java.jar:system/product/framework/com.quicinc.cne.constants-V2.1-java.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/dpmapi.jar:system/product/framework/dpmapi.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/embmslibrary.jar:system/product/framework/embmslibrary.jar \
-    vendor/oneplus/oneplus6/proprietary/product/framework/ims-ext-common.jar:system/product/framework/ims-ext-common.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/op-telephony-common.jar:system/product/framework/op-telephony-common.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/qcrilhook.jar:system/product/framework/qcrilhook.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/qti-telephony-common.jar:system/product/framework/qti-telephony-common.jar \
-    vendor/oneplus/oneplus6/proprietary/product/framework/qti-telephony-hidl-wrapper.jar:system/product/framework/qti-telephony-hidl-wrapper.jar \
-    vendor/oneplus/oneplus6/proprietary/product/framework/qti-telephony-utils.jar:system/product/framework/qti-telephony-utils.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/remotesimlockmanagerlibrary.jar:system/product/framework/remotesimlockmanagerlibrary.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/uimgbalibrary.jar:system/product/framework/uimgbalibrary.jar \
     vendor/oneplus/oneplus6/proprietary/product/framework/uimgbamanagerlibrary.jar:system/product/framework/uimgbamanagerlibrary.jar \
@@ -330,7 +324,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.gnss@2.1.so:system/product/lib/vendor.qti.gnss@2.1.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.gnss@3.0.so:system/product/lib/vendor.qti.gnss@3.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.alarm@1.0.so:system/product/lib/vendor.qti.hardware.alarm@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.bluetooth_audio@2.0.so:system/product/lib/vendor.qti.hardware.bluetooth_audio@2.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:system/product/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.btconfigstore@1.0.so:system/product/lib/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.camera.device@1.0.so:system/product/lib/vendor.qti.hardware.camera.device@1.0.so \
@@ -443,7 +436,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.gnss@2.1.so:system/product/lib64/vendor.qti.gnss@2.1.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.gnss@3.0.so:system/product/lib64/vendor.qti.gnss@3.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.alarm@1.0.so:system/product/lib64/vendor.qti.hardware.alarm@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so:system/product/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:system/product/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:system/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.camera.device@1.0.so:system/product/lib64/vendor.qti.hardware.camera.device@1.0.so \
@@ -507,28 +499,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService \
     WfdService \
-    CallFeaturesSetting \
-    DynamicDDSService \
-    PerformanceMode \
-    QdcmFF \
-    QtiSettings \
-    QtiSystemService \
-    QtiTelephonyService \
-    atfwd \
-    colorservice \
-    com.qualcomm.qti.services.secureui \
-    datastatusnotification \
-    embms \
-    imssettings \
-    remoteSimLockAuthentication \
-    remotesimlockservice \
-    uceShimService \
-    uimgbaservice \
-    uimlpaservice \
-    uimremoteclient \
-    uimremoteserver \
-    ims \
-    qcrilmsgtunnel \
     WfdCommon \
     qcnvitems
 endif
