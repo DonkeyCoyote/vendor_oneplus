@@ -17,13 +17,9 @@
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/bin/qvrservice:system/bin/qvrservice \
     vendor/oneplus/oneplus7pro/proprietary/bin/wfdservice:system/bin/wfdservice \
-    vendor/oneplus/oneplus7pro/proprietary/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
     vendor/oneplus/oneplus7pro/proprietary/etc/bluetooth/bt_profile.conf:system/etc/bluetooth/bt_profile.conf \
-    vendor/oneplus/oneplus7pro/proprietary/etc/bluetooth/bt_stack.conf:system/etc/bluetooth/bt_stack.conf \
-    vendor/oneplus/oneplus7pro/proprietary/etc/bluetooth/bt_stack_debug.conf:system/etc/bluetooth/bt_stack_debug.conf \
     vendor/oneplus/oneplus7pro/proprietary/etc/bluetooth/interop_database.conf:system/etc/bluetooth/interop_database.conf \
     vendor/oneplus/oneplus7pro/proprietary/etc/cdma_call_conf.xml:system/etc/cdma_call_conf.xml \
-    vendor/oneplus/oneplus7pro/proprietary/etc/clatd.conf:system/etc/clatd.conf \
     vendor/oneplus/oneplus7pro/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/oneplus7pro/proprietary/etc/nfc_card_config.conf:system/etc/nfc_card_config.conf \
     vendor/oneplus/oneplus7pro/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
@@ -119,7 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/oneplus/oneplus7pro/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
     vendor/oneplus/oneplus7pro/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/oneplus/oneplus7pro/proprietary/lib/android.hardware.secure_element@1.0.so:system/lib/android.hardware.secure_element@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libOpenCL_system.so:system/lib/libOpenCL_system.so \
@@ -129,7 +124,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib/libcdsprpc_system.so:system/lib/libcdsprpc_system.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libchromaflash.so:system/lib/libchromaflash.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib/libdisplayconfig.so:system/lib/libdisplayconfig.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libfiltergenerator.so:system/lib/libfiltergenerator.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libhazebuster.so:system/lib/libhazebuster.so \
@@ -152,11 +146,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib/libnl.so:system/lib/libnl.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libnxpnfc-nci.so:system/lib/libnxpnfc-nci.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libopcameralib-em.so:system/lib/libopcameralib-em.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/liboptizoom.so:system/lib/liboptizoom.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib/libqdMetaData.system.so:system/lib/libqdMetaData.system.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
@@ -201,11 +193,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib/rfsa/adsp/libsns_device_mode_skel.so:system/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oneplus/oneplus7pro/proprietary/lib/rfsa/adsp/libtracker_6dof_skel.so:system/lib/rfsa/adsp/libtracker_6dof_skel.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib/vendor.nxp.nxpnfc@1.0.so:system/lib/vendor.nxp.nxpnfc@1.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:system/lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib/vendor.oneplus.camera.CameraHIDL@1.0.so:system/lib/vendor.oneplus.camera.CameraHIDL@1.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib/vendor.oneplus.fingerprint.extension@1.0.so:system/lib/vendor.oneplus.fingerprint.extension@1.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib64/android.hardware.secure_element@1.0.so:system/lib64/android.hardware.secure_element@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libOpenCL_system.so:system/lib64/libOpenCL_system.so \
@@ -216,7 +203,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libcdsprpc_system.so:system/lib64/libcdsprpc_system.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libchromaflash.so:system/lib64/libchromaflash.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib64/libdisplayconfig.so:system/lib64/libdisplayconfig.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libdualcameraddm.so:system/lib64/libdualcameraddm.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libfiltergenerator.so:system/lib64/libfiltergenerator.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libhazebuster.so:system/lib64/libhazebuster.so \
@@ -227,7 +213,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libjni_filtergenerator.so:system/lib64/libjni_filtergenerator.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libjni_hazebuster.so:system/lib64/libjni_hazebuster.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libjni_optizoom.so:system/lib64/libjni_optizoom.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib64/libjni_pacprocessor.so:system/lib64/libjni_pacprocessor.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libjni_seestraight.so:system/lib64/libjni_seestraight.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libjni_sharpshooter.so:system/lib64/libjni_sharpshooter.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libjni_stillmore.so:system/lib64/libjni_stillmore.so \
@@ -245,7 +230,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libnxpnfc_nci_jni.so:system/lib64/libnxpnfc_nci_jni.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libopcameralib-em.so:system/lib64/libopcameralib-em.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/liboptizoom.so:system/lib64/liboptizoom.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib64/libqdMetaData.system.so:system/lib64/libqdMetaData.system.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
@@ -265,10 +249,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libvraudio_client.qti.so:system/lib64/libvraudio_client.qti.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/oneplus/oneplus7pro/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.nxp.nxpnfc@1.0.so:system/lib64/vendor.nxp.nxpnfc@1.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so:system/lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so:system/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/lib64/vendor.oneplus.fingerprint.extension@1.0.so:system/lib64/vendor.oneplus.fingerprint.extension@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/bin/dpmd:system/product/bin/dpmd \
     vendor/oneplus/oneplus7pro/proprietary/product/etc/dpm/dpm.conf:system/product/etc/dpm/dpm.conf \
     vendor/oneplus/oneplus7pro/proprietary/product/etc/init/dpmd.rc:system/product/etc/init/dpmd.rc \
@@ -286,10 +266,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/product/etc/permissions/qcrilhook.xml:system/product/etc/permissions/qcrilhook.xml \
     vendor/oneplus/oneplus7pro/proprietary/product/etc/permissions/telephonyservice.xml:system/product/etc/permissions/telephonyservice.xml \
     vendor/oneplus/oneplus7pro/proprietary/product/etc/permissions/uimremoteclient.xml:system/product/etc/permissions/uimremoteclient.xml \
-    vendor/oneplus/oneplus7pro/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:system/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
-    vendor/oneplus/oneplus7pro/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:system/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/oneplus/oneplus7pro/proprietary/product/etc/sysconfig/google.xml:system/product/etc/sysconfig/google.xml \
-    vendor/oneplus/oneplus7pro/proprietary/product/framework/com.qti.dpmframework.jar:system/product/framework/com.qti.dpmframework.jar \
     vendor/oneplus/oneplus7pro/proprietary/product/framework/com.quicinc.cne.api-V1.1-java.jar:system/product/framework/com.quicinc.cne.api-V1.1-java.jar \
     vendor/oneplus/oneplus7pro/proprietary/product/framework/com.quicinc.cne.constants-V1.0-java.jar:system/product/framework/com.quicinc.cne.constants-V1.0-java.jar \
     vendor/oneplus/oneplus7pro/proprietary/product/framework/com.quicinc.cne.constants-V2.0-java.jar:system/product/framework/com.quicinc.cne.constants-V2.0-java.jar \
@@ -301,7 +278,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar:system/product/framework/vendor.qti.data.factory-V2.0-java.jar \
     vendor/oneplus/oneplus7pro/proprietary/product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/com.qualcomm.qti.ant@1.0.so:system/product/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/com.qualcomm.qti.dpm.api@1.0.so:system/product/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:system/product/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:system/product/lib/com.qualcomm.qti.imscmservice@2.0.so \
@@ -365,7 +341,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:system/product/lib/vendor.qti.imsrtpservice@2.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/vendor.qti.voiceprint@1.0.so:system/product/lib/vendor.qti.voiceprint@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:system/product/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:system/product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/product/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/product/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:system/product/lib64/com.qualcomm.qti.imscmservice@2.0.so \
@@ -465,11 +440,10 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/oneplus7pro/proprietary/product/etc/permissions/qti_telephony_hidl_wrapper.xml:system/product/etc/permissions/qti_telephony_hidl_wrapper.xml \
-    vendor/oneplus/oneplus7pro/proprietary/product/etc/permissions/qti_telephony_utils.xml:system/product/etc/permissions/qti_telephony_utils.xml \
+    vendor/oneplus/oneplus7pro/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:system/product/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/vendor.qti.gnss@3.0.so:system/product/lib64/vendor.qti.gnss@3.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/product/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so:system/product/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so \
-    vendor/oneplus/oneplus7pro/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:system/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so
+    vendor/oneplus/oneplus7pro/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:system/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
+    vendor/oneplus/oneplus7pro/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:system/product/lib64/vendor.qti.imsrtpservice@2.1.so
 
 PRODUCT_PACKAGES += \
     AntHalService \
@@ -487,8 +461,7 @@ PRODUCT_PACKAGES += \
     qcnvitems \
     QtiTelephonyServicelibrary \
     com.qti.dpmframework \
-    qcrilhook \
-    qti-telephony-common
+    qcrilhook
 endif
 
 -include vendor/extra/devices.mk

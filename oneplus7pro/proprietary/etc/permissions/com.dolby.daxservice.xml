@@ -15,7 +15,6 @@
         <permission name="android.permission.MANAGE_USERS"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 </permissions>
 

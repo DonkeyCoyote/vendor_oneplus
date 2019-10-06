@@ -554,39 +554,6 @@ LOCAL_MODULE_SUFFIX := .jar
 LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := qti-telephony-common
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/product/framework/qti-telephony-common.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-LOCAL_PRODUCT_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qti-telephony-hidl-wrapper
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/product/framework/qti-telephony-hidl-wrapper.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-LOCAL_PRODUCT_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qti-telephony-utils
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/product/framework/qti-telephony-utils.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-LOCAL_PRODUCT_MODULE := true
-include $(BUILD_PREBUILT)
-
 endif
 
 ifneq ($(TARGET_HAVE_QC_PERF),true)
