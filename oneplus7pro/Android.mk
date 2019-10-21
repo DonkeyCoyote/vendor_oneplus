@@ -19,6 +19,135 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),oneplus7pro)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := NxpNfcNci
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/NxpNfcNci/NxpNfcNci.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := NxpSecureElement
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/NxpSecureElement/NxpSecureElement.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := OPSoundTuner
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/OPSoundTuner/OPSoundTuner.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := HotwordEnrollmentOKGoogleWCD9340
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := HotwordEnrollmentXGoogleWCD9340
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := OPNetworkSetting
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/OPNetworkSetting/OPNetworkSetting.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := daxService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/daxService/daxService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := DynamicDDSService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/DynamicDDSService/DynamicDDSService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := uceShimService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/uceShimService/uceShimService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := uimlpaservice
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/uimlpaservice/uimlpaservice.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := uimremoteclient
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/uimremoteclient/uimremoteclient.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := com.nxp.nfc
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/framework/com.nxp.nfc.jar
@@ -238,6 +367,140 @@ include $(BUILD_PREBUILT)
 
 
 ifeq ($(QCPATH),)
+include $(CLEAR_VARS)
+LOCAL_MODULE := AntHalService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/AntHalService/AntHalService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/WfdService/WfdService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.qualcomm.location
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := QtiSystemService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/QtiSystemService/QtiSystemService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := QtiTelephonyService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := datastatusnotification
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/datastatusnotification/datastatusnotification.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := embms
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/embms/embms.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := imssettings
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/app/imssettings/imssettings.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := dpmserviceapp
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ims
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/priv-app/ims/ims.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qcrilmsgtunnel
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := WfdCommon
 LOCAL_MODULE_OWNER := oneplus
