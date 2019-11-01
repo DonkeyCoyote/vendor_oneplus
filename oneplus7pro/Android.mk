@@ -88,6 +88,42 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := OnePlusCamera
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/OnePlusCamera/OnePlusCamera.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := OnePlusCameraService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/OnePlusCameraService/OnePlusCameraService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := OnePlusGallery
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/OnePlusGallery/OnePlusGallery.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := daxService
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/priv-app/daxService/daxService.apk
