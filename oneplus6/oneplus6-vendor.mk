@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/etc/bluetooth/bt_profile.conf:system/etc/bluetooth/bt_profile.conf \
     vendor/oneplus/oneplus6/proprietary/etc/bluetooth/interop_database.conf:system/etc/bluetooth/interop_database.conf \
     vendor/oneplus/oneplus6/proprietary/etc/cdma_call_conf.xml:system/etc/cdma_call_conf.xml \
+    vendor/oneplus/oneplus6/proprietary/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:system/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/oneplus/oneplus6/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/oneplus/oneplus6/proprietary/etc/nfc_card_config.conf:system/etc/nfc_card_config.conf \
     vendor/oneplus/oneplus6/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
@@ -111,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
     vendor/oneplus/oneplus6/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/oneplus/oneplus6/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:system/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/oneplus/oneplus6/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/oneplus/oneplus6/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/oneplus/oneplus6/proprietary/lib/libOpenCL_system.so:system/lib/libOpenCL_system.so \
@@ -121,6 +123,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/liblight_jni.so:system/lib/liblight_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmdsprpc_system.so:system/lib/libmdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libmiracastsystem.so:system/lib/libmiracastsystem.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/oneplus/oneplus6/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
@@ -149,9 +152,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
     vendor/oneplus/oneplus6/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
     vendor/oneplus/oneplus6/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdmmsrc_system.so:system/lib/libwfdmmsrc_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
     vendor/oneplus/oneplus6/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfdsinksm.so:system/lib/libwfdsinksm.so \
     vendor/oneplus/oneplus6/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/oneplus/oneplus6/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
     vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so:system/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so \
     vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so:system/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so \
@@ -159,6 +169,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libqvr_dsp_driver_skel.so:system/lib/rfsa/adsp/libqvr_dsp_driver_skel.so \
     vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libsns_device_mode_skel.so:system/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/oneplus/oneplus6/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
+    vendor/oneplus/oneplus6/proprietary/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:system/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libCalibrationJNI.so:system/lib64/libCalibrationJNI.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
@@ -170,6 +182,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/liblight_jni.so:system/lib64/liblight_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmdsprpc_system.so:system/lib64/libmdsprpc_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libmiracastsystem.so:system/lib64/libmiracastsystem.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
@@ -189,8 +202,26 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libvraudio.so:system/lib64/libvraudio.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libvraudio_client.qti.so:system/lib64/libvraudio_client.qti.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdmminterface.so:system/lib64/libwfdmminterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdmmsink.so:system/lib64/libwfdmmsink.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
-    vendor/oneplus/oneplus6/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdrtsp.so:system/lib64/libwfdrtsp.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdsinksm.so:system/lib64/libwfdsinksm.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfdsm.so:system/lib64/libwfdsm.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcinterface.so:system/lib64/libwfduibcinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsink.so:system/lib64/libwfduibcsink.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsinkinterface.so:system/lib64/libwfduibcsinkinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsrc.so:system/lib64/libwfduibcsrc.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libwfduibcsrcinterface.so:system/lib64/libwfduibcsrcinterface.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:system/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.sigma_miracast@1.0.so:system/product/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:system/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:system/product/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:system/product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/oneplus6/proprietary/system/bin/sigma_miracasthalservice:system/system/bin/sigma_miracasthalservice
 
 PRODUCT_PACKAGES += \
     NxpNfcNci \
@@ -324,7 +355,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.gnss@2.1.so:system/product/lib/vendor.qti.gnss@2.1.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.gnss@3.0.so:system/product/lib/vendor.qti.gnss@3.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.alarm@1.0.so:system/product/lib/vendor.qti.hardware.alarm@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:system/product/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.btconfigstore@1.0.so:system/product/lib/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.camera.device@1.0.so:system/product/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so:system/product/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so \
@@ -373,13 +403,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.soter@1.0.so:system/product/lib/vendor.qti.hardware.soter@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.tui_comm@1.0.so:system/product/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.vpp@1.1.so:system/product/lib/vendor.qti.hardware.vpp@1.1.so \
-    vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.vpp@1.2.so:system/product/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:system/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:system/product/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so:system/product/lib/vendor.qti.hardware.wigig.supptunnel@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.ims.callinfo@1.0.so:system/product/lib/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.0.so:system/product/lib/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:system/product/lib/vendor.qti.imsrtpservice@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:system/product/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.latency@2.0.so:system/product/lib/vendor.qti.latency@2.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib/vendor.qti.voiceprint@1.0.so:system/product/lib/vendor.qti.voiceprint@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:system/product/lib64/com.qualcomm.qti.ant@1.0.so \
@@ -436,7 +466,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.gnss@2.1.so:system/product/lib64/vendor.qti.gnss@2.1.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.gnss@3.0.so:system/product/lib64/vendor.qti.gnss@3.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.alarm@1.0.so:system/product/lib64/vendor.qti.hardware.alarm@1.0.so \
-    vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:system/product/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:system/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.camera.device@1.0.so:system/product/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so:system/product/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so \
@@ -485,7 +514,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.soter@1.0.so:system/product/lib64/vendor.qti.hardware.soter@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.tui_comm@1.0.so:system/product/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.vpp@1.1.so:system/product/lib64/vendor.qti.hardware.vpp@1.1.so \
-    vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.vpp@1.2.so:system/product/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.wifi.keystore@1.0.so:system/product/lib64/vendor.qti.hardware.wifi.keystore@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:system/product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:system/product/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so \
@@ -493,12 +521,35 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:system/product/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:system/product/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:system/product/lib64/vendor.qti.imsrtpservice@2.0.so \
+    vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:system/product/lib64/vendor.qti.imsrtpservice@2.1.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.latency@2.0.so:system/product/lib64/vendor.qti.latency@2.0.so \
     vendor/oneplus/oneplus6/proprietary/product/lib64/vendor.qti.voiceprint@1.0.so:system/product/lib64/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
     AntHalService \
     WfdService \
+    CallFeaturesSetting \
+    DynamicDDSService \
+    PerformanceMode \
+    QdcmFF \
+    QtiSettings \
+    QtiSystemService \
+    QtiTelephonyService \
+    atfwd \
+    colorservice \
+    com.qualcomm.qti.services.secureui \
+    datastatusnotification \
+    embms \
+    imssettings \
+    remoteSimLockAuthentication \
+    remotesimlockservice \
+    uceShimService \
+    uimgbaservice \
+    uimlpaservice \
+    uimremoteclient \
+    uimremoteserver \
+    ims \
+    qcrilmsgtunnel \
     WfdCommon \
     qcnvitems
 endif
