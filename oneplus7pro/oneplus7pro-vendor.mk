@@ -444,6 +444,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     OPNetworkSetting \
+    OnePlusCamera \
+    OnePlusCameraService \
+    OnePlusGallery \
     daxService \
     DynamicDDSService \
     uceShimService \
