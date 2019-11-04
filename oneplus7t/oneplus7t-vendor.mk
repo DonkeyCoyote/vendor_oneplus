@@ -275,6 +275,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrcinterface.so \
     vendor/oneplus/oneplus7t/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
     vendor/oneplus/oneplus7t/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/oneplus7pro/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
+    vendor/oneplus/oneplus7pro/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
+    vendor/oneplus/oneplus7pro/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/LteDirectDiscovery.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/LteDirectDiscovery.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/RemoteSimlock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/RemoteSimlock.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
@@ -440,6 +443,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     OPNetworkSetting \
+    OnePlusCamera \
+    OnePlusCameraService \
+    OnePlusGallery \
     DynamicDDSService \
     uceShimService \
     uimlpaservice \
