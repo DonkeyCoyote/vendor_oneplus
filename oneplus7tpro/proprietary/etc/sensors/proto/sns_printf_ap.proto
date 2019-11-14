@@ -1,0 +1,58 @@
+// @file sns_printf_ap.proto
+//
+// Defines the API for PrintfAP module.
+//
+// Copyright (c) 2018 OnePlus Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - OnePlus Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+
+enum sns_printf_ap_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // Uses message: sns_printf_ap_request
+  SNS_PRINTF_AP_EVENT_MSGID_REQUEST = 2049;
+
+  // Uses message: sns_printf_ap_event
+  SNS_PRINTF_AP_EVENT_MSGID_LOG_EVENT = 2050;
+
+  // Uses message: sns_printf_ap_lite_event
+  SNS_PRINTF_AP_EVENT_MSGID_LITE_EVENT = 2051;
+}
+
+enum sns_printf_ap_prio{
+  PRINTF_AP_PRIO_LOW   = 0;
+  PRINTF_AP_PRIO_MED   = 1;
+  PRINTF_AP_PRIO_HIGH  = 2;
+  PRINTF_AP_PRIO_ERROR = 3;
+  PRINTF_AP_PRIO_FATAL = 4;
+}
+
+message sns_printf_ap_request{
+  required sns_printf_ap_prio min_prio = 1;
+  optional string keyword = 2;
+  repeated string sensors = 3;
+}
+
+message sns_printf_ap_event{
+  required sns_printf_ap_prio prio = 1;
+  optional string file = 2;
+  optional uint32 line = 3;
+  required string format = 4;
+  required bytes args = 5;
+}
+
+// 0 -> "{name} {str} {args}"
+// 1 -> "{name} init {args}"
+// 2 -> "{name} deinit {args}"
+// 3 -> "{name} enable request {args}"
+// 4 -> "{name} disable request {args}"
+message sns_printf_ap_lite_event{
+  required string name = 1;
+  required uint32 msgid = 2;
+  optional string str = 3;
+  repeated float args = 4;
+}

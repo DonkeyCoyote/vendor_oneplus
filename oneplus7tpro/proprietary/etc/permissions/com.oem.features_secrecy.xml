@@ -1,0 +1,5 @@
+<!-- This file is used by SecrecyService only.  DO NOT MODIFY. -->
+
+<permissions>
+    <feature name="oem.secrecy.support" />
+</permissions>
