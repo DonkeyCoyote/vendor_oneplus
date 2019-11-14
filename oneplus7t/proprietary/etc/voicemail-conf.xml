@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voicemail>
+    <voicemail
+        numeric="23410"
+        carrier="O2 UK"
+        vmnumber="901"
+        vmtag="Voicemail" />
+    <!-- Angela 20180419 add for Bouygues Telecom-->
+    <voicemail
+        numeric="20820"
+        carrier="Bouygues Telecom"
+        vmnumber="+33660660001"
+        vmtag="Voicemail" />
+    <!-- Angela 20180419 end -->
+    <!-- VENDOR_EDIT Brian+@20181025 start -->
+    <voicemail
+        numeric="22201"
+        carrier="TIM"
+        vmnumber="41919"
+        vmtag="Voicemail" />
+    <!-- VENDOR_EDIT Brian-@20181025 end -->
+    <!-- VENDOR_EDIT Rad GCE-20657 +@20190410 start -->
+    <voicemail
+        numeric="20416"
+        carrier="T-Mobile"
+        vmnumber="+31624001233"
+        vmtag="Voicemail" />
+    <!-- VENDOR_EDIT Rad GCE-20657 -@20190410 end -->
+    <!-- VENDOR_EDIT Tulika HD-10937 +@20190828 start -->
+    <voicemail
+        numeric="27202"
+        carrier="Three"
+        vmnumber="171"
+        vmtag="Voicemail" />
+    <voicemail
+        numeric="27205"
+        carrier="Three"
+        vmnumber="171"
+        vmtag="Voicemail" />
+    <!-- VENDOR_EDIT Tulika HD-10937 -@20190828 end -->
+    <!-- VENDOR_EDIT mark.huangsj HD-16423 +@20190916 start -->
+    <voicemail
+        numeric="26201"
+        carrier="Telekom"
+        vmnumber="3311"
+        vmtag="Voicemail" />
+    <!-- VENDOR_EDIT mark.huangsj HD-16423 -@20190916 end -->
+</voicemail>
