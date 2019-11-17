@@ -306,9 +306,6 @@ PRODUCT_PACKAGES += \
     WfdCommon \
     com.nxp.nfc \
     qcnvitems \
-    WfdCommon \
-    com.nxp.nfc \
-    qcnvitems \
     dashd
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
@@ -494,28 +491,6 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    QtiTelephonyServicelibrary \
-    com.qti.dpmframework \
-    com.qualcomm.qti.imscmservice-V2.0-java \
-    com.qualcomm.qti.imscmservice-V2.1-java \
-    com.qualcomm.qti.imscmservice-V2.2-java \
-    com.qualcomm.qti.uceservice-V2.0-java \
-    com.qualcomm.qti.uceservice-V2.1-java \
-    qcrilhook \
-    qti-telephony-common \
-    uimlpalibrary \
-    uimremoteclientlibrary \
-    uimremotesimlocklibrary \
-    vendor.qti.hardware.alarm-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.1-java \
-    vendor.qti.hardware.data.dynamicdds-V1.0-java \
-    vendor.qti.hardware.data.latency-V1.0-java \
-    vendor.qti.hardware.sensorscalibrate-V1.0-java \
-    vendor.qti.hardware.soter-V1.0-java \
-    vendor.qti.ims.callinfo-V1.0-java \
-    vendor.qti.ims.rcsconfig-V1.0-java \
-    vendor.qti.voiceprint-V1.0-java \
     QtiTelephonyServicelibrary \
     com.qti.dpmframework \
     com.qualcomm.qti.imscmservice-V2.0-java \

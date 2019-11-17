@@ -238,7 +238,6 @@ PRODUCT_PACKAGES += \
     OnePlusCameraService \
     OnePlusGallery \
     com.nxp.nfc \
-    com.nxp.nfc \
     dashd
 
 ifeq ($(QCPATH),)
@@ -559,8 +558,6 @@ PRODUCT_PACKAGES += \
     uimremoteserver \
     ims \
     qcrilmsgtunnel \
-    WfdCommon \
-    qcnvitems \
     WfdCommon \
     qcnvitems
 endif
