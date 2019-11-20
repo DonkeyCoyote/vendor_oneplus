@@ -239,8 +239,6 @@ PRODUCT_PACKAGES += \
     OnePlusGallery \
     com.nxp.nfc \
     dashd
-
-ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
     vendor/oneplus/oneplus6/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
@@ -560,8 +558,3 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     qcnvitems
-endif
-
--include vendor/extra/devices.mk
-ifneq ($(call is-qc-perf-target),true)
-endif

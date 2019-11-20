@@ -325,6 +325,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimsmedia_jni.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsdm-disp-apis.qti.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsecureui_svcsock_system.so \
+    vendor/oneplus/oneplus7pro/proprietary/product/lib/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsecureuisvc_jni.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.1.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.postproc@1.0.so \
@@ -390,6 +391,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureui_svcsock_system.so \
+    vendor/oneplus/oneplus7pro/proprietary/product/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureuisvc_jni.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
     vendor/oneplus/oneplus7pro/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so \
@@ -453,25 +455,6 @@ PRODUCT_PACKAGES += \
     uimlpaservice \
     uimremoteclient \
     com.nxp.nfc \
-    com.nxp.nfc \
-    com.qualcomm.qti.imscmservice-V2.0-java \
-    com.qualcomm.qti.imscmservice-V2.1-java \
-    com.qualcomm.qti.imscmservice-V2.2-java \
-    com.qualcomm.qti.uceservice-V2.0-java \
-    com.qualcomm.qti.uceservice-V2.1-java \
-    uimlpalibrary \
-    uimremoteclientlibrary \
-    uimremotesimlocklibrary \
-    vendor.qti.hardware.alarm-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.1-java \
-    vendor.qti.hardware.data.dynamicdds-V1.0-java \
-    vendor.qti.hardware.data.latency-V1.0-java \
-    vendor.qti.hardware.sensorscalibrate-V1.0-java \
-    vendor.qti.hardware.soter-V1.0-java \
-    vendor.qti.ims.callinfo-V1.0-java \
-    vendor.qti.ims.rcsconfig-V1.0-java \
-    vendor.qti.voiceprint-V1.0-java \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.imscmservice-V2.2-java \
@@ -513,12 +496,6 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     qcnvitems \
-    WfdCommon \
-    qcnvitems \
-    QtiTelephonyServicelibrary \
-    com.qti.dpmframework \
-    qcrilhook \
-    qti-telephony-common \
     QtiTelephonyServicelibrary \
     com.qti.dpmframework \
     qcrilhook \

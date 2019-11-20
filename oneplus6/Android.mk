@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),oneplus6)
+ifneq ($(filter oneplus6 oneplus6t,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := dashd
@@ -28,12 +28,5 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
 
-
-ifeq ($(QCPATH),)
-endif
-
-ifneq ($(TARGET_HAVE_QC_PERF),true)
-
-endif
 
 endif

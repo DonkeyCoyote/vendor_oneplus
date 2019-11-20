@@ -19,6 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM)/bin/qvrservice \
+    vendor/oneplus/oneplus7tpro/proprietary/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM)/bin/sigma_miracasthalservice \
     vendor/oneplus/oneplus7tpro/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/oneplus/oneplus7tpro/proprietary/etc/bluetooth/bt_profile.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/bt_profile.conf \
     vendor/oneplus/oneplus7tpro/proprietary/etc/bluetooth/interop_database.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/interop_database.conf \
@@ -287,8 +288,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrc.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrcinterface.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
-    vendor/oneplus/oneplus7tpro/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
-    vendor/oneplus/oneplus7tpro/proprietary/system/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM)/bin/sigma_miracasthalservice
+    vendor/oneplus/oneplus7tpro/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
 
 PRODUCT_PACKAGES += \
     AntHalService \
@@ -358,6 +358,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimsmedia_jni.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsdm-disp-apis.qti.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsecureui_svcsock_system.so \
+    vendor/oneplus/oneplus7tpro/proprietary/product/lib/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsecureuisvc_jni.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.1.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.postproc@1.0.so \
@@ -424,6 +425,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureui_svcsock_system.so \
+    vendor/oneplus/oneplus7tpro/proprietary/product/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureuisvc_jni.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
     vendor/oneplus/oneplus7tpro/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so \
