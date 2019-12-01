@@ -281,6 +281,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/LteDirectDiscovery.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/LteDirectDiscovery.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/RemoteSimlock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/RemoteSimlock.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.dolby.daxservice.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
@@ -446,6 +447,7 @@ PRODUCT_PACKAGES += \
     OnePlusCamera \
     OnePlusCameraService \
     OnePlusGallery \
+    daxService \
     DynamicDDSService \
     uceShimService \
     uimlpaservice \
