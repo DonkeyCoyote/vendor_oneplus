@@ -502,6 +502,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice-V2.2-java \
     com.qualcomm.qti.uceservice-V2.0-java \
     com.qualcomm.qti.uceservice-V2.1-java \
+    op-telephony-common \
     qcrilhook \
     qti-telephony-common \
     uimlpalibrary \
