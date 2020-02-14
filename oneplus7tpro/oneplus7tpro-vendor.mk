@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/etc/permissions/com.oem.features_secrecy.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.oem.features_secrecy.xml \
     vendor/oneplus/oneplus7tpro/proprietary/etc/permissions/com.oneplus.software.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.oneplus.software.xml \
     vendor/oneplus/oneplus7tpro/proprietary/etc/permissions/com.qrd.wappush.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qrd.wappush.xml \
+    vendor/oneplus/oneplus7tpro/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/oneplus/oneplus7tpro/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
     vendor/oneplus/oneplus7tpro/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/oneplus/oneplus7tpro/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
@@ -131,7 +132,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/etc/voicemail-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/voicemail-conf.xml \
     vendor/oneplus/oneplus7tpro/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
     vendor/oneplus/oneplus7tpro/proprietary/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/audiosphere.jar \
-    vendor/oneplus/oneplus7tpro/proprietary/framework/izat.xt.srv.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/izat.xt.srv.jar \
     vendor/oneplus/oneplus7tpro/proprietary/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
@@ -305,6 +305,8 @@ PRODUCT_PACKAGES += \
     com.qualcomm.location \
     WfdCommon \
     com.nxp.nfc \
+    com.qti.location.sdk \
+    izat.xt.srv \
     qcnvitems \
     dashd
 PRODUCT_COPY_FILES += \

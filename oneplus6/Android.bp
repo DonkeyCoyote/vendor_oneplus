@@ -105,10 +105,27 @@ android_app_import {
 	privileged: true,
 }
 
+android_app_import {
+	name: "com.qualcomm.location",
+	owner: "oneplus",
+	apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
 dex_import {
 	name: "com.nxp.nfc",
 	owner: "oneplus",
 	jars: ["proprietary/framework/com.nxp.nfc.jar"],
+}
+
+dex_import {
+	name: "com.qti.location.sdk",
+	owner: "oneplus",
+	jars: ["proprietary/framework/com.qti.location.sdk.jar"],
 }
 
 android_app_import {
