@@ -136,6 +136,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib/libqti-at.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti-at.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti-perfd-client_system.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti-util_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqti_performance.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqvr_cam_cdsp_driver_stub.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqvr_cdsp_driver_stub.so \
     vendor/oneplus/oneplus6/proprietary/lib/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqvr_eyetracking_plugin.so \
@@ -197,6 +198,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti-at.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-at.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-perfd-client_system.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-util_system.so \
+    vendor/oneplus/oneplus6/proprietary/lib64/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti_performance.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqvrcamera_client.qti.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqvrservice_client.qti.so \
     vendor/oneplus/oneplus6/proprietary/lib64/libvr_amb_engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvr_amb_engine.so \
