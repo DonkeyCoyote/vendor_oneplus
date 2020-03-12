@@ -82,17 +82,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "OPNetworkSetting",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/OPNetworkSetting/OPNetworkSetting.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "OnePlusCamera",
 	owner: "oneplus",
 	apk: "proprietary/priv-app/OnePlusCamera/OnePlusCamera.apk",
@@ -426,13 +415,6 @@ dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.1-java",
 	owner: "oneplus",
 	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "op-telephony-common",
-	owner: "oneplus",
-	jars: ["proprietary/product/framework/op-telephony-common.jar"],
 	product_specific: true,
 }
 
