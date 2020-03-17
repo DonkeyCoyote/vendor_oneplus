@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM)/bin/qvrservice \
+    vendor/oneplus/oneplus7t/proprietary/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM)/bin/sigma_miracasthalservice \
     vendor/oneplus/oneplus7t/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/oneplus/oneplus7t/proprietary/etc/bluetooth/bt_profile.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/bt_profile.conf \
     vendor/oneplus/oneplus7t/proprietary/etc/bluetooth/interop_database.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/interop_database.conf \
@@ -33,6 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/etc/permissions/com.oem.features_secrecy.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.oem.features_secrecy.xml \
     vendor/oneplus/oneplus7t/proprietary/etc/permissions/com.oneplus.software.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.oneplus.software.xml \
     vendor/oneplus/oneplus7t/proprietary/etc/permissions/com.qrd.wappush.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qrd.wappush.xml \
+    vendor/oneplus/oneplus7t/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
     vendor/oneplus/oneplus7t/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
     vendor/oneplus/oneplus7t/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/oneplus/oneplus7t/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
@@ -45,18 +47,23 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/nanopb.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/qti_gravity.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/qti_gravity.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_accel.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_accel_cal.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ambient_light.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ambient_temperature.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_amd.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_aont.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_async_com_port.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_async_com_port.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_basic_gestures.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_bring_to_ear.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_cal.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_ccd_ttw.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ccd_ttw.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_ccd_walk.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ccd_walk.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_client.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_cmc.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_cmd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_cmd.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_da_test.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_dae.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_dae.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_data_acquisition_engine.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_data_acquisition_engine.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_device_mode.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_device_orient.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_diag.proto \
@@ -80,16 +87,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_interrupt.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_interrupt.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_mag.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_mag_cal.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_mcmd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_mcmd.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_motion_detect.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_motion_detect.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_multishake.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_multishake.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_oem1.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_offbody_detect.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_op_iface.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_op_iface.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_op_motion_detect.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_op_motion_detect.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pedometer.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pedometer_wrist.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_physical_sensor_test.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_pickup.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pickup.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_pocket.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pocket.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pose_6dof.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ppg.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_pressure.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_printf_ap.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_printf_ap.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_proximity.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_psmd.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_registry.proto \
@@ -110,14 +123,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_std_type.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_suid.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_thermopile.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_threshold.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_tilt.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_tilt_to_wake.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_timer.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_timer.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_ultra_violet.proto \
+    vendor/oneplus/oneplus7t/proprietary/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/oneplus/oneplus7t/proprietary/etc/voicemail-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/voicemail-conf.xml \
     vendor/oneplus/oneplus7t/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
     vendor/oneplus/oneplus7t/proprietary/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/audiosphere.jar \
-    vendor/oneplus/oneplus7t/proprietary/framework/izat.xt.srv.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/izat.xt.srv.jar \
     vendor/oneplus/oneplus7t/proprietary/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/oneplus/oneplus7t/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
     vendor/oneplus/oneplus7t/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
@@ -274,10 +288,30 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrc.so \
     vendor/oneplus/oneplus7t/proprietary/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfduibcsrcinterface.so \
     vendor/oneplus/oneplus7t/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
-    vendor/oneplus/oneplus7t/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
-    vendor/oneplus/oneplus7pro/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
-    vendor/oneplus/oneplus7pro/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
-    vendor/oneplus/oneplus7pro/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
+    vendor/oneplus/oneplus7t/proprietary/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
+
+PRODUCT_PACKAGES += \
+    AntHalService \
+    NxpNfcNci \
+    NxpSecureElement \
+    OPSoundTuner \
+    HotwordEnrollmentOKGoogleWCD9340 \
+    HotwordEnrollmentXGoogleWCD9340 \
+    OnePlusCamera \
+    OnePlusCameraService \
+    OnePlusGallery \
+    WfdService \
+    com.qualcomm.location \
+    WfdCommon \
+    com.nxp.nfc \
+    com.qti.location.sdk \
+    izat.xt.srv \
+    qcnvitems \
+    dashd
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/oneplus7t/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
+    vendor/oneplus/oneplus7t/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
+    vendor/oneplus/oneplus7t/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/LteDirectDiscovery.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/LteDirectDiscovery.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/RemoteSimlock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/RemoteSimlock.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
@@ -287,6 +321,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/dpmapi.xml \
+    vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/embms-noship_product_privapp_permissions_qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms-noship_product_privapp_permissions_qti.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/embms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/lpa.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/lpa.xml \
     vendor/oneplus/oneplus7t/proprietary/product/etc/permissions/privapp-permissions-oem-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-oem-product.xml \
@@ -325,8 +360,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/product/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimsmedia_jni.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsdm-disp-apis.qti.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsecureui_svcsock_system.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsecureuisvc_jni.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.1.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.2.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.3.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.postproc@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.gnss@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.gnss@1.1.so \
@@ -368,6 +406,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.0.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.voiceprint@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
@@ -390,15 +429,20 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureui_svcsock_system.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureuisvc_jni.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.2.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.3.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.1.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@1.2.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@2.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@2.1.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@3.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.connection@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.connection@1.1.so \
@@ -434,30 +478,37 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
-    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.voiceprint@1.0.so \
-    vendor/oneplus/oneplus7t/proprietary/system/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM)/bin/sigma_miracasthalservice
+    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so \
+    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
-    NxpNfcNci \
-    NxpSecureElement \
-    OPSoundTuner \
-    HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
-    OPNetworkSetting \
-    OnePlusCamera \
-    OnePlusCameraService \
-    OnePlusGallery \
-    daxService \
     DynamicDDSService \
+    QtiSystemService \
+    QtiTelephonyService \
+    colorservice \
+    com.qualcomm.qti.services.secureui \
+    datastatusnotification \
+    embms \
+    imssettings \
     uceShimService \
+    uimgbaservice \
     uimlpaservice \
     uimremoteclient \
-    com.nxp.nfc \
+    uimremoteserver \
+    QAS_DVC_MSP \
+    daxService \
+    dpmserviceapp \
+    ims \
+    qcrilmsgtunnel \
+    QtiTelephonyServicelibrary \
+    com.qti.dpmframework \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.imscmservice-V2.2-java \
     com.qualcomm.qti.uceservice-V2.0-java \
     com.qualcomm.qti.uceservice-V2.1-java \
+    qcrilhook \
+    qti-telephony-common \
     uimlpalibrary \
     uimremoteclientlibrary \
     uimremotesimlocklibrary \
@@ -470,36 +521,4 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter-V1.0-java \
     vendor.qti.ims.callinfo-V1.0-java \
     vendor.qti.ims.rcsconfig-V1.0-java \
-    vendor.qti.voiceprint-V1.0-java \
-    dashd
-
-ifeq ($(QCPATH),)
-PRODUCT_COPY_FILES += \
-    vendor/oneplus/oneplus7t/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.1.so \
-    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@3.0.so \
-    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/oneplus/oneplus7t/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so
-
-PRODUCT_PACKAGES += \
-    AntHalService \
-    WfdService \
-    com.qualcomm.location \
-    QtiSystemService \
-    QtiTelephonyService \
-    datastatusnotification \
-    embms \
-    imssettings \
-    dpmserviceapp \
-    ims \
-    qcrilmsgtunnel \
-    WfdCommon \
-    qcnvitems \
-    QtiTelephonyServicelibrary \
-    com.qti.dpmframework \
-    qcrilhook \
-    qti-telephony-common
-endif
-
--include vendor/extra/devices.mk
-ifneq ($(call is-qc-perf-target),true)
-endif
+    vendor.qti.voiceprint-V1.0-java

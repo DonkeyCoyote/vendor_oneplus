@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,13 +27,5 @@ LOCAL_SRC_FILES := proprietary/rootfs/sbin/dashd
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
-
-
-ifeq ($(QCPATH),)
-endif
-
-ifneq ($(TARGET_HAVE_QC_PERF),true)
-
-endif
 
 endif
