@@ -138,7 +138,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libOpenCL_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOpenCL_system.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libadsprpc_system.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libantradio.so \
+    vendor/oneplus/oneplus7tpro/proprietary/lib/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_calibverify_TriCamera.so \
+    vendor/oneplus/oneplus7tpro/proprietary/lib/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_tricam_calibration.so \
+    vendor/oneplus/oneplus7tpro/proprietary/lib/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_tricam_verification.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbluetooth_qti.so \
+    vendor/oneplus/oneplus7tpro/proprietary/lib/libcalibverif_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcalibverif_jni.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcdsprpc_system.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libchromaflash.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libchromaflash.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
@@ -223,8 +227,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libantradio.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libantradio.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
+    vendor/oneplus/oneplus7tpro/proprietary/lib64/libarcsoft_calibverify_TriCamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_calibverify_TriCamera.so \
+    vendor/oneplus/oneplus7tpro/proprietary/lib64/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_tricam_calibration.so \
+    vendor/oneplus/oneplus7tpro/proprietary/lib64/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_tricam_verification.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbluetooth_qti.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libbtconfigstore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbtconfigstore.so \
+    vendor/oneplus/oneplus7tpro/proprietary/lib64/libcalibverif_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcalibverif_jni.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcdsprpc_system.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libchromaflash.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libchromaflash.so \
     vendor/oneplus/oneplus7tpro/proprietary/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so \
@@ -297,6 +305,7 @@ PRODUCT_PACKAGES += \
     OPSoundTuner \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    OPCameraResources \
     OnePlusCamera \
     OnePlusCameraService \
     OnePlusGallery \

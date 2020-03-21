@@ -82,6 +82,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "OPCameraResources",
+	owner: "oneplus",
+	apk: "proprietary/priv-app/OPCameraResources/OPCameraResources.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "OnePlusCamera",
 	owner: "oneplus",
 	apk: "proprietary/priv-app/OnePlusCamera/OnePlusCamera.apk",
