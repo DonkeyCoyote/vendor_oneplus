@@ -445,7 +445,6 @@ PRODUCT_PACKAGES += \
     OPSoundTuner \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
-    OPNetworkSetting \
     OnePlusCamera \
     OnePlusCameraService \
     OnePlusGallery \
@@ -498,7 +497,6 @@ PRODUCT_PACKAGES += \
     qcnvitems \
     QtiTelephonyServicelibrary \
     com.qti.dpmframework \
-    op-telephony-common \
     qcrilhook \
     qti-telephony-common
 endif
