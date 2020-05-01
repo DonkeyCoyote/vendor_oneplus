@@ -38,11 +38,4 @@
         vmnumber="171"
         vmtag="Voicemail" />
     <!-- VENDOR_EDIT Tulika HD-10937 -@20190828 end -->
-    <!-- VENDOR_EDIT mark.huangsj HD-16423 +@20190916 start -->
-    <voicemail
-        numeric="26201"
-        carrier="Telekom"
-        vmnumber="3311"
-        vmtag="Voicemail" />
-    <!-- VENDOR_EDIT mark.huangsj HD-16423 -@20190916 end -->
 </voicemail>
