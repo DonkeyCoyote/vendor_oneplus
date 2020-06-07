@@ -307,9 +307,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     OPCameraResources \
-    OnePlusCamera \
     OnePlusCameraService \
-    OnePlusGallery \
     WfdService \
     com.qualcomm.location \
     WfdCommon \
@@ -318,6 +316,13 @@ PRODUCT_PACKAGES += \
     izat.xt.srv \
     qcnvitems \
     dashd
+
+ifneq ($(PRODUCT_EXCLUDE_EXTRA_PACKAGES),true)
+PRODUCT_PACKAGES += \
+    OnePlusCamera \
+    OnePlusGallery
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus7tpro/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
     vendor/oneplus/oneplus7tpro/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \

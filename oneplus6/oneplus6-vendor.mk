@@ -236,13 +236,18 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     OPNetworkSetting \
-    OnePlusCamera \
     OnePlusCameraService \
-    OnePlusGallery \
     com.qualcomm.location \
     com.nxp.nfc \
     com.qti.location.sdk \
     dashd
+
+ifneq ($(PRODUCT_EXCLUDE_EXTRA_PACKAGES),true)
+PRODUCT_PACKAGES += \
+    OnePlusCamera \
+    OnePlusGallery
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus6/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
     vendor/oneplus/oneplus6/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
