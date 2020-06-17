@@ -445,9 +445,7 @@ PRODUCT_PACKAGES += \
     OPSoundTuner \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
-    OnePlusCamera \
     OnePlusCameraService \
-    OnePlusGallery \
     daxService \
     DynamicDDSService \
     uceShimService \
@@ -473,6 +471,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig-V1.0-java \
     vendor.qti.voiceprint-V1.0-java \
     dashd
+
+ifneq ($(PRODUCT_EXCLUDE_EXTRA_PACKAGES),true)
+PRODUCT_PACKAGES += \
+    OnePlusCamera \
+    OnePlusGallery
+endif
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
