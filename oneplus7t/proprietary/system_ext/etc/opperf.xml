@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<perf version="1" switch="1" timeout="20000">
+  <pkg name="com.miHoYo.bh3" perflock="11000"/>
+  <pkg name="com.tencent.tmgp.sgame" perflock="11000"/>
+  <pkg name="com.tencent.ig" perflock="13000"/>
+  <pkg name="com.garena.game.codm" perflock="14000"/>
+  <pkg name="com.lilithgame.roc.gp" perflock="10000"/>
+  <pkg name="com.blizzard.wtcg.hearthstone" perflock="10000"/>
+  <pkg name="com.gameloft.android.ANMP.GloftA8CN" perflock="15000"/>
+  <pkg name="com.tencent.tmgp.cf" perflock="14000"/>
+  <pkg name="com.imangi.templerun2" perflock="21000"/>
+  <pkg name="com.tencent.tmgp.pubgmhd" perflock="14000"/>
+  <pkg name="com.fgol.oppo" perflock="9000"/>
+  <pkg name="pl.idreams.SkyForceReloaded2016" perflock="25000"/>
+  <pkg name="com.madfingergames.unkilled" perflock="17000"/>
+  <pkg name="com.ea.game.starwarscapital_row" perflock="19000"/>
+  <pkg name="com.ea.game.nfs14_row" perflock="25000"/>
+  <pkg name="com.ea.game.pvzfree_row" perflock="25000"/>
+  <pkg name="com.ustwo.monumentvalley" perflock="6000"/>
+  <pkg name="com.elex.lastbattlegroundsurvival" perflock="4000"/>
+  <pkg name="com.nianticlabs.pokemongo" perflock="1" level="FST"/>
+  <pkg name="com.ea.games.r3_row" perflock="1" level="FST"/>
+  <pkg name="com.king.candycrushsaga" perflock="1" level="FST"/>
+  <pkg name="com.netease.ko" perflock="1" level="FST"/>
+  <pkg name="com.netease.hyxd" perflock="10000"/>
+  <pkg name="com.tencent.tmgp.speedmobile" perflock="14000"/>
+  <pkg name="com.netease.mrzh" perflock="5000"/>
+  <pkg name="com.netease.h48" perflock="15000"/>
+  <pkg name="com.tencent.tmgp.tstl" perflock="25000"/>
+  <pkg name="com.tencent.tmgp.qqx5" perflock="5000"/>
+  <pkg name="com.netease.dhxy" perflock="5000"/>
+  <pkg name="com.duoyi.shenwu3" perflock="4000"/>
+  <pkg name="com.netease.wyclx" perflock="30000"/>
+  <pkg name="com.tencent.shootgame" perflock="15000"/>
+  <pkg name="com.tencent.tmgp.wec" perflock="6000"/>
+  <pkg name="com.happyelements.AndroidAnimal" perflock="7000"/>
+  <pkg name="com.netease.onmyoji" perflock="6000"/>
+  <pkg name="com.qqgame.hlddz" perflock="6500"/>
+  <pkg name="com.zlongame.mhmnz" perflock="20000"/>
+  <pkg name="com.bilibili.fatego" perflock="11000"/>
+  <pkg name="com.netease.my" perflock="3000"/>
+  <pkg name="com.yottagames.mafiawar" perflock="8000"/>
+  <spkg name="com.gameloft.android.ANMP.GloftA9HM" mode="7" level="999" timeout="0"/>
+  <perflock level="1" param="0x41004000,2"/>
+  <perflock level="999" param="0x40800100,0x40C,0x40800000,0x506,0x40400000,0x1,0x40C00000,0x2"/>
+  <schedtune level="0">
+    <item path="/sys/module/lpm_levels/parameters/cluster_prediction" param="0" default="1"/>
+  </schedtune>
+</perf>

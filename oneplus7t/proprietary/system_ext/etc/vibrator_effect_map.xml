@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <!-- DEMO use sceneId do not modify -->
+    <effectmap sceneId="9001"  effectId="1"  duration="8" />
+    <effectmap sceneId="9002"  effectId="2"  duration="10" />
+    <effectmap sceneId="9003"  effectId="3"  duration="10" />
+    <effectmap sceneId="9004"  effectId="4"  duration="13" />
+    <effectmap sceneId="9005"  effectId="5"  duration="13" />
+    <!-- 7 excel -->
+    <effectmap sceneId="9006"  effectId="6"  duration="14" />
+    <!-- 8 excel -->
+    <effectmap sceneId="9007"  effectId="7"  duration="14" />
+    <!-- 9 excel -->
+    <effectmap sceneId="9008"  effectId="8"  duration="21" />
+    <!-- 11 excel -->
+    <effectmap sceneId="9009"  effectId="9"  duration="67" />
+    <effectmap sceneId="9010"  effectId="10"  duration="100" />
+    <effectmap sceneId="9011"  effectId="11"  duration="100" />
+    <effectmap sceneId="9012"  effectId="12"  duration="100" />
+    <!-- effectid = 1 -->
+    <effectmap sceneId="1"  effectId="1"  duration="8" />
+    <effectmap sceneId="2"  effectId="1"  duration="8" />
+    <effectmap sceneId="3"  effectId="1"  duration="8" />
+    <effectmap sceneId="21"  effectId="1"  duration="8" />
+    <effectmap sceneId="1007"  effectId="10"  duration="6" />
+    <effectmap sceneId="1012"  effectId="1"  duration="8" />
+    <effectmap sceneId="1015"  effectId="1"  duration="8" />
+    <effectmap sceneId="1017"  effectId="1"  duration="8" />
+    <effectmap sceneId="1018"  effectId="1"  duration="8" />
+    <effectmap sceneId="1021"  effectId="2"  duration="10" />
+    <effectmap sceneId="1026"  effectId="1"  duration="8" />
+    <!-- effectid = 2 -->
+    <effectmap sceneId="1004"  effectId="2"  duration="10" />
+    <effectmap sceneId="1005"  effectId="12"  duration="10" />
+    <effectmap sceneId="1006"  effectId="2"  duration="10" />
+    <effectmap sceneId="1008"  effectId="2"  duration="10" />
+    <effectmap sceneId="1030"  effectId="2"  duration="10" />
+    <!-- effectid = 3 -->
+    <effectmap sceneId="1011"  effectId="3"  duration="10" />
+    <effectmap sceneId="1014"  effectId="3"  duration="10" />
+    <!-- effectid = 4 -->
+    <effectmap sceneId="22"  effectId="4"  duration="13" />
+    <effectmap sceneId="25"  effectId="4"  duration="13" />
+    <effectmap sceneId="26"  effectId="4"  duration="13" />
+    <effectmap sceneId="27"  effectId="4"  duration="13" />
+    <!-- <effectmap sceneId="1000"  effectId="4"  duration="10" /> -->
+    <effectmap sceneId="1001"  effectId="11"  duration="8" />
+    <effectmap sceneId="1002"  effectId="4"  duration="13" />
+    <effectmap sceneId="1003"  effectId="4"  duration="13" />
+    <effectmap sceneId="1010"  effectId="4"  duration="13" />
+    <effectmap sceneId="1014"  effectId="3"  duration="10" />
+    <effectmap sceneId="1019"  effectId="3"  duration="10" />
+    <effectmap sceneId="1020"  effectId="3"  duration="10" />
+    <effectmap sceneId="1022"  effectId="5"  duration="13" />
+    <effectmap sceneId="1024"  effectId="4"  duration="13" />
+    <effectmap sceneId="1025"  effectId="5"  duration="13" />
+    <!-- effectid = 5 -->
+    <effectmap sceneId="4"  effectId="5"  duration="13" />
+    <effectmap sceneId="20"  effectId="5"  duration="13" />
+    <effectmap sceneId="23"  effectId="5"  duration="13" />
+    <effectmap sceneId="1009"  effectId="5"  duration="13" />
+    <effectmap sceneId="1013"  effectId="5"  duration="13" />
+    <effectmap sceneId="1023"  effectId="5"  duration="13" />
+    <!-- effectid = 6 / 7 excel-->
+    <!-- effectid = 7 / 8 excel-->
+    <!-- effectid = 8 / 9 excel-->
+    <!-- effectid = 9 / 11 excel-->
+    <!-- Factory mode, do not change-->
+    <effectmap sceneId="97"  effectId="97" duration="1"/>
+    <effectmap sceneId="98"  effectId="98" duration="1"/>
+    <effectmap sceneId="99"  effectId="99" duration="1"/>
+    <!-- RING use sceneId-->
+    <effectmap sceneId="10101"  effectId="401"  duration="13680" /><!--[Alacrity.wav	13680ms.bin]-->
+    <effectmap sceneId="10102"  effectId="402"  duration="15602" /><!--[Amenity.wav	15602ms.bin]-->
+    <effectmap sceneId="10103"  effectId="403"  duration="18563" /><!--[Blues.wav	18563ms.bin]-->
+    <effectmap sceneId="10104"  effectId="404"  duration="10769" /><!--[Bounce.wav	10769ms.bin]-->
+    <effectmap sceneId="10105"  effectId="405"  duration="6140" /><!--[Calm.wav	6140ms.bin]-->
+    <effectmap sceneId="10106"  effectId="406"  duration="12505" /><!--[Cloud.wav	12505ms.bin]-->
+    <effectmap sceneId="10107"  effectId="407"  duration="16388" /><!--[Cyclotron.wav	16388ms.bin]-->
+    <effectmap sceneId="10108"  effectId="408"  duration="6466" /><!--[Distinct.wav	6466ms.bin]-->
+    <effectmap sceneId="10109"  effectId="409"  duration="19166" /><!--[Dynamic.wav	19166ms.bin]-->
+    <effectmap sceneId="10110"  effectId="410"  duration="15501" /><!--Echo.wav	15501ms-->
+    <effectmap sceneId="10111"  effectId="411"  duration="7490" /><!--Expect.wav	7490ms-->
+    <effectmap sceneId="10112"  effectId="412"  duration="23926" /><!--Fanatical.wav	23926ms-->
+    <effectmap sceneId="10113"  effectId="413"  duration="8897" /><!--Funky.wav	8897ms-->
+    <effectmap sceneId="10114"  effectId="414"  duration="16096" /><!--Guitar.wav	16096ms-->
+    <effectmap sceneId="10115"  effectId="415"  duration="13344" /><!--Harping.wav	13344ms-->
+    <effectmap sceneId="10116"  effectId="416"  duration="6872" /><!--Highlight.wav	6872ms-->
+    <effectmap sceneId="10117"  effectId="417"  duration="16848" /><!--Idyl.wav	16848ms-->
+    <effectmap sceneId="10118"  effectId="418"  duration="20830" /><!--Innocence.wav	20830ms-->
+    <effectmap sceneId="10119"  effectId="419"  duration="24926" /><!--Journey.wav	24926ms-->
+    <effectmap sceneId="10120"  effectId="420"  duration="5844" /><!--///Joyous.wav	5844ms-->
+    <effectmap sceneId="10121"  effectId="421"  duration="18341" /><!--//Lazy.wav	18341ms-->
+    <effectmap sceneId="10122"  effectId="422"  duration="8234" /><!--//Marimba.wav	8234ms-->
+    <effectmap sceneId="10123"  effectId="423"  duration="18040" /><!--Mystical.wav	18040ms-->
+    <effectmap sceneId="10124"  effectId="424"  duration="6324" /><!--//Old_telephone.wav	6324ms-->
+    <effectmap sceneId="10125"  effectId="425"  duration="14774" /><!--//Oneplus_tune.wav	14774ms-->
+    <effectmap sceneId="10126"  effectId="426"  duration="17807" /><!--//OnePlus_tune_rhythm.wav	17807ms-->
+    <effectmap sceneId="10127"  effectId="427"  duration="19962" /><!--//Optimistic.wav	19962ms-->
+    <effectmap sceneId="10128"  effectId="428"  duration="22222" /><!--//Piano.wav	22222ms-->
+    <effectmap sceneId="10129"  effectId="429"  duration="11048" /><!--Whirl.wav	11048ms-->
+    <effectmap sceneId="10130"  effectId="431"  duration="2112" /><!--t-jingle.wav        2112ms-->
+    <effectmap sceneId="10131"  effectId="430"  duration="24111" /><!--VZW ARIWAVES.wav        11048ms-->
+    <!-- Notification use sceneId-->
+    <effectmap sceneId="10201"  effectId="501"  duration="415" /><!--Allay.wav	415ms-->
+    <effectmap sceneId="10202"  effectId="502"  duration="960" /><!--Allusion.wav	960ms-->
+    <effectmap sceneId="10203"  effectId="503"  duration="1622" /><!--Amiable.wav	1622ms-->
+    <effectmap sceneId="10204"  effectId="504"  duration="1388" /><!--Blare.wav	1388ms-->
+    <effectmap sceneId="10205"  effectId="505"  duration="2099" /><!--Blissful.wav	2099ms-->
+    <effectmap sceneId="10206"  effectId="506"  duration="570" /><!--Brisk.wav	570ms-->
+    <effectmap sceneId="10207"  effectId="507"  duration="127" /><!--Bubble.wav	127ms-->
+    <effectmap sceneId="10208"  effectId="508"  duration="544" /><!--Cheerful.wav	544ms-->
+    <effectmap sceneId="10209"  effectId="509"  duration="457" /><!--Clear.wav	457ms-->
+    <effectmap sceneId="10210"  effectId="510"  duration="3024" /><!--Comely.wav	3024ms-->
+    <effectmap sceneId="10211"  effectId="511"  duration="2303" /><!--Cozy.wav	2303ms-->
+    <effectmap sceneId="10212"  effectId="512"  duration="1697" /><!--Ding.wav	1697ms-->
+    <effectmap sceneId="10213"  effectId="513"  duration="1506" /><!--Effervesce.wav	1506ms-->
+    <effectmap sceneId="10214"  effectId="514"  duration="1893" /><!--Elegant.wav	1893ms-->
+    <effectmap sceneId="10215"  effectId="515"  duration="1416" /><!--Free.wav	1416ms-->
+    <effectmap sceneId="10216"  effectId="516"  duration="1401" /><!--Hallucination.wav	1401ms-->
+    <effectmap sceneId="10217"  effectId="517"  duration="1583" /><!--Inbound.wav	1583ms-->
+    <effectmap sceneId="10218"  effectId="518"  duration="1100" /><!--Light.wav	1100ms-->
+    <effectmap sceneId="10219"  effectId="519"  duration="871" /><!--Meet.wav	871ms-->
+    <effectmap sceneId="10220"  effectId="520"  duration="1878" /><!--Naivety.wav	1878ms-->
+    <effectmap sceneId="10221"  effectId="521"  duration="612" /><!--Quickly.wav	612ms-->
+    <effectmap sceneId="10222"  effectId="522"  duration="842" /><!--Rhythm.wav	842ms-->
+    <effectmap sceneId="10223"  effectId="523"  duration="1067" /><!--Surprise.wav	1067ms-->
+    <effectmap sceneId="10224"  effectId="524"  duration="2206" /><!--Twinkle.wav	2206ms-->
+    <effectmap sceneId="10291"  effectId="524"  duration="1951" />
+    <effectmap sceneId="10292"  effectId="525"  duration="1254" /><!--vERIZON ALERT.wav       1000ms-->
+    <!-- Alarm use sceneId-->
+    <effectmap sceneId="10401"  effectId="601"  duration="2115" /><!--Alarm_clock.wav	2115ms-->
+    <effectmap sceneId="10402"  effectId="602"  duration="2373" /><!--Beep.wav	2373ms-->
+    <effectmap sceneId="10403"  effectId="603"  duration="32511" /><!--Breeze.wav	32511ms-->
+    <effectmap sceneId="10404"  effectId="604"  duration="35086" /><!--Dawn.wav	35086ms-->
+    <effectmap sceneId="10405"  effectId="605"  duration="38500" /><!--Dream.wav	38500ms-->
+    <effectmap sceneId="10406"  effectId="606"  duration="22410" /><!--Fluttering.wav	22410ms-->
+    <effectmap sceneId="10407"  effectId="607"  duration="20108" /><!--Flyer.wav	20108ms-->
+    <effectmap sceneId="10408"  effectId="608"  duration="10584" /><!--Interesting.wav	10584ms-->
+    <effectmap sceneId="10409"  effectId="609"  duration="18442" /><!--Leisurely.wav	18442ms-->
+    <effectmap sceneId="10410"  effectId="610"  duration="27611" /><!--Memory.wav	27611ms-->
+    <effectmap sceneId="10411"  effectId="611"  duration="26404" /><!--Relieved.wav	26404ms-->
+    <effectmap sceneId="10412"  effectId="612"  duration="7590" /><!--Ripple.wav	7590ms-->
+    <effectmap sceneId="10413"  effectId="613"  duration="25038" /><!--Slowly.wav	50077ms-->
+    <effectmap sceneId="10414"  effectId="614"  duration="24457" /><!--spring.wav	24457ms-->
+    <effectmap sceneId="10415"  effectId="615"  duration="22488" /><!--Stars.wav	22488ms-->
+    <effectmap sceneId="10416"  effectId="616"  duration="12847" /><!--Surging.wav	12847ms-->
+    <effectmap sceneId="10417"  effectId="617"  duration="20299" /><!--tactfully.wav	20299ms-->
+    <effectmap sceneId="10418"  effectId="618"  duration="23264" /><!--The_wind.wav	23264ms-->
+    <effectmap sceneId="10419"  effectId="619"  duration="18551" /><!--Walking_in_the_rain.wav	18551ms-->
+    <effectmap sceneId="10420"  effectId="620"  duration="20560" />
+</filter-conf>
+

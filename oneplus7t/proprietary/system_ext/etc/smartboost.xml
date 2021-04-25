@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<smartboost version = "1" switch = "true" ioppreload="true">
+  <pkg name="com.tencent.tmgp.pubgmhd" hotcount="901"/>
+  <pkg name="com.tencent.tmgp.speedmobile" hotcount="902"/>
+  <pkg name="com.tencent.tmgp.pubgm" hotcount="903"/>
+  <pkg name="com.happyelements.AndroidAnimal" hotcount="904"/>
+  <pkg name="com.qqgame.hlddz" hotcount="905"/>
+  <pkg name="com.tencent.tmgp.cf" hotcount="906"/>
+  <pkg name="com.blizzard.wtcg.hearthstone" hotcount="907"/>
+  <pkg name="com.qqgame.happymj" hotcount="908"/>
+  <pkg name="com.netease.dwrg" hotcount="909"/>
+  <pkg name="com.tencent.KiHan" hotcount="910"/>
+  <pkg name="cn.jj" hotcount="911"/>
+  <pkg name="com.tencent.peng" hotcount="912"/>
+  <pkg name="com.tencent.pao" hotcount="913"/>
+  <pkg name="com.ztgame.bob" hotcount="914"/>
+  <pkg name="com.netease.hyxd" hotcount="915"/>
+  <pkg name="com.tencent.shootgame" hotcount="916"/>
+  <pkg name="com.tencent.qqgame.xq" hotcount="917"/>
+  <pkg name="com.tencent.tmgp.qqx5" hotcount="918"/>
+  <pkg name="com.supercell.boombeach" hotcount="919"/>
+  <pkg name="com.superevilmegacorp.game" hotcount="920"/>
+  <pkg name="com.supercell.clashofclans" hotcount="921"/>
+  <pkg name="com.mfp.jelly.oppo" hotcount="922"/>
+  <pkg name="com.tencent.tmgp.NBA" hotcount="923"/>
+  <pkg name="com.ChillyRoom.DungeonShooter" hotcount="924"/>
+  <pkg name="com.sgshd" hotcount="925"/>
+  <pkg name="com.tencent.feiji" hotcount="926"/>
+  <pkg name="com.ddz" hotcount="927"/>
+  <pkg name="com.wepie.snake" hotcount="928"/>
+  <pkg name="com.cmplay.tiles2_cn" hotcount="929"/>
+  <pkg name="com.tencent.tmgp.wec" hotcount="930"/>
+  <pkg name="com.supercell.clashroyale" hotcount="931"/>
+  <pkg name="com.minitech.miniworld" hotcount="932"/>
+  <pkg name="com.tencent.game.rhythmmaster" hotcount="933"/>
+  <pkg name="com.tencent.tmgp.wesix" hotcount="934"/>
+  <pkg name="com.tencent.pocket" hotcount="935"/>
+  <pkg name="com.netease.zjz2" hotcount="936"/>
+  <pkg name="com.tencent.tmgp.carrot3" hotcount="937"/>
+  <pkg name="com.tencent.tmgp.ttmj" hotcount="938"/>
+  <pkg name="com.tencent.qqgame.qqhlupwvga" hotcount="939"/>
+  <pkg name="com.happyelements.AndroidClover" hotcount="940"/>
+  <pkg name="com.zengame.zrttddz" hotcount="941"/>
+  <pkg name="com.tencent.clover" hotcount="942"/>
+  <pkg name="com.ledou.mhhy" hotcount="943"/>
+  <pkg name="com.netease.moba" hotcount="944"/>
+  <pkg name="com.tencent.game.VXDGame" hotcount="945"/>
+  <pkg name="com.popcap.pvz2cthdop" hotcount="946"/>
+  <pkg name="com.ChillyRoom" hotcount="947"/>
+  <pkg name="com.ztgame.yyzy" hotcount="948"/>
+  <pkg name="com.cmplay.dancingline" hotcount="949"/>
+  <pkg name="com.imangi.templerun2" hotcount="950"/>
+  <pkg name="com.kiloo.subwaysurf" hotcount="951"/>
+  <pkg name="com.outfit7.mytalkingtomfree" hotcount="952"/>
+  <pkg name="com.boyaa.chinesechess" hotcount="953"/>
+  <pkg name="com.outfit7.talkingtomgoldrun" hotcount="954"/>
+  <pkg name="com.netease.mc" hotcount="955"/>
+  <pkg name="com.hegu.dnl.oppo" hotcount="956"/>
+  <pkg name="com.mahjong.sichuang" hotcount="957"/>
+  <pkg name="com.turbochilli.rollingsky_cn" hotcount="958"/>
+  <pkg name="com.gameloft.android.ANMP.GloftA8HM" hotcount="959"/>
+  <pkg name="com.ea.android.chs.nbamobile" hotcount="960"/>
+  <pkg name="com.tencent.tmgp.sgqyz" hotcount="961"/>
+  <pkg name="com.tencent.WeFire" hotcount="962"/>
+  <pkg name="com.cmcm.arrowio_cn" hotcount="963"/>
+  <pkg name="com.tencent.tmgp.dragonball" hotcount="964"/>
+  <pkg name="com.tencent.game.SSGame" hotcount="965"/>
+  <pkg name="com.tencent.tmgp.fom" hotcount="966"/>
+  <pkg name="com.wedobest.bbtan" hotcount="967"/>
+  <pkg name="com.tencent.freestyle" hotcount="968"/>
+  <pkg name="com.tq.he" hotcount="969"/>
+  <pkg name="com.ustwo.monumentvalleyzz" hotcount="970"/>
+  <pkg name="com.mewe.wolf" hotcount="971"/>
+  <pkg name="org.islq.move2048" hotcount="972"/>
+  <pkg name="com.supercell.clashofclans" hotcount="973"/>
+  <pkg name="com.tencent.tmgp.jnbg2" hotcount="974"/>
+  <pkg name="com.tencent.qqgame.qqTexaswvga" hotcount="975"/>
+  <pkg name="com.pfu.popstar" hotcount="976"/>
+  <pkg name="com.leiting.gumballs" hotcount="977"/>
+  <pkg name="com.wedobest.xiangqi" hotcount="978"/>
+  <pkg name="com.netease.stzb" hotcount="979"/>
+  <pkg name="com.pdragon.HD1010" hotcount="980"/>
+  <pkg name="com.qqgame.hldouniu" hotcount="981"/>
+  <pkg name="com.fingersoft.hillclimb.noncmcc" hotcount="982"/>
+  <pkg name="com.pdragon.new2048" hotcount="983"/>
+  <pkg name="com.mojang.minecraftpe" hotcount="984"/>
+  <pkg name="com.ea.games.r3_row" hotcount="985"/>
+  <pkg name="com.tencent.Qfarm" hotcount="986"/>
+  <pkg name="com.jd.game.slider" hotcount="987"/>
+  <pkg name="com.yodo1.OPPO_01.SkiSafari" hotcount="988"/>
+  <pkg name="com.guandan" hotcount="989"/>
+  <pkg name="com.taojin.dungeon2" hotcount="990"/>
+  <pkg name="com.fgol.oppo" hotcount="991"/>
+  <pkg name="cn.flytalk.shudu" hotcount="992"/>
+  <pkg name="com.ea.games.r3_na" hotcount="993"/>
+  <pkg name="com.hlddz" hotcount="994"/>
+  <pkg name="com.studiorouleau.forceescape" hotcount="995"/>
+  <pkg name="com.k7k7.goujihd" hotcount="996"/>
+  <pkg name="com.invictus.impossiball" hotcount="997"/>
+  <pkg name="com.tencent.king.candycrushsaga" hotcount="998"/>
+  <pkg name="com.rastar.czjy" hotcount="999"/>
+  <pkg name="com.garena.game.kgtw" hotcount="1000"/>
+  <pkg name="com.cricbuzz.android" hotcount="1001"/>
+  <pkg name="com.supercell.clashroyale" hotcount="1002"/>
+  <pkg name="com.king.candycrushsaga" hotcount="1003"/>
+  <pkg name="com.nianticlabs.pokemongo" hotcount="1004"/>
+  <pkg name="jp.konami.pesam" hotcount="1005"/>
+  <pkg name="com.mobile.legends" hotcount="1006"/>
+  <pkg name="com.fungames.sniper3d" hotcount="1007"/>
+  <pkg name="com.bentostudio.ballsvsblocks" hotcount="1008"/>
+  <pkg name="com.ea.gp.fifamobile" hotcount="1009"/>
+  <pkg name="com.rovio.baba" hotcount="1010"/>
+  <pkg name="com.playrix.homescapes" hotcount="1011"/>
+  <pkg name="com.ea.game.nfs14_row" hotcount="1012"/>
+  <pkg name="com.tencent.tmgp.sgame" hotcount="1013"/>
+  <pkg name="com.generagames.resistance" hotcount="1014"/>
+  <pkg name="com.playrix.gardenscapes" hotcount="1015"/>
+  <pkg name="com.gameloft.android.ANMP.GloftM5HM" hotcount="1016"/>
+  <pkg name="com.nintendo.zaba" hotcount="1017"/>
+  <pkg name="com.com2us.smon.normal.freefull.google.kr.android.common" hotcount="1018"/>
+  <pkg name="com.gameloft.android.ANMP.GloftMOHM" hotcount="1019"/>
+  <pkg name="net.wargaming.wot.blitz" hotcount="1020"/>
+  <pkg name="com.supercell.hayday" hotcount="1021"/>
+  <pkg name="com.outfit7.mytalkingtomfree" hotcount="1023"/>
+  <pkg name="jp.konami.duellinks" hotcount="1024"/>
+  <pkg name="com.naturalmotion.customstreetracer2" hotcount="1025"/>
+  <pkg name="com.ustwo.monumentvalley" hotcount="1026"/>
+  <pkg name="com.yodo1.rodeo.safari" hotcount="1027"/>
+  <pkg name="com.ngame.allstar.eu" hotcount="1028"/>
+  <pkg name="com.droidhang.ad" hotcount="1029"/>
+  <pkg name="com.nianticproject.ingress" hotcount="1030"/>
+  <pkg name="com.aniplex.fategrandorder" hotcount="1031"/>
+  <pkg name="com.netmarble.mherosgb" hotcount="1032"/>
+  <pkg name="com.gameloft.android.ANMP.GloftA9HM" hotcount="1033"/>
+  <pkg name="com.epicgames.fortnite" hotcount="1034"/>
+
+  <iop name="com.epicgames.fortnite"/>
+  <iop name="com.miHoYo.bh3.nearme.gamecenter"/>
+  <iop name="com.tencent.tmgp.pubgmhd"/>
+  <iop name="com.tencent.tmgp.NBA"/>
+  <iop name="com.blizzard.wtcg.hearthstone"/>
+  <iop name="com.superevilmegacorp.game"/>
+  <iop name="com.tencent.KiHan"/>
+  <iop name="com.tencent.tmgp.wec"/>
+  <iop name="com.tencent.tmgp.qqx5"/>
+  <iop name="com.tencent.game.VXDGame"/>
+  <iop name="com.netease.moba.nearme.gamecenter"/>
+  <iop name="com.cmplay.tiles2_cn"/>
+  <iop name="com.netease.zjz2.nearme.gamecenter"/>
+  <iop name="com.ChillyRoom.DungeonShooter"/>
+  <iop name="com.tencent.tmgp.wesix"/>
+  <iop name="com.tencent.shootgame"/>
+  <iop name="com.popcap.pvz2cthdop"/>
+  <iop name="com.ChillyRoom.nearme.gamecenter"/>
+  <iop name="com.tencent.tmgp.pubgm"/>
+  <iop name="com.tencent.feiji"/>
+  <iop name="com.cmplay.dancingline.nearme.gamecenter"/>
+  <iop name="com.qqgame.hlddz"/>
+  <iop name="com.wepie.snake.nearme.gamecenter"/>
+  <iop name="com.netease.hyxd.nearme.gamecenter"/>
+  <iop name="com.supercell.boombeach.nearme.gamecenter"/>
+  <iop name="com.tencent.peng"/>
+  <iop name="com.tencent.pao"/>
+  <iop name="com.tencent.tmgp.sgame"/>
+  <iop name="com.netease.mrzh"/>
+  <iop name="com.miHoYo.enterprise.NGHSoD"/>
+  <iop name="com.netease.hyxd"/>
+  <iop name="com.tencent.tmgp.tstl"/>
+  <iop name="com.netease.wyclx"/>
+  <iop name="com.netease.h48"/>
+  <iop name="com.tencent.tmgp.cf"/>
+  <iop name="com.tencent.tmgp.wec"/>
+  <iop name="com.netease.my"/>
+  <iop name="com.bilibili.fatego"/>
+  <iop name="com.zlongame.mhmnz"/>
+  <iop name="com.netease.onmyoji"/>
+  <iop name="com.igg.android.lordsmobile"/>
+  <iop name="com.lilithgame.roc.gp"/>
+  <iop name="com.yottagames.mafiawar"/>
+</smartboost>

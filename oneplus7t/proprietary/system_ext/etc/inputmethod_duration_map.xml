@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <durationmap packagename="com.sohu.inputmethod.sogou"  min="0"  max="50" />
+    <durationmap packagename="com.iflytek.inputmethod.google"  min="0"  max="50" />
+    <durationmap packagename="com.iflytek.inputmethod"  min="0"  max="50" />
+    <durationmap packagename="com.iflytek.inputmethod.oneplus"  min="0"  max="50" />
+    <durationmap packagename="com.baidu.input"  min="0"  max="90" />
+    <durationmap packagename="com.baidu.input_yijia"  min="0"  max="90" />
+    <durationmap packagename="com.tencent.qqpinyin"  min="0"  max="75" />
+    <durationmap packagename="com.xinshuru.inputmethod"  min="0"  max="48" />
+    <durationmap packagename="com.google.android.inputmethod.pinyin"  min="0"  max="100" />
+    <durationmap packagename="com.google.android.inputmethod.latin"  min="0"  max="100" />
+    <durationmap packagename="com.touchtype.swiftkey"  min="1"  max="100" />
+    <durationmap packagename="com.jb.emoji.gokeyboard"  min="0"  max="100" />
+    <durationmap packagename="com.jb.gokeyboard"  min="0"  max="100" />
+    <durationmap packagename="com.cootek.smartinputv5"  min="0"  max="200" />
+    <durationmap packagename="abc.apple.emoji.theme.gif.keyboard"  min="0"  max="200" />
+    <durationmap packagename="com.emoji.keyboard.touchpal"  min="0"  max="200" />
+    <durationmap packagename="com.syntellia.fleksy.keyboard"  min="0"  max="40" />
+    <enhancedefault packagename="com.google.android.inputmethod.pinyin"  default="10" />
+    <enhancedefault packagename="com.touchtype.swiftkey"  default="10" />
+    <enhancedefault packagename="com.syntellia.fleksy.keyboard"  default="4" />
+    <enhancedefault packagename="com.google.android.inputmethod.latin"  default="10" />
+    <enhancedefault packagename="com.google.android.apps.handwriting.ime"  default="10" />
+    <enhancedefault packagename="com.cootek.smartinputv5"  default="10" />
+    <enhancedefault packagename="abc.apple.emoji.theme.gif.keyboard"  default="10" />
+    <enhancedefault packagename="com.emoji.keyboard.touchpal"  default="10" />
+    <enhancedefault packagename="com.gamelounge.chroomakeyboard"  default="10" />
+    <seteffect packagename="com.google.android.googlequicksearchbox"  duration="30" />
+    <seteffect packagename="com.xiaomi.smarthome"  duration="100" />
+</filter-conf>

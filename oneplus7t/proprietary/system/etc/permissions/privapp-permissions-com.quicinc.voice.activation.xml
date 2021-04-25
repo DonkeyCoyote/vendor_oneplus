@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!---/***********************************************************
+  Copyright (c) 2018 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+**************************************************************-->
+
+<!--
+This XML file declares which signature|privileged permissions should be granted to the privileged
+application VoiceActivation.
+-->
+
+<permissions>
+    <privapp-permissions package="com.quicinc.voice.activation">
+        <permission name="android.permission.CAPTURE_AUDIO_HOTWORD" />
+        <permission name="android.permission.MANAGE_SOUND_TRIGGER"/>
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+	
+    <feature name="com.quicinc.voice.assist" />
+    <feature name="com.quicinc.voice.assist.uvr" />
+</permissions>

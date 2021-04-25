@@ -1,0 +1,82 @@
+#
+# Copyright (C) 2016 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+
+# VENDOR_EDIT bingham.fang, porting wlan logs function
+on property:persist.vendor.oem.wifi.cnssdiag=1
+   setprop vendor.debug.mmosal.config 6015:63:6013:63
+   setprop persist.vendor.debug.wfdcdbg true
+
+on property:persist.vendor.oem.wifi.cnssdiag=0 && property:persist.vendor.oem.wifi.logpath=data
+   setprop vendor.debug.mmosal.config 6015:0:6013:24
+   setprop persist.vendor.debug.wfdcdbg false
+
+on property:persist.vendor.oem.wifi.cnssdiag=0 && property:persist.vendor.oem.wifi.logpath=sdcard
+   setprop vendor.debug.mmosal.config 6015:0:6013:24
+   setprop persist.vendor.debug.wfdcdbg false
+   setprop persist.vendor.oem.wifi.copytosd 1
+
+on property:persist.vendor.oem.wifi.copytosd=1
+   copyall /data/vendor/wifi/wlan_logs /sdcard/Android/data/oem_log/wlan_logs
+   setprop persist.vendor.oem.wifi.copytosd 0
+# VENDOR_EDIT end
+
+# VENDOR_EDIT JamesChang, Add for QXDM ODL
+on property:persist.vendor.qxdm.copymask=1
+   mkdir /data/vendor/diag_logs 0770 system system
+   copyall /storage/emulated/0/Android/data/oem_log/diag_logs/Diag.cfg /data/vendor/diag_logs/Diag.cfg
+   mkdir /data/vendor/diag_logs/mdm 0770 system system
+   copyall /storage/emulated/0/Android/data/oem_log/diag_logs/mdm/Diag.cfg /data/vendor/diag_logs/mdm/Diag.cfg
+   mkdir /data/vendor/diag_logs/mdm2 0770 system system
+   copyall /storage/emulated/0/Android/data/oem_log/diag_logs/mdm2/Diag.cfg /data/vendor/diag_logs/mdm2/Diag.cfg
+   chmod 666 /data/vendor/diag_logs/Diag.cfg
+   chmod 666 /data/vendor/diag_logs/mdm/Diag.cfg
+   chmod 666 /data/vendor/diag_logs/mdm2/Diag.cfg
+   setprop persist.vendor.qxdm.copymask 0
+
+# VENDOR_EDIT  yuquan.fei@connectivity, 2019/10/10, add for wlan log
+on property:persist.vendor.qxdm_wifi.copymask=1
+   mkdir /sdcard/oem_log 0770 system system
+   mkdir /sdcard/oem_log/diag_logs 0770 system system
+   copy /vendor/etc/wifi/Diag_host.cfg /sdcard/oem_log/diag_logs/Diag.cfg
+   mkdir /sdcard/oem_log/diag_logs/mdm2 0770 system system
+   copy /vendor/etc/wifi/Diag_FW.cfg /sdcard/oem_log/diag_logs/mdm2/Diag.cfg
+   chmod 666 /sdcard/oem_log/diag_logs/Diag.cfg
+   chmod 666 /sdcard/oem_log/diag_logs/mdm2/Diag.cfg
+   setprop persist.vendor.qxdm_wifi.copymask 0
+
+on property:persist.vendor.qxdm.copylog=1
+   copyall /data/vendor/diag_logs /storage/emulated/0/Android/data/oem_log/diag_logs
+# VENDOR_EDIT end
+
+on property:persist.vendor.tcpdump.dir=1
+   mkdir /data/oem_log/tcpdump
+   setprop persist.vendor.tcpdump.dir 0
+
+on property:persist.vendor.tcpdump.copy=1
+   copyall /data/oem_log/tcpdump ${persist.vendor.tcpdump.location}
+   setprop persist.vendor.tcpdump.copy 0
+
+#ifdef /* VENDOR_EDIT */
+# Augus.Liao@Connectivity, 2019/05/07, Copy sniffer log to sdcard.
+on property:vendor.wlan.sniffer.dump=1
+    copyall /data/oem_log/sniffer /sdcard/sniffer
+    setprop vendor.wlan.sniffer.dump 0
+#endif /* VENDOR_EDIT */
+
+on property:persist.vendor.tcpdump.mdpermission=1
+    exec_background - root root -- /system_ext/bin/modify_tcpdump_permission.sh
+    setprop persist.vendor.tcpdump.mdpermission 0

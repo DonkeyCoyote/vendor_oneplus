@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <library name="vendor.oneplus.engnative.engineer-V1.0"
+          file="/system/framework/vendor.oneplus.engnative.engineer-V1.0-java.jar"/>
+</permissions>
+

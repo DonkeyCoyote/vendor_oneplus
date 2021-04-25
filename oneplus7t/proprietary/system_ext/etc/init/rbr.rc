@@ -1,0 +1,10 @@
+service rbr_rescue_party /system_ext/bin/rbr --rescue-party
+    class main
+    disabled
+    oneshot
+
+service rbr_non_rescue_party /system_ext/bin/rbr --non-rescue-party
+    class main
+    disabled
+    oneshot
+

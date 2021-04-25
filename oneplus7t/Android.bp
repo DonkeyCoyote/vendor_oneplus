@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 The LineageOS Project
+ * Copyright (C) 2019-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,82 +20,19 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "AntHalService",
+	name: "aptxals",
 	owner: "oneplus",
-	apk: "proprietary/app/AntHalService/AntHalService.apk",
+	apk: "proprietary/system/app/aptxals/aptxals.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-}
-
-android_app_import {
-	name: "NxpNfcNci",
-	owner: "oneplus",
-	apk: "proprietary/app/NxpNfcNci/NxpNfcNci.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "NxpSecureElement",
-	owner: "oneplus",
-	apk: "proprietary/app/NxpSecureElement/NxpSecureElement.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "OPSoundTuner",
-	owner: "oneplus",
-	apk: "proprietary/app/OPSoundTuner/OPSoundTuner.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "HotwordEnrollmentOKGoogleWCD9340",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleWCD9340",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "OnePlusCamera",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/OnePlusCamera/OnePlusCamera.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 }
 
 android_app_import {
 	name: "OnePlusCameraService",
 	owner: "oneplus",
-	apk: "proprietary/priv-app/OnePlusCameraService/OnePlusCameraService.apk",
+	apk: "proprietary/system/priv-app/OnePlusCameraService/OnePlusCameraService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -103,423 +40,621 @@ android_app_import {
 	privileged: true,
 }
 
-android_app_import {
-	name: "OnePlusGallery",
+dex_import {
+	name: "QPerformance",
 	owner: "oneplus",
-	apk: "proprietary/priv-app/OnePlusGallery/OnePlusGallery.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
+	jars: ["proprietary/system/framework/QPerformance.jar"],
 }
 
-android_app_import {
-	name: "WfdService",
+dex_import {
+	name: "UxPerformance",
 	owner: "oneplus",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.location",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
+	jars: ["proprietary/system/framework/UxPerformance.jar"],
 }
 
 dex_import {
 	name: "WfdCommon",
 	owner: "oneplus",
-	jars: ["proprietary/framework/WfdCommon.jar"],
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
-dex_import {
-	name: "com.nxp.nfc",
+android_app_import {
+	name: "HotwordEnrollmentOKGoogleWCD9340",
 	owner: "oneplus",
-	jars: ["proprietary/framework/com.nxp.nfc.jar"],
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
-dex_import {
-	name: "com.qti.location.sdk",
+android_app_import {
+	name: "HotwordEnrollmentXGoogleWCD9340",
 	owner: "oneplus",
-	jars: ["proprietary/framework/com.qti.location.sdk.jar"],
-}
-
-dex_import {
-	name: "izat.xt.srv",
-	owner: "oneplus",
-	jars: ["proprietary/framework/izat.xt.srv.jar"],
-}
-
-dex_import {
-	name: "qcnvitems",
-	owner: "oneplus",
-	jars: ["proprietary/framework/qcnvitems.jar"],
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 android_app_import {
 	name: "DynamicDDSService",
 	owner: "oneplus",
-	apk: "proprietary/product/app/DynamicDDSService/DynamicDDSService.apk",
+	apk: "proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
-	name: "QtiSystemService",
+	name: "PerformanceMode",
 	owner: "oneplus",
-	apk: "proprietary/product/app/QtiSystemService/QtiSystemService.apk",
+	apk: "proprietary/system_ext/app/PerformanceMode/PerformanceMode.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "oneplus",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SoterService",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/SoterService/SoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "colorservice",
 	owner: "oneplus",
-	apk: "proprietary/product/app/colorservice/colorservice.apk",
+	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.qti.services.secureui",
-	owner: "oneplus",
-	apk: "proprietary/product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "datastatusnotification",
 	owner: "oneplus",
-	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "embms",
 	owner: "oneplus",
-	apk: "proprietary/product/app/embms/embms.apk",
+	apk: "proprietary/system_ext/app/embms/embms.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "imssettings",
 	owner: "oneplus",
-	apk: "proprietary/product/app/imssettings/imssettings.apk",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "oem_tcma",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/oem_tcma/oem_tcma.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "remoteSimLockAuthentication",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "remotesimlockservice",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/remotesimlockservice/remotesimlockservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "uceShimService",
 	owner: "oneplus",
-	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "uimgbaservice",
 	owner: "oneplus",
-	apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
+	apk: "proprietary/system_ext/app/uimgbaservice/uimgbaservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "uimlpaservice",
 	owner: "oneplus",
-	apk: "proprietary/product/app/uimlpaservice/uimlpaservice.apk",
+	apk: "proprietary/system_ext/app/uimlpaservice/uimlpaservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "uimremoteclient",
 	owner: "oneplus",
-	apk: "proprietary/product/app/uimremoteclient/uimremoteclient.apk",
+	apk: "proprietary/system_ext/app/uimremoteclient/uimremoteclient.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "uimremoteserver",
 	owner: "oneplus",
-	apk: "proprietary/product/app/uimremoteserver/uimremoteserver.apk",
+	apk: "proprietary/system_ext/app/uimremoteserver/uimremoteserver.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "IFAAService",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/IFAAService/IFAAService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "QAS_DVC_MSP",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
+	apk: "proprietary/system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "WfdService",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.location",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.services.systemhelper",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "daxService",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/daxService/daxService.apk",
+	apk: "proprietary/system_ext/priv-app/daxService/daxService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "dpmserviceapp",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "ims",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "seccamservice",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/seccamservice/seccamservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
 dex_import {
-	name: "QtiTelephonyServicelibrary",
+	name: "com.android.hotwordenrollment.common.util",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
-	name: "com.qti.dpmframework",
+	name: "com.qti.location.sdk",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/com.qti.dpmframework.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qti.location.sdk.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.media.secureprocessor",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.qti.media.secureprocessor.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.1-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.imscmservice-V2.2-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "com.qualcomm.qti.uceservice-V2.1-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.2-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "qcrilhook",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/qcrilhook.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "qti-telephony-common",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "remotesimlockmanagerlibrary",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/remotesimlockmanagerlibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "uimgbalibrary",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/uimgbalibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "uimgbamanagerlibrary",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/uimgbamanagerlibrary.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "uimlpalibrary",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/uimlpalibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/uimlpalibrary.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "uimremoteclientlibrary",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/uimremoteclientlibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/uimremoteclientlibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "uimremoteserverlibrary",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/uimremoteserverlibrary.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "uimremotesimlocklibrary",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/uimremotesimlocklibrary.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/uimremotesimlocklibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.oneplus.hardware.CameraMDMHIDL-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.oneplus.hardware.CameraMDMHIDL-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.oneplus.hardware.camera-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.oneplus.hardware.camera-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.oneplus.hardware.param-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.oneplus.hardware.param-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.oneplus.hardware.wifi-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.oneplus.hardware.wifi-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.mwqem-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.slm-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.alarm-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.capabilityconfigstore-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.connection-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.connection-V1.1-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
-	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.hardware.soter-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.hardware.soter-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callcapability-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.callinfo-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.ims.rcsconfig-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.1-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V2.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V2.1-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {
 	name: "vendor.qti.voiceprint-V1.0-java",
 	owner: "oneplus",
-	jars: ["proprietary/product/framework/vendor.qti.voiceprint-V1.0-java.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
