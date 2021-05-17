@@ -101,6 +101,7 @@
     <effectmap sceneId="10129"  effectId="429"  duration="11048" /><!--Whirl.wav	11048ms-->
     <effectmap sceneId="10130"  effectId="431"  duration="2112" /><!--t-jingle.wav        2112ms-->
     <effectmap sceneId="10131"  effectId="430"  duration="24111" /><!--VZW ARIWAVES.wav        11048ms-->
+    <effectmap sceneId="10190"  effectId="429"  duration="16062" /><!--McLaren.wav   16062-->
     <!-- Notification use sceneId-->
     <effectmap sceneId="10201"  effectId="501"  duration="415" /><!--Allay.wav	415ms-->
     <effectmap sceneId="10202"  effectId="502"  duration="960" /><!--Allusion.wav	960ms-->
